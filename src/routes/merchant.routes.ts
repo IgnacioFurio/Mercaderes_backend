@@ -127,7 +127,7 @@ router.post("/generate", async (req: Request, res: Response) => {
         quantity: inventoryItem.quantity,
         finalPrice: inventoryItem.finalPrice,
         status: inventoryItem.status,
-        notes: inventoryItem.notes,
+        notes: "",
       }));
 
       await MerchantInventory.bulkCreate(inventoryToSave);
@@ -168,7 +168,42 @@ router.post("/generate", async (req: Request, res: Response) => {
 
 router.get("/:id", async (req: Request, res: Response) => {
   try {
-    const merchant = await Merchant.findByPk(req.params.id);
+    const merchant = await Merchant.findByPk(req.params.id, {
+      include: [
+        {
+          model: ShopType,
+          as: "shopType",
+          attributes: ["id", "name", "description"],
+        },
+        {
+          model: MerchantQuality,
+          as: "quality",
+          attributes: ["id", "name", "rank", "description"],
+        },
+        {
+          model: MerchantInventory,
+          as: "inventory",
+          attributes: [
+            "id",
+            "quantity",
+            "finalPrice",
+          ],
+          include: [
+            {
+              model: Item,
+              as: "item",
+              attributes: [
+                "id",
+                "name",
+                "price",
+                "source",
+                "notes",
+              ],
+            },
+          ],
+        },
+      ],
+    });
 
     if (!merchant) {
       return res.status(404).json({
