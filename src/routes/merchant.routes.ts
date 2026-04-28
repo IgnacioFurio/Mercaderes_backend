@@ -1,5 +1,10 @@
 import { Router, Request, Response } from "express";
-const { Merchant } = require("../../models");
+import { Op } from "sequelize";
+import { pickRandomElement, pickRandomItems } from "../utils/random.utils";
+import { rollDiceFormula } from "../utils/dice.utils";
+import { getInventorySizeByQualityRank } from "../utils/inventory.utils";
+
+const { Merchant, ShopType, MerchantQuality, Item } = require("../../models");
 
 const router = Router();
 
@@ -32,6 +37,100 @@ router.post("/", async (req: Request, res: Response) => {
     res.status(500).json({
       message: "Error al crear mercader",
       error,
+    });
+  }
+});
+
+router.post("/generate", async (req: Request, res: Response) => {
+  try {
+    const { shopTypeId, merchantQualityId, save = false } = req.body;
+
+    let selectedShopType;
+
+    if (shopTypeId === null || shopTypeId === undefined) {
+      const shopTypes = await ShopType.findAll();
+      selectedShopType = pickRandomElement(shopTypes);
+    } else {
+      selectedShopType = await ShopType.findByPk(shopTypeId);
+
+      if (!selectedShopType) {
+        return res.status(404).json({
+          message: "El tipo de tienda indicado no existe.",
+        });
+      }
+    }
+
+    let selectedQuality;
+
+    if (merchantQualityId === null || merchantQualityId === undefined) {
+      const qualities = await MerchantQuality.findAll();
+      selectedQuality = pickRandomElement(qualities);
+    } else {
+      selectedQuality = await MerchantQuality.findByPk(merchantQualityId);
+
+      if (!selectedQuality) {
+        return res.status(404).json({
+          message: "La calidad de mercader indicada no existe.",
+        });
+      }
+    }
+
+    const compatibleItems = await Item.findAll({
+      where: {
+        shopTypeId: selectedShopType.id,
+        merchantQualityId: {
+          [Op.lte]: selectedQuality.id,
+        },
+      },
+    });
+
+    const inventorySize = getInventorySizeByQualityRank(selectedQuality.rank);
+    const selectedItems = pickRandomItems(compatibleItems, inventorySize);
+
+    const generatedInventory = selectedItems
+      .map((item: any) => {
+        const quantity = rollDiceFormula(item.quantityFormula);
+
+        return {
+          itemId: item.id,
+          name: item.name,
+          price: item.price,
+          finalPrice: item.price,
+          quantity,
+          quantityFormula: item.quantityFormula,
+          source: item.source,
+          notes: item.notes,
+          status: quantity > 0 ? "Disponible" : "Sin stock",
+        };
+      })
+      .filter((inventoryItem: any) => inventoryItem.quantity > 0);
+
+    const generatedMerchant = {
+      name: "Mercader sin nombre",
+      species: "Humano",
+      region: "Sin región",
+      attitude: "Neutral",
+      notes: "",
+      shopTypeId: selectedShopType.id,
+      merchantQualityId: selectedQuality.id,
+      shopType: selectedShopType,
+      quality: selectedQuality,
+    };
+
+    res.json({
+      message: "Mercader generado correctamente",
+      saved: save,
+      data: {
+        merchant: generatedMerchant,
+        inventorySize,
+        inventoryCount: generatedInventory.length,
+        inventory: generatedInventory,
+      },
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Error al generar mercader",
+      error: error instanceof Error ? error.message : error,
     });
   }
 });
