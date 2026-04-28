@@ -2,6 +2,9 @@ import express, { Request, Response } from "express";
 import cors from "cors";
 import "dotenv/config";
 import merchantRoutes from "./routes/merchant.routes";
+import merchantQualityRoutes from "./routes/merchantQuality.routes";
+import shopTypeRoutes from "./routes/shopType.routes";
+
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -10,6 +13,8 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/merchants", merchantRoutes);
+app.use("/api/merchant-qualities", merchantQualityRoutes);
+app.use("/api/shop-types", shopTypeRoutes);
 
 
 app.get("/", (req: Request, res: Response) => {
