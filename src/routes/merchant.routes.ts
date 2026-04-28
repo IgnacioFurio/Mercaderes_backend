@@ -35,4 +35,74 @@ router.post("/", async (req: Request, res: Response) => {
     });
   }
 });
+
+router.get("/:id", async (req: Request, res: Response) => {
+  try {
+    const merchant = await Merchant.findByPk(req.params.id);
+
+    if (!merchant) {
+      return res.status(404).json({
+        message: "Mercader no encontrado",
+      });
+    }
+
+    res.json({
+      message: "Mercader encontrado",
+      data: merchant,
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Error al obtener mercader",
+      error,
+    });
+  }
+});
+
+router.put("/:id", async (req: Request, res: Response) => {
+  try {
+    const merchant = await Merchant.findByPk(req.params.id);
+
+    if (!merchant) {
+      return res.status(404).json({
+        message: "Mercader no encontrado",
+      });
+    }
+
+    await merchant.update(req.body);
+
+    res.json({
+      message: "Mercader actualizado correctamente",
+      data: merchant,
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Error al actualizar mercader",
+      error,
+    });
+  }
+});
+
+router.delete("/:id", async (req: Request, res: Response) => {
+  try {
+    const merchant = await Merchant.findByPk(req.params.id);
+
+    if (!merchant) {
+      return res.status(404).json({
+        message: "Mercader no encontrado",
+      });
+    }
+
+    await merchant.destroy();
+
+    res.json({
+      message: "Mercader eliminado correctamente",
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Error al eliminar mercader",
+      error,
+    });
+  }
+});
+
 export default router;
