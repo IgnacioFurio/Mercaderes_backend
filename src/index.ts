@@ -4,6 +4,7 @@ import "dotenv/config";
 import merchantRoutes from "./routes/merchant.routes";
 import merchantQualityRoutes from "./routes/merchantQuality.routes";
 import shopTypeRoutes from "./routes/shopType.routes";
+import itemRoutes from "./routes/item.routes";
 
 
 const app = express();
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use("/api/merchants", merchantRoutes);
 app.use("/api/merchant-qualities", merchantQualityRoutes);
 app.use("/api/shop-types", shopTypeRoutes);
+app.use("/api/items", itemRoutes);
 
 
 app.get("/", (req: Request, res: Response) => {
