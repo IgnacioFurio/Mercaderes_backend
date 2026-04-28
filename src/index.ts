@@ -1,12 +1,16 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
 import "dotenv/config";
+import merchantRoutes from "./routes/merchant.routes";
 
 const app = express();
 const PORT = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(express.json());
+
+app.use("/api/merchants", merchantRoutes);
+
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Mercaderes Backend funcionando");
