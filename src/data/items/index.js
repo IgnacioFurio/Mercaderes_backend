@@ -1,9 +1,11 @@
+const alcoholAndRefreshmentItems = require('./alcoholAndRefreshments.items');
 const animalsItems  = require('./animals.items');
-// const weapons = require('./weapons.items');
+const flowersAndSeedsItems = require('./flowersAndSeeds.items');
 // const tools = require('./tools.items');
 
 module.exports = [
+    ...alcoholAndRefreshmentItems, 
     ...animalsItems ,
-    // ...weapons,
+    ...flowersAndSeedsItems ,
     // ...tools,
 ];
