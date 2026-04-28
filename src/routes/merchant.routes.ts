@@ -10,7 +10,24 @@ const router = Router();
 
 router.get("/", async (req: Request, res: Response) => {
   try {
-    const merchants = await Merchant.findAll();
+    const merchants = await Merchant.findAll( {
+      include: [
+        {
+          model: ShopType,
+          as: "shopType",
+          attributes: ["id", "name", "description"],
+        },
+        {
+          model: MerchantQuality,
+          as: "quality",
+          attributes: ["id", "name", "rank", "description"],
+        },
+      ],
+      order: [
+        ["name", "ASC"],
+        ["id", "DESc"],
+      ],
+    });
 
     res.json({
         message: "Listado de comerciantes",
