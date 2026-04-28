@@ -11,12 +11,26 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Merchant.belongsTo(models.ShopType, {
+        foreignKey: "shopTypeId",
+        as: "shopType",
+      });
+
+      Merchant.belongsTo(models.MerchantQuality, {
+        foreignKey: "merchantQualityId",
+        as: "quality",
+      });
+
+      Merchant.hasMany(models.MerchantInventory, {
+        foreignKey: "merchantId",
+        as: "inventory",
+      });
     }
   }
   Merchant.init({
     name: DataTypes.STRING,
     species: DataTypes.STRING,
-    shopType: DataTypes.INTEGER,
+    shopTypeId: DataTypes.INTEGER,
     region: DataTypes.STRING,
     merchantQualityId: DataTypes.INTEGER,
     attitude: DataTypes.STRING,

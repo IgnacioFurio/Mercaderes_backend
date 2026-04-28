@@ -11,7 +11,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-    }
+       MerchantInventory.belongsTo(models.Merchant, {
+        foreignKey: "merchantId",
+        as: "merchant",
+      });
+
+      MerchantInventory.belongsTo(models.Item, {
+        foreignKey: "itemId",
+        as: "item",
+      });
+        }
   }
   MerchantInventory.init({
     merchantId: DataTypes.INTEGER,
