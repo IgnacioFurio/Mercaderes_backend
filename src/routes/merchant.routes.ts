@@ -4,7 +4,7 @@ import { pickRandomElement, pickRandomItems } from "../utils/random.utils";
 import { rollDiceFormula } from "../utils/dice.utils";
 import { getInventorySizeByQualityRank } from "../utils/inventory.utils";
 
-const { Merchant, ShopType, MerchantQuality, Item } = require("../../models");
+const { Merchant, ShopType, MerchantQuality, Item, MerchantInventory } = require("../../models");
 
 const router = Router();
 
@@ -41,6 +41,7 @@ router.post("/", async (req: Request, res: Response) => {
   }
 });
 
+//generar mercader con tienda
 router.post("/generate", async (req: Request, res: Response) => {
   try {
     const { shopTypeId, merchantQualityId, save = false } = req.body;
@@ -117,11 +118,41 @@ router.post("/generate", async (req: Request, res: Response) => {
       quality: selectedQuality,
     };
 
+    if (save === true) {
+      const savedMerchant = await Merchant.create(generatedMerchant);
+
+      const inventoryToSave = generatedInventory.map((inventoryItem: any) => ({
+        merchantId: savedMerchant.id,
+        itemId: inventoryItem.itemId,
+        quantity: inventoryItem.quantity,
+        finalPrice: inventoryItem.finalPrice,
+        status: inventoryItem.status,
+        notes: inventoryItem.notes,
+      }));
+
+      await MerchantInventory.bulkCreate(inventoryToSave);
+
+      return res.status(201).json({
+        message: "Mercader generado y guardado correctamente",
+        saved: true,
+        data: {
+          merchant: savedMerchant,
+          inventorySize,
+          inventoryCount: generatedInventory.length,
+          inventory: generatedInventory,
+        },
+      });
+    }
+
     res.json({
       message: "Mercader generado correctamente",
-      saved: save,
+      saved: false,
       data: {
-        merchant: generatedMerchant,
+        merchant: {
+          ...generatedMerchant,
+          shopType: selectedShopType,
+          quality: selectedQuality,
+        },
         inventorySize,
         inventoryCount: generatedInventory.length,
         inventory: generatedInventory,
