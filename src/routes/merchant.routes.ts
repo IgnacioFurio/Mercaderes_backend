@@ -14,7 +14,7 @@ import {
 } from "../data/merchants";
 import { generateMerchantNameBySpecies } from "../utils/merchantName.utils";
 
-const { Merchant, ShopType, MerchantQuality, Item, MerchantInventory } = require("../../models");
+const { sequelize, Merchant, ShopType, MerchantQuality, Item, MerchantInventory } = require("../../models");
 
 const router = Router();
 
@@ -47,6 +47,27 @@ router.get("/", async (req: Request, res: Response) => {
           as: "quality",
           attributes: ["id", "name", "rank", "description"],
         },
+        {
+          model: MerchantInventory,
+          as: "inventory",
+          attributes: ["id", "quantity", "finalPrice", "status"],
+          include: [
+            {
+              model: Item,
+              as: "item",
+              attributes: [
+                "id",
+                "name",
+                "price",
+                "quantityFormula",
+                "source",
+                "notes",
+                "shopTypeId",
+                "merchantQualityId",
+              ],
+            },
+          ],
+        },
       ],
       order: [
         ["id", "DESC"],
@@ -69,16 +90,20 @@ router.get("/", async (req: Request, res: Response) => {
 
 // crear mercader
 router.post("/", async (req: Request, res: Response) => {
+  const transaction = await sequelize.transaction();
+
   try {
     const { merchant, inventory = [] } = req.body;
 
     if (!merchant) {
+      await transaction.rollback();
+
       return res.status(400).json({
         message: "Debes enviar los datos del mercader.",
       });
     }
 
-    const savedMerchant = await Merchant.create(merchant);
+    const savedMerchant = await Merchant.create(merchant, { transaction });
 
     const inventoryToSave = inventory.map((inventoryItem: any) => ({
       merchantId: savedMerchant.id,
@@ -90,8 +115,10 @@ router.post("/", async (req: Request, res: Response) => {
     }));
 
     if (inventoryToSave.length > 0) {
-      await MerchantInventory.bulkCreate(inventoryToSave);
+      await MerchantInventory.bulkCreate(inventoryToSave, { transaction });
     }
+
+    await transaction.commit();
 
     const merchantWithInventory = await Merchant.findByPk(savedMerchant.id, {
       include: [
@@ -134,6 +161,8 @@ router.post("/", async (req: Request, res: Response) => {
       data: merchantWithInventory,
     });
   } catch (error) {
+    await transaction.rollback();
+
     res.status(500).json({
       message: "Error al crear mercader",
       error: error instanceof Error ? error.message : error,
