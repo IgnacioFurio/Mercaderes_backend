@@ -5,6 +5,7 @@ import merchantRoutes from "./routes/merchant.routes";
 import merchantQualityRoutes from "./routes/merchantQuality.routes";
 import shopTypeRoutes from "./routes/shopType.routes";
 import itemRoutes from "./routes/item.routes";
+import merchantOptionsRoutes from "./routes/merchantOptions.routes";
 
 
 const app = express();
@@ -17,6 +18,7 @@ app.use("/api/merchants", merchantRoutes);
 app.use("/api/merchant-qualities", merchantQualityRoutes);
 app.use("/api/shop-types", shopTypeRoutes);
 app.use("/api/items", itemRoutes);
+app.use("/api/merchant-options", merchantOptionsRoutes);
 
 
 app.get("/", (req: Request, res: Response) => {

@@ -86,7 +86,21 @@ router.post("/", async (req: Request, res: Response) => {
 //generar mercader con tienda
 router.post("/generate", async (req: Request, res: Response) => {
   try {
-    const { shopTypeId, merchantQualityId, save = false } = req.body;
+    const {
+      name,
+      species,
+      region,
+      shopTypeId,
+      merchantQualityId,
+      personalityTrait,
+      ideal,
+      bond,
+      flaw,
+      gimmick,
+      attitude,
+      notes,
+      save = false,
+    } = req.body;
 
     let selectedShopType;
 
@@ -148,25 +162,25 @@ router.post("/generate", async (req: Request, res: Response) => {
       })
       .filter((inventoryItem: any) => inventoryItem.quantity > 0);
 
-    const selectedSpecies = pickRandomElement(speciesOptions);
-    const selectedRegion = pickRandomElement(regionOptions);
-    const generatedName = generateMerchantNameBySpecies(selectedSpecies);
-    const personalityTrait = pickRandomElement(personalityTraitsOptions);
-    const ideal = pickRandomElement(idealsOptions);
-    const bond = pickRandomElement(bondsOptions);
-    const flaw = pickRandomElement(flawsOptions);
-    const gimmick = pickRandomElement(gimmicksOptions);
+    const selectedSpecies = species ?? pickRandomElement(speciesOptions);
+    const selectedRegion = region ?? pickRandomElement(regionOptions);
+    const generatedName = name ?? generateMerchantNameBySpecies(selectedSpecies);
+    const selectedPersonalityTrait = personalityTrait ?? pickRandomElement(personalityTraitsOptions);
+    const selectedIdeal = ideal ?? pickRandomElement(idealsOptions);
+    const selectedBond = bond ?? pickRandomElement(bondsOptions);
+    const selectedFlaw = flaw ?? pickRandomElement(flawsOptions);
+    const selectedGimmick = gimmick ?? pickRandomElement(gimmicksOptions);
 
     const generatedMerchant = {
       name: generatedName,
       species: selectedSpecies,
       region: selectedRegion,
       attitude: "Neutral",
-      personalityTrait,
-      ideal,
-      bond,
-      flaw,
-      gimmick,
+      personalityTrait: selectedPersonalityTrait,
+      ideal: selectedIdeal,
+      bond: selectedBond,
+      flaw: selectedFlaw,
+      gimmick: selectedGimmick,
       notes: "",
       shopTypeId: selectedShopType.id,
       merchantQualityId: selectedQuality.id,
