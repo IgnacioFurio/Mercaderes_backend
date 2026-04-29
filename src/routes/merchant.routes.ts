@@ -49,8 +49,8 @@ router.get("/", async (req: Request, res: Response) => {
         },
       ],
       order: [
-        ["name", "ASC"],
         ["id", "DESC"],
+        ["name", "ASC"],
       ],
     });
 
@@ -67,18 +67,76 @@ router.get("/", async (req: Request, res: Response) => {
   }
 });
 
+// crear mercader
 router.post("/", async (req: Request, res: Response) => {
   try {
-    const merchant = await Merchant.create(req.body);
+    const { merchant, inventory = [] } = req.body;
+
+    if (!merchant) {
+      return res.status(400).json({
+        message: "Debes enviar los datos del mercader.",
+      });
+    }
+
+    const savedMerchant = await Merchant.create(merchant);
+
+    const inventoryToSave = inventory.map((inventoryItem: any) => ({
+      merchantId: savedMerchant.id,
+      itemId: inventoryItem.itemId,
+      quantity: inventoryItem.quantity,
+      finalPrice: inventoryItem.finalPrice,
+      status: inventoryItem.status || "Disponible",
+      notes: inventoryItem.notes || "",
+    }));
+
+    if (inventoryToSave.length > 0) {
+      await MerchantInventory.bulkCreate(inventoryToSave);
+    }
+
+    const merchantWithInventory = await Merchant.findByPk(savedMerchant.id, {
+      include: [
+        {
+          model: ShopType,
+          as: "shopType",
+          attributes: ["id", "name", "description"],
+        },
+        {
+          model: MerchantQuality,
+          as: "quality",
+          attributes: ["id", "name", "rank", "description"],
+        },
+        {
+          model: MerchantInventory,
+          as: "inventory",
+          attributes: ["id", "quantity", "finalPrice", "status"],
+          include: [
+            {
+              model: Item,
+              as: "item",
+              attributes: [
+                "id",
+                "name",
+                "price",
+                "quantityFormula",
+                "source",
+                "notes",
+                "shopTypeId",
+                "merchantQualityId",
+              ],
+            },
+          ],
+        },
+      ],
+    });
 
     res.status(201).json({
       message: "Mercader creado correctamente",
-      data: merchant,
+      data: merchantWithInventory,
     });
   } catch (error) {
     res.status(500).json({
       message: "Error al crear mercader",
-      error,
+      error: error instanceof Error ? error.message : error,
     });
   }
 });
@@ -99,7 +157,6 @@ router.post("/generate", async (req: Request, res: Response) => {
       gimmick,
       attitude,
       notes,
-      save = false,
     } = req.body;
 
     let selectedShopType;
@@ -186,35 +243,8 @@ router.post("/generate", async (req: Request, res: Response) => {
       merchantQualityId: selectedQuality.id,
     };
 
-    if (save === true) {
-      const savedMerchant = await Merchant.create(generatedMerchant);
-
-      const inventoryToSave = generatedInventory.map((inventoryItem: any) => ({
-        merchantId: savedMerchant.id,
-        itemId: inventoryItem.itemId,
-        quantity: inventoryItem.quantity,
-        finalPrice: inventoryItem.finalPrice,
-        status: inventoryItem.status,
-        notes: "",
-      }));
-
-      await MerchantInventory.bulkCreate(inventoryToSave);
-
-      return res.status(201).json({
-        message: "Mercader generado y guardado correctamente",
-        saved: true,
-        data: {
-          merchant: savedMerchant,
-          inventorySize,
-          inventoryCount: generatedInventory.length,
-          inventory: generatedInventory,
-        },
-      });
-    }
-
     res.json({
       message: "Mercader generado correctamente",
-      saved: false,
       data: {
         merchant: {
           ...generatedMerchant,
