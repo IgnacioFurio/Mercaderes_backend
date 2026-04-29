@@ -3,7 +3,9 @@ import { Op } from "sequelize";
 import { pickRandomElement, pickRandomItems } from "../utils/random.utils";
 import { rollDiceFormula } from "../utils/dice.utils";
 import { getInventorySizeByQualityRank } from "../utils/inventory.utils";
-import { speciesOptions, 
+import { 
+  speciesOptions, 
+  regionOptions,
   personalityTraitsOptions,
   idealsOptions,
   bondsOptions,
@@ -147,6 +149,7 @@ router.post("/generate", async (req: Request, res: Response) => {
       .filter((inventoryItem: any) => inventoryItem.quantity > 0);
 
     const selectedSpecies = pickRandomElement(speciesOptions);
+    const selectedRegion = pickRandomElement(regionOptions);
     const generatedName = generateMerchantNameBySpecies(selectedSpecies);
     const personalityTrait = pickRandomElement(personalityTraitsOptions);
     const ideal = pickRandomElement(idealsOptions);
@@ -157,7 +160,7 @@ router.post("/generate", async (req: Request, res: Response) => {
     const generatedMerchant = {
       name: generatedName,
       species: selectedSpecies,
-      region: "Sin región",
+      region: selectedRegion,
       attitude: "Neutral",
       personalityTrait,
       ideal,
