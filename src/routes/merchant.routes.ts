@@ -10,6 +10,7 @@ import { speciesOptions,
   flawsOptions,
   gimmicksOptions,
 } from "../data/merchants";
+import { generateMerchantNameBySpecies } from "../utils/merchantName.utils";
 
 const { Merchant, ShopType, MerchantQuality, Item, MerchantInventory } = require("../../models");
 
@@ -145,6 +146,8 @@ router.post("/generate", async (req: Request, res: Response) => {
       })
       .filter((inventoryItem: any) => inventoryItem.quantity > 0);
 
+    const selectedSpecies = pickRandomElement(speciesOptions);
+    const generatedName = generateMerchantNameBySpecies(selectedSpecies);
     const personalityTrait = pickRandomElement(personalityTraitsOptions);
     const ideal = pickRandomElement(idealsOptions);
     const bond = pickRandomElement(bondsOptions);
@@ -152,8 +155,8 @@ router.post("/generate", async (req: Request, res: Response) => {
     const gimmick = pickRandomElement(gimmicksOptions);
 
     const generatedMerchant = {
-      name: "Mercader sin nombre",
-      species: pickRandomElement(speciesOptions),
+      name: generatedName,
+      species: selectedSpecies,
       region: "Sin región",
       attitude: "Neutral",
       personalityTrait,
