@@ -34,7 +34,12 @@ module.exports = (sequelize, DataTypes) => {
     region: DataTypes.STRING,
     merchantQualityId: DataTypes.INTEGER,
     attitude: DataTypes.STRING,
-    notes: DataTypes.TEXT
+    personalityTrait: DataTypes.TEXT,
+    ideal: DataTypes.TEXT,
+    bond: DataTypes.TEXT,
+    flaw: DataTypes.TEXT,
+    gimmick: DataTypes.TEXT,
+    notes: DataTypes.TEXT,
   }, {
     sequelize,
     modelName: 'Merchant',

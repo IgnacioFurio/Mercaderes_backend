@@ -3,6 +3,13 @@ import { Op } from "sequelize";
 import { pickRandomElement, pickRandomItems } from "../utils/random.utils";
 import { rollDiceFormula } from "../utils/dice.utils";
 import { getInventorySizeByQualityRank } from "../utils/inventory.utils";
+import { speciesOptions, 
+  personalityTraitsOptions,
+  idealsOptions,
+  bondsOptions,
+  flawsOptions,
+  gimmicksOptions,
+} from "../data/merchants";
 
 const { Merchant, ShopType, MerchantQuality, Item, MerchantInventory } = require("../../models");
 
@@ -11,6 +18,21 @@ const router = Router();
 router.get("/", async (req: Request, res: Response) => {
   try {
     const merchants = await Merchant.findAll( {
+      attributes: [
+        "id",
+        "name",
+        "species",
+        "region",
+        "attitude",
+        "personalityTrait",
+        "ideal",
+        "bond",
+        "flaw",
+        "gimmick",
+        "notes",
+        "shopTypeId",
+        "merchantQualityId",
+      ],
       include: [
         {
           model: ShopType,
@@ -25,7 +47,7 @@ router.get("/", async (req: Request, res: Response) => {
       ],
       order: [
         ["name", "ASC"],
-        ["id", "DESc"],
+        ["id", "DESC"],
       ],
     });
 
@@ -123,16 +145,25 @@ router.post("/generate", async (req: Request, res: Response) => {
       })
       .filter((inventoryItem: any) => inventoryItem.quantity > 0);
 
+    const personalityTrait = pickRandomElement(personalityTraitsOptions);
+    const ideal = pickRandomElement(idealsOptions);
+    const bond = pickRandomElement(bondsOptions);
+    const flaw = pickRandomElement(flawsOptions);
+    const gimmick = pickRandomElement(gimmicksOptions);
+
     const generatedMerchant = {
       name: "Mercader sin nombre",
-      species: "Humano",
+      species: pickRandomElement(speciesOptions),
       region: "Sin región",
       attitude: "Neutral",
+      personalityTrait,
+      ideal,
+      bond,
+      flaw,
+      gimmick,
       notes: "",
       shopTypeId: selectedShopType.id,
       merchantQualityId: selectedQuality.id,
-      shopType: selectedShopType,
-      quality: selectedQuality,
     };
 
     if (save === true) {
