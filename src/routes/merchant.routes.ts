@@ -47,27 +47,6 @@ router.get("/", async (req: Request, res: Response) => {
           as: "quality",
           attributes: ["id", "name", "rank", "description"],
         },
-        {
-          model: MerchantInventory,
-          as: "inventory",
-          attributes: ["id", "quantity", "finalPrice", "status"],
-          include: [
-            {
-              model: Item,
-              as: "item",
-              attributes: [
-                "id",
-                "name",
-                "price",
-                "quantityFormula",
-                "source",
-                "notes",
-                "shopTypeId",
-                "merchantQualityId",
-              ],
-            },
-          ],
-        },
       ],
       order: [
         ["id", "DESC"],
@@ -232,18 +211,17 @@ router.post("/generate", async (req: Request, res: Response) => {
 
     const generatedInventory = selectedItems
       .map((item: any) => {
-        const quantity = rollDiceFormula(item.quantityFormula);
+        const quantity = item.quantityFormula
+          ? rollDiceFormula(item.quantityFormula)
+          : 1;
 
         return {
           itemId: item.id,
-          name: item.name,
-          price: item.price,
-          finalPrice: item.price,
           quantity,
-          quantityFormula: item.quantityFormula,
-          source: item.source,
-          notes: item.notes,
+          finalPrice: item.price,
           status: quantity > 0 ? "Disponible" : "Sin stock",
+          notes: "",
+          item,
         };
       })
       .filter((inventoryItem: any) => inventoryItem.quantity > 0);
@@ -312,8 +290,12 @@ router.get("/:id", async (req: Request, res: Response) => {
           as: "inventory",
           attributes: [
             "id",
+            "merchantId",
+            "itemId",
             "quantity",
             "finalPrice",
+            "status",
+            "notes",
           ],
           include: [
             {
@@ -323,8 +305,11 @@ router.get("/:id", async (req: Request, res: Response) => {
                 "id",
                 "name",
                 "price",
+                "quantityFormula",
                 "source",
                 "notes",
+                "shopTypeId",
+                "merchantQualityId",
               ],
             },
           ],
