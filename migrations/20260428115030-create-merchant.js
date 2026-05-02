@@ -42,8 +42,14 @@ module.exports = {
         onDelete: "RESTRICT"
       },
       cashAmount: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        defaultValue: "0 cp",
+      },
+      cashAmountCp: {
         type: Sequelize.INTEGER,
-        allowNull: true,
+        allowNull: false,
+        defaultValue: 0,
       },
       attitude: {
         type: Sequelize.STRING,

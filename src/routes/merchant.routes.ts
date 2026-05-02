@@ -13,7 +13,7 @@ import {
   gimmicksOptions,
 } from "../data/merchants";
 import { generateMerchantNameBySpecies } from "../utils/merchantName.utils";
-import { getMerchantCashAmountFromQualities } from "../utils/merchantCash.utils";
+import { getMerchantCashFromQualities } from "../utils/merchantCash.utils";
 
 const { sequelize, Merchant, ShopType, MerchantQuality, Item, MerchantInventory } = require("../../models");
 
@@ -22,22 +22,6 @@ const router = Router();
 router.get("/", async (req: Request, res: Response) => {
   try {
     const merchants = await Merchant.findAll( {
-      attributes: [
-        "id",
-        "name",
-        "species",
-        "region",
-        "attitude",
-        "cashAmount",
-        "personalityTrait",
-        "ideal",
-        "bond",
-        "flaw",
-        "gimmick",
-        "notes",
-        "shopTypeId",
-        "merchantQualityId",
-      ],
       include: [
         {
           model: ShopType,
@@ -208,7 +192,7 @@ router.post("/generate", async (req: Request, res: Response) => {
       order: [["rank", "ASC"]],
     });
 
-    const cashAmount = getMerchantCashAmountFromQualities(cashQualities);
+    const { cashAmount, cashAmountCp } = getMerchantCashFromQualities(cashQualities);
 
     const compatibleItems = await Item.findAll({
       where: {
@@ -254,6 +238,7 @@ router.post("/generate", async (req: Request, res: Response) => {
       region: selectedRegion,
       attitude: "Neutral",
       cashAmount: cashAmount,
+      cashAmountCp: cashAmountCp,
       personalityTrait: selectedPersonalityTrait,
       ideal: selectedIdeal,
       bond: selectedBond,
