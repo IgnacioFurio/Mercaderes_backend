@@ -33,6 +33,7 @@ module.exports = (sequelize, DataTypes) => {
     shopTypeId: DataTypes.INTEGER,
     region: DataTypes.STRING,
     merchantQualityId: DataTypes.INTEGER,
+    cashAmount: DataTypes.INTEGER,
     attitude: DataTypes.STRING,
     personalityTrait: DataTypes.TEXT,
     ideal: DataTypes.TEXT,

@@ -25,7 +25,8 @@ module.exports = (sequelize, DataTypes) => {
   MerchantQuality.init({
     name: DataTypes.STRING,
     rank: DataTypes.INTEGER,
-    description: DataTypes.TEXT
+    description: DataTypes.TEXT,
+    cashFormula: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'MerchantQuality',

@@ -10,10 +10,12 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       species: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       shopTypeId: {
         type: Sequelize.INTEGER,
@@ -26,7 +28,8 @@ module.exports = {
         onDelete: "RESTRICT"
       },
       region: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       merchantQualityId: {
         type: Sequelize.INTEGER,
@@ -38,11 +41,37 @@ module.exports = {
         onUpdate: "CASCADE",
         onDelete: "RESTRICT"
       },
+      cashAmount: {
+        type: Sequelize.INTEGER,
+        allowNull: true,
+      },
       attitude: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       notes: {
-        type: Sequelize.TEXT
+        type: Sequelize.TEXT,
+        allowNull: true,
+      },
+      personalityTrait: {
+        type: Sequelize.TEXT,
+        allowNull: true
+      },
+      ideal: {
+        type: Sequelize.TEXT,
+        allowNull: true
+      },
+      bond: {
+        type: Sequelize.TEXT,
+        allowNull: true
+      },
+      flaw: {
+        type: Sequelize.TEXT,
+        allowNull: true
+      },
+      gimmick: {
+        type: Sequelize.TEXT,
+        allowNull: true
       },
       createdAt: {
         allowNull: false,

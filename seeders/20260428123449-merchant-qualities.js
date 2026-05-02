@@ -8,6 +8,7 @@ module.exports = {
         name: 'Desastroso',
         rank: 1,
         description: 'Mercader de calidad pésima. Mercancía escasa, dañada, sospechosa o poco fiable.',
+        cashFormula: "1d10x20",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -15,6 +16,7 @@ module.exports = {
         name: 'Pobre',
         rank: 2,
         description: 'Mercader humilde. Stock limitado, productos básicos y poca variedad.',
+        cashFormula: "1d10x50",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -22,6 +24,7 @@ module.exports = {
         name: 'Común',
         rank: 3,
         description: 'Mercader fiable. Mercancía común, precios razonables y disponibilidad aceptable.',
+        cashFormula: "1d10x100",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -29,6 +32,7 @@ module.exports = {
         name: 'Buena',
         rank: 4,
         description: 'Mercader competente. Mejor variedad, productos cuidados y algunos artículos especiales.',
+        cashFormula: "1d10x250",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -36,6 +40,7 @@ module.exports = {
         name: 'Excelente',
         rank: 5,
         description: 'Mercader excelente. Stock amplio, objetos raros, mercancía de calidad y contactos útiles.',
+        cashFormula: "1d10x500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -43,6 +48,7 @@ module.exports = {
         name: 'Legendaria',
         rank: 6,
         description: 'Mercader extraordinario. Artículos únicos, tratos inusuales y acceso a mercancía excepcional.',
+        cashFormula: "1d10x1000",
         createdAt: new Date(),
         updatedAt: new Date()
       }

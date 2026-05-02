@@ -13,6 +13,7 @@ import {
   gimmicksOptions,
 } from "../data/merchants";
 import { generateMerchantNameBySpecies } from "../utils/merchantName.utils";
+import { getMerchantCashAmountFromQualities } from "../utils/merchantCash.utils";
 
 const { sequelize, Merchant, ShopType, MerchantQuality, Item, MerchantInventory } = require("../../models");
 
@@ -27,6 +28,7 @@ router.get("/", async (req: Request, res: Response) => {
         "species",
         "region",
         "attitude",
+        "cashAmount",
         "personalityTrait",
         "ideal",
         "bond",
@@ -109,7 +111,7 @@ router.post("/", async (req: Request, res: Response) => {
         {
           model: MerchantQuality,
           as: "quality",
-          attributes: ["id", "name", "rank", "description"],
+          attributes: ["id", "name", "rank", "description", "cashFormula"],
         },
         {
           model: MerchantInventory,
@@ -197,6 +199,17 @@ router.post("/generate", async (req: Request, res: Response) => {
       }
     }
 
+    const cashQualities = await MerchantQuality.findAll({
+      where: {
+        rank: {
+          [Op.lte]: selectedQuality.rank,
+        },
+      },
+      order: [["rank", "ASC"]],
+    });
+
+    const cashAmount = getMerchantCashAmountFromQualities(cashQualities);
+
     const compatibleItems = await Item.findAll({
       where: {
         shopTypeId: selectedShopType.id,
@@ -240,6 +253,7 @@ router.post("/generate", async (req: Request, res: Response) => {
       species: selectedSpecies,
       region: selectedRegion,
       attitude: "Neutral",
+      cashAmount: cashAmount,
       personalityTrait: selectedPersonalityTrait,
       ideal: selectedIdeal,
       bond: selectedBond,
@@ -283,7 +297,7 @@ router.get("/:id", async (req: Request, res: Response) => {
         {
           model: MerchantQuality,
           as: "quality",
-          attributes: ["id", "name", "rank", "description"],
+          attributes: ["id", "name", "rank", "description", "cashFormula"],
         },
         {
           model: MerchantInventory,
