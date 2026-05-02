@@ -30,6 +30,7 @@ module.exports = (sequelize, DataTypes) => {
   Item.init({
     name: DataTypes.STRING,
     price: DataTypes.STRING,
+    basePriceCp: DataTypes.INTEGER,
     quantityFormula: DataTypes.STRING,
     source: DataTypes.STRING,
     notes: DataTypes.TEXT,

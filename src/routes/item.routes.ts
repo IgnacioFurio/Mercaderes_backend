@@ -74,7 +74,7 @@ router.get("/compatible", async (req, res) => {
       order: [
         ["shopTypeId", "ASC"],
         ["merchantQualityId", "ASC"],
-        ["price", "ASC"],
+        ["basePriceCp", "ASC"],
       ],
     });
 
@@ -125,7 +125,7 @@ router.post("/inventory-items", async (req, res) => {
       order: [
         ["shopTypeId", "ASC"],
         ["merchantQualityId", "ASC"],
-        ["price", "ASC"],
+        ["basePriceCp", "ASC"],
       ],
     });
 
@@ -239,7 +239,7 @@ router.post("/generate-random", async (req, res) => {
       order: [
         ["shopTypeId", "ASC"],
         ["merchantQualityId", "ASC"],
-        ["price", "ASC"],
+        ["basePriceCp", "ASC"],
       ],
     });
 
@@ -253,6 +253,18 @@ router.post("/generate-random", async (req, res) => {
       compatibleItems,
       Math.min(parsedAmount, compatibleItems.length)
     );
+
+    selectedItems.sort((a: any, b: any) => {
+      if (a.shopTypeId !== b.shopTypeId) {
+        return a.shopTypeId - b.shopTypeId;
+      }
+
+      if (a.merchantQualityId !== b.merchantQualityId) {
+        return a.merchantQualityId - b.merchantQualityId;
+      }
+
+      return (a.basePriceCp || 0) - (b.basePriceCp || 0);
+    });
 
     const inventoryItems = selectedItems.map((item: any) => {
       const quantity = item.quantityFormula

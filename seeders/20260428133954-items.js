@@ -1,5 +1,6 @@
 'use strict';
 const items = require('../src/data/items/index.js');
+const { parseCurrencyToCopper } = require("../src/utils/currency.core");
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -8,6 +9,7 @@ module.exports = {
 
     const itemsWithDates = items.map((item) => ({
       ...item,
+      basePriceCp: parseCurrencyToCopper(item.price),
       createdAt: now,
       updatedAt: now
     }));

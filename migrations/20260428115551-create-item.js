@@ -15,6 +15,10 @@ module.exports = {
       price: {
         type: Sequelize.STRING
       },
+      basePriceCp: {
+        type: Sequelize.INTEGER,
+        allowNull: true,
+      },
       quantityFormula: {
         type: Sequelize.STRING
       },
