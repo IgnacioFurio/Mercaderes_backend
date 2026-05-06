@@ -151,7 +151,8 @@ router.post("/inventory-items", async (req, res) => {
       itemId: item.id,
       quantity,
       finalPrice: item.price,
-      status: "Disponible",
+      finalPriceCp: item.basePriceCp || 0,
+      status: quantity < 0 ? "Disponible" : "Sin Stock",
       notes: "",
       item,
     };
@@ -275,6 +276,7 @@ router.post("/generate-random", async (req, res) => {
         itemId: item.id,
         quantity,
         finalPrice: item.price,
+        finalPriceCp: item.basePriceCp || 0,
         status: quantity > 0 ? "Disponible" : "Sin stock",
         notes: "",
         item,

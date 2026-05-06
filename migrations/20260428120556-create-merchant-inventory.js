@@ -33,10 +33,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       finalPrice: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allownull: false,
+      },
+      finalPriceCp: {
+        type: Sequelize.INTEGER,
+        allownull: false,
+        defaultValue: 0,
       },
       status: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allownull: false,
+        defaultValue: "Disponible",
       },
       notes: {
         type: Sequelize.TEXT

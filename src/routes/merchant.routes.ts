@@ -75,6 +75,7 @@ router.post("/", async (req: Request, res: Response) => {
       itemId: inventoryItem.itemId,
       quantity: inventoryItem.quantity,
       finalPrice: inventoryItem.finalPrice,
+      finalPriceCp: inventoryItem.finalPriceCp || 0,
       status: inventoryItem.status || "Disponible",
       notes: inventoryItem.notes || "",
     }));
@@ -100,7 +101,7 @@ router.post("/", async (req: Request, res: Response) => {
         {
           model: MerchantInventory,
           as: "inventory",
-          attributes: ["id", "quantity", "finalPrice", "status"],
+          attributes: ["id", "quantity", "finalPrice", "finalPriceCp", "status"],
           include: [
             {
               model: Item,
@@ -109,6 +110,7 @@ router.post("/", async (req: Request, res: Response) => {
                 "id",
                 "name",
                 "price",
+                "basePriceCp",
                 "quantityFormula",
                 "source",
                 "notes",
@@ -216,6 +218,7 @@ router.post("/generate", async (req: Request, res: Response) => {
           itemId: item.id,
           quantity,
           finalPrice: item.price,
+          finalPriceCp: item.basePriceCp,
           status: quantity > 0 ? "Disponible" : "Sin stock",
           notes: "",
           item,
@@ -293,6 +296,7 @@ router.get("/:id", async (req: Request, res: Response) => {
             "itemId",
             "quantity",
             "finalPrice",
+            "finalPriceCp",
             "status",
             "notes",
           ],
@@ -304,6 +308,7 @@ router.get("/:id", async (req: Request, res: Response) => {
                 "id",
                 "name",
                 "price",
+                "basePriceCp",
                 "quantityFormula",
                 "source",
                 "notes",
