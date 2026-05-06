@@ -71,6 +71,17 @@ router.get("/compatible", async (req, res) => {
 
     const compatibleItems = await Item.findAll({
       where: whereConditions,
+      attributes: [
+        "id",
+        "name",
+        "price",
+        "basePriceCp",
+        "quantityFormula",
+        "source",
+        "notes",
+        "shopTypeId",
+        "merchantQualityId",
+      ],
       order: [
         ["shopTypeId", "ASC"],
         ["merchantQualityId", "ASC"],
@@ -127,6 +138,9 @@ router.post("/inventory-items", async (req, res) => {
         ["merchantQualityId", "ASC"],
         ["basePriceCp", "ASC"],
       ],
+      attributes: {
+        exclude: ["createdAt", "updatedAt"],
+      },
     });
 
     if (items.length !== parsedItemIds.length) {
@@ -152,7 +166,7 @@ router.post("/inventory-items", async (req, res) => {
       quantity,
       finalPrice: item.price,
       finalPriceCp: item.basePriceCp || 0,
-      status: quantity < 0 ? "Disponible" : "Sin Stock",
+      status: quantity > 0 ? "Disponible" : "Sin Stock",
       notes: "",
       item,
     };

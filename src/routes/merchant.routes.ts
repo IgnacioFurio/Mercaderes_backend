@@ -121,6 +121,11 @@ router.post("/", async (req: Request, res: Response) => {
           ],
         },
       ],
+      order: [
+        [{ model: MerchantInventory, as: "inventory" }, { model: Item, as: "item" }, "shopTypeId", "ASC"],
+        [{ model: MerchantInventory, as: "inventory" }, { model: Item, as: "item" }, "merchantQualityId", "ASC"],
+        [{ model: MerchantInventory, as: "inventory" }, { model: Item, as: "item" }, "basePriceCp", "ASC"],
+      ],
     });
 
     res.status(201).json({
@@ -207,6 +212,18 @@ router.post("/generate", async (req: Request, res: Response) => {
 
     const inventorySize = getInventorySizeByQualityRank(selectedQuality.rank);
     const selectedItems = pickRandomItems(compatibleItems, inventorySize);
+
+    selectedItems.sort((a: any, b: any) => {
+      if (a.shopTypeId !== b.shopTypeId) {
+        return a.shopTypeId - b.shopTypeId;
+      }
+
+      if (a.merchantQualityId !== b.merchantQualityId) {
+        return a.merchantQualityId - b.merchantQualityId;
+      }
+
+      return (a.basePriceCp || 0) - (b.basePriceCp || 0);
+    });
 
     const generatedInventory = selectedItems
       .map((item: any) => {
@@ -318,6 +335,26 @@ router.get("/:id", async (req: Request, res: Response) => {
             },
           ],
         },
+      ],
+      order: [
+        [
+          { model: MerchantInventory, as: "inventory" },
+          { model: Item, as: "item" },
+          "shopTypeId",
+          "ASC",
+        ],
+        [
+          { model: MerchantInventory, as: "inventory" },
+          { model: Item, as: "item" },
+          "merchantQualityId",
+          "ASC",
+        ],
+        [
+          { model: MerchantInventory, as: "inventory" },
+          { model: Item, as: "item" },
+          "basePriceCp",
+          "ASC",
+        ],
       ],
     });
 
