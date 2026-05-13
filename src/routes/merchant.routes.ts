@@ -14,11 +14,12 @@ import {
 } from "../data/merchants";
 import { generateMerchantNameBySpecies } from "../utils/merchantName.utils";
 import { getMerchantCashFromQualities } from "../utils/merchantCash.utils";
-import { 
+import {
   PRICE_MODIFIER_OPTIONS,
   getPriceModifierOptionByValue,
   getModifiedPrice,
-  } from "../utils/priceModifier.utils";
+  applyPriceModifierToCopper,
+} from "../utils/priceModifier.utils";
 
 const { sequelize, Merchant, ShopType, MerchantQuality, Item, MerchantInventory } = require("../../models");
 
