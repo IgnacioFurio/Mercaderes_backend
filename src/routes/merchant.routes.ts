@@ -14,6 +14,11 @@ import {
 } from "../data/merchants";
 import { generateMerchantNameBySpecies } from "../utils/merchantName.utils";
 import { getMerchantCashFromQualities } from "../utils/merchantCash.utils";
+import { 
+  PRICE_MODIFIER_OPTIONS,
+  getPriceModifierOptionByValue,
+  getModifiedPrice,
+  } from "../utils/priceModifier.utils";
 
 const { sequelize, Merchant, ShopType, MerchantQuality, Item, MerchantInventory } = require("../../models");
 
@@ -156,7 +161,7 @@ router.post("/generate", async (req: Request, res: Response) => {
       bond,
       flaw,
       gimmick,
-      attitude,
+      priceModifierPercent,
       notes,
     } = req.body;
 
@@ -225,17 +230,47 @@ router.post("/generate", async (req: Request, res: Response) => {
       return (a.basePriceCp || 0) - (b.basePriceCp || 0);
     });
 
+        let finalPriceModifierOption;
+
+    if (priceModifierPercent === null || priceModifierPercent === undefined) {
+      finalPriceModifierOption = pickRandomElement(PRICE_MODIFIER_OPTIONS);
+    } else {
+      const parsedPriceModifierPercent = Number(priceModifierPercent);
+
+      if (Number.isNaN(parsedPriceModifierPercent)) {
+        return res.status(400).json({
+          message: "priceModifierPercent must be a valid number",
+        });
+      }
+
+      finalPriceModifierOption = getPriceModifierOptionByValue(
+        parsedPriceModifierPercent
+      );
+
+      if (!finalPriceModifierOption) {
+        return res.status(400).json({
+          message: "priceModifierPercent must be one of the allowed values",
+          allowedValues: PRICE_MODIFIER_OPTIONS.map((option) => option.value),
+        });
+      }
+    }
+
     const generatedInventory = selectedItems
       .map((item: any) => {
         const quantity = item.quantityFormula
           ? rollDiceFormula(item.quantityFormula)
           : 1;
 
+        const { finalPrice, finalPriceCp } = getModifiedPrice(
+          item.basePriceCp || 0,
+          finalPriceModifierOption.value
+        );
+
         return {
           itemId: item.id,
           quantity,
-          finalPrice: item.price,
-          finalPriceCp: item.basePriceCp,
+          finalPrice,
+          finalPriceCp,
           status: quantity > 0 ? "Disponible" : "Sin stock",
           notes: "",
           item,
@@ -256,7 +291,8 @@ router.post("/generate", async (req: Request, res: Response) => {
       name: generatedName,
       species: selectedSpecies,
       region: selectedRegion,
-      attitude: "Neutral",
+      attitude: finalPriceModifierOption.attitudeLabel ||"Neutral",
+      priceModifierPercent: finalPriceModifierOption.value,
       cashAmount: cashAmount,
       cashAmountCp: cashAmountCp,
       personalityTrait: selectedPersonalityTrait,
@@ -264,7 +300,7 @@ router.post("/generate", async (req: Request, res: Response) => {
       bond: selectedBond,
       flaw: selectedFlaw,
       gimmick: selectedGimmick,
-      notes: "",
+      notes: notes || "",
       shopTypeId: selectedShopType.id,
       merchantQualityId: selectedQuality.id,
     };

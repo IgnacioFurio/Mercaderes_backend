@@ -55,6 +55,11 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+      priceModifierPercent: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0,
+      },
       notes: {
         type: Sequelize.TEXT,
         allowNull: true,

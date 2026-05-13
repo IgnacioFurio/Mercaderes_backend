@@ -2,6 +2,11 @@ import { Router, Request, Response } from "express";
 import { Op } from "sequelize";
 import { rollDiceFormula } from "../utils/dice.utils";
 import { pickRandomItems } from "../utils/random.utils";
+import { 
+  getModifiedPrice,
+  PRICE_MODIFIER_MIN,
+  PRICE_MODIFIER_MAX,
+} from "../utils/priceModifier.utils";
 
 
 const { Item, ShopType, MerchantQuality } = require("../../models");
@@ -101,8 +106,8 @@ router.get("/compatible", async (req, res) => {
 
 router.post("/inventory-items", async (req, res) => {
   try {
-    const { itemIds } = req.body;
-
+    const { itemIds, priceModifierPercent } = req.body; 
+    
     if (!Array.isArray(itemIds)) {
       return res.status(400).json({
         message: "itemIds must be an array",
@@ -121,6 +126,29 @@ router.post("/inventory-items", async (req, res) => {
       Number.isNaN(itemId)
     );
 
+    if (priceModifierPercent === undefined || priceModifierPercent === null) {
+      return res.status(400).json({
+        message: "priceModifierPercent is required",
+      });
+    }
+
+    const parsedPriceModifierPercent = Number(priceModifierPercent);
+
+    if (Number.isNaN(parsedPriceModifierPercent)) {
+      return res.status(400).json({
+        message: "priceModifierPercent must be a valid number",
+      });
+    }
+
+    if (
+      parsedPriceModifierPercent < PRICE_MODIFIER_MIN ||
+      parsedPriceModifierPercent > PRICE_MODIFIER_MAX
+    ) {
+      return res.status(400).json({
+        message: `priceModifierPercent must be between ${PRICE_MODIFIER_MIN} and ${PRICE_MODIFIER_MAX}`,
+      });
+    }
+    
     if (hasInvalidIds) {
       return res.status(400).json({
         message: "All itemIds must be valid numbers",
@@ -160,12 +188,16 @@ router.post("/inventory-items", async (req, res) => {
     const quantity = item.quantityFormula
       ? rollDiceFormula(item.quantityFormula)
       : 1;
+    const { finalPrice, finalPriceCp } = getModifiedPrice(
+      item.basePriceCp || 0,
+      parsedPriceModifierPercent
+    );
 
     return {
       itemId: item.id,
       quantity,
-      finalPrice: item.price,
-      finalPriceCp: item.basePriceCp || 0,
+      finalPrice,
+      finalPriceCp,
       status: quantity > 0 ? "Disponible" : "Sin Stock",
       notes: "",
       item,
@@ -189,17 +221,40 @@ router.post("/generate-random", async (req, res) => {
       merchantQualityId,
       excludeItemIds = [],
       amount = 1,
+      priceModifierPercent = 0,
     } = req.body;
 
-    if (shopTypeId === undefined || merchantQualityId === undefined) {
+    if (priceModifierPercent === undefined || priceModifierPercent === null) {
       return res.status(400).json({
-        message: "shopTypeId and merchantQualityId are required",
+        message: "priceModifierPercent is required",
       });
     }
 
     const parsedShopTypeId = Number(shopTypeId);
     const parsedMerchantQualityId = Number(merchantQualityId);
     const parsedAmount = Number(amount);
+    const parsedPriceModifierPercent = Number(priceModifierPercent);
+    
+    if (shopTypeId === undefined || merchantQualityId === undefined) {
+      return res.status(400).json({
+        message: "shopTypeId and merchantQualityId are required",
+      });
+    }
+    
+    if (Number.isNaN(parsedPriceModifierPercent)) {
+      return res.status(400).json({
+        message: "priceModifierPercent must be a valid number",
+      });
+    }
+
+    if (
+      parsedPriceModifierPercent < PRICE_MODIFIER_MIN ||
+      parsedPriceModifierPercent > PRICE_MODIFIER_MAX
+    ) {
+      return res.status(400).json({
+        message: `priceModifierPercent must be between ${PRICE_MODIFIER_MIN} and ${PRICE_MODIFIER_MAX}`,
+      });
+    }
 
     if (
       Number.isNaN(parsedShopTypeId) ||
@@ -219,6 +274,21 @@ router.post("/generate-random", async (req, res) => {
     if (!Array.isArray(excludeItemIds)) {
       return res.status(400).json({
         message: "excludeItemIds must be an array",
+      });
+    }
+
+    if (Number.isNaN(parsedPriceModifierPercent)) {
+      return res.status(400).json({
+        message: "priceModifierPercent must be a valid number",
+      });
+    }
+
+    if (
+      parsedPriceModifierPercent < PRICE_MODIFIER_MIN ||
+      parsedPriceModifierPercent > PRICE_MODIFIER_MAX
+    ) {
+      return res.status(400).json({
+        message: `priceModifierPercent must be between ${PRICE_MODIFIER_MIN} and ${PRICE_MODIFIER_MAX}`,
       });
     }
 
@@ -285,12 +355,17 @@ router.post("/generate-random", async (req, res) => {
       const quantity = item.quantityFormula
         ? rollDiceFormula(item.quantityFormula)
         : 1;
+      
+      const { finalPrice, finalPriceCp } = getModifiedPrice(
+        item.basePriceCp || 0,
+        parsedPriceModifierPercent
+      );
 
       return {
         itemId: item.id,
         quantity,
-        finalPrice: item.price,
-        finalPriceCp: item.basePriceCp || 0,
+        finalPrice,
+        finalPriceCp,
         status: quantity > 0 ? "Disponible" : "Sin stock",
         notes: "",
         item,
