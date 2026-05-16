@@ -20,6 +20,7 @@ import {
   getModifiedPrice,
   applyPriceModifierToCopper,
 } from "../utils/priceModifier.utils";
+import { formatCopperToCurrency } from "../utils/currency.utils";
 
 const { sequelize, Merchant, ShopType, MerchantQuality, Item, MerchantInventory } = require("../../models");
 
@@ -334,6 +335,115 @@ router.get("/price-modifier-options", (_req: Request, res: Response) => {
     count: PRICE_MODIFIER_OPTIONS.length,
     data: PRICE_MODIFIER_OPTIONS,
   });
+});
+
+//calcular ventas
+router.post("/calculate-sale", (req: Request, res: Response) => {
+  try {
+    const {
+      cashAmountCp,
+      itemId,
+      currentQuantity,
+      finalPriceCp,
+      saleQuantity,
+    } = req.body;
+
+    const parsedCashAmountCp = Number(cashAmountCp);
+    const parsedItemId = Number(itemId);
+    const parsedCurrentQuantity = Number(currentQuantity);
+    const parsedFinalPriceCp = Number(finalPriceCp);
+    const parsedSaleQuantity = Number(saleQuantity);
+
+    if (
+      Number.isNaN(parsedCashAmountCp) ||
+      !Number.isInteger(parsedCashAmountCp) ||
+      parsedCashAmountCp < 0
+    ) {
+      return res.status(400).json({
+        message: "cashAmountCp must be a positive integer or zero",
+      });
+    }
+
+    if (
+      Number.isNaN(parsedItemId) ||
+      !Number.isInteger(parsedItemId) ||
+      parsedItemId <= 0
+    ) {
+      return res.status(400).json({
+        message: "itemId must be a positive integer",
+      });
+    }
+
+    if (
+      Number.isNaN(parsedCurrentQuantity) ||
+      !Number.isInteger(parsedCurrentQuantity) ||
+      parsedCurrentQuantity < 0
+    ) {
+      return res.status(400).json({
+        message: "currentQuantity must be a positive integer or zero",
+      });
+    }
+
+    if (
+      Number.isNaN(parsedFinalPriceCp) ||
+      !Number.isInteger(parsedFinalPriceCp) ||
+      parsedFinalPriceCp < 0
+    ) {
+      return res.status(400).json({
+        message: "finalPriceCp must be a positive integer or zero",
+      });
+    }
+
+    if (
+      Number.isNaN(parsedSaleQuantity) ||
+      !Number.isInteger(parsedSaleQuantity) ||
+      parsedSaleQuantity <= 0
+    ) {
+      return res.status(400).json({
+        message: "saleQuantity must be a positive integer",
+      });
+    }
+
+    if (parsedSaleQuantity > parsedCurrentQuantity) {
+      return res.status(400).json({
+        message: "No hay suficiente stock para completar la venta.",
+        availableQuantity: parsedCurrentQuantity,
+        requestedQuantity: parsedSaleQuantity,
+      });
+    }
+
+    const totalPriceCp = parsedFinalPriceCp * parsedSaleQuantity;
+    const newCashAmountCp = parsedCashAmountCp + totalPriceCp;
+    const newQuantity = parsedCurrentQuantity - parsedSaleQuantity;
+
+    res.json({
+      message: "Venta calculada correctamente",
+      data: {
+        saleSummary: {
+          itemId: parsedItemId,
+          quantity: parsedSaleQuantity,
+          unitPriceCp: parsedFinalPriceCp,
+          unitPrice: formatCopperToCurrency(parsedFinalPriceCp),
+          totalPriceCp,
+          totalPrice: formatCopperToCurrency(totalPriceCp),
+        },
+        merchant: {
+          cashAmountCp: newCashAmountCp,
+          cashAmount: formatCopperToCurrency(newCashAmountCp),
+        },
+        inventoryItem: {
+          itemId: parsedItemId,
+          quantity: newQuantity,
+          status: newQuantity > 0 ? "Disponible" : "Sin stock",
+        },
+      },
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Error al calcular venta",
+      error: error instanceof Error ? error.message : error,
+    });
+  }
 });
 
 router.get("/:id", async (req: Request, res: Response) => {
