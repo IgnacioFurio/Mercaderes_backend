@@ -327,6 +327,15 @@ router.post("/generate", async (req: Request, res: Response) => {
   }
 });
 
+//traer opciones de actitud del mercader
+router.get("/price-modifier-options", (_req: Request, res: Response) => {
+  res.json({
+    message: "Opciones de modificador de precio",
+    count: PRICE_MODIFIER_OPTIONS.length,
+    data: PRICE_MODIFIER_OPTIONS,
+  });
+});
+
 router.get("/:id", async (req: Request, res: Response) => {
   try {
     const merchant = await Merchant.findByPk(req.params.id, {
