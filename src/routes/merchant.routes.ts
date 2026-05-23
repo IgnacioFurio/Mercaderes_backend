@@ -446,6 +446,83 @@ router.post("/calculate-sale", (req: Request, res: Response) => {
   }
 });
 
+//recalcula precio inventario
+router.post("/recalculate-inventory-prices", (req: Request, res: Response) => {
+  try {
+    const { priceModifierPercent, inventory } = req.body;
+
+    if (priceModifierPercent === undefined || priceModifierPercent === null) {
+      return res.status(400).json({
+        message: "priceModifierPercent is required",
+      });
+    }
+
+    const parsedPriceModifierPercent = Number(priceModifierPercent);
+
+    if (Number.isNaN(parsedPriceModifierPercent)) {
+      return res.status(400).json({
+        message: "priceModifierPercent must be a valid number",
+      });
+    }
+
+    const priceModifierOption = getPriceModifierOptionByValue(
+      parsedPriceModifierPercent
+    );
+
+    if (!priceModifierOption) {
+      return res.status(400).json({
+        message: "priceModifierPercent must be one of the allowed values",
+        allowedValues: PRICE_MODIFIER_OPTIONS.map((option) => option.value),
+      });
+    }
+
+    if (!Array.isArray(inventory)) {
+      return res.status(400).json({
+        message: "inventory must be an array",
+      });
+    }
+
+    const recalculatedInventory = inventory.map((inventoryItem: any) => {
+      const basePriceCp = Number(inventoryItem.item?.basePriceCp);
+
+      if (
+        Number.isNaN(basePriceCp) ||
+        !Number.isInteger(basePriceCp) ||
+        basePriceCp < 0
+      ) {
+        throw new Error(
+          `Invalid basePriceCp for inventory item ${inventoryItem.itemId}`
+        );
+      }
+
+      const { finalPrice, finalPriceCp } = getModifiedPrice(
+        basePriceCp,
+        priceModifierOption.value
+      );
+
+      return {
+        ...inventoryItem,
+        finalPrice,
+        finalPriceCp,
+      };
+    });
+
+    res.json({
+      message: "Precios de inventario recalculados correctamente",
+      data: {
+        priceModifierPercent: priceModifierOption.value,
+        attitude: priceModifierOption.attitudeLabel,
+        inventory: recalculatedInventory,
+      },
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Error al recalcular precios de inventario",
+      error: error instanceof Error ? error.message : error,
+    });
+  }
+});
+
 router.get("/:id", async (req: Request, res: Response) => {
   try {
     const merchant = await Merchant.findByPk(req.params.id, {
