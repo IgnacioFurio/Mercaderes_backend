@@ -1,0 +1,58 @@
+const enchantmentsItems = [
+    {
+        name: 'Encantamiento menor aleatorio',
+        price: '100 gp',
+        quantityFormula: '3',
+        source: '—',
+        notes: 'Cantidad en encantamientos diarios. El encantamiento se determina tirando en la tabla de Encantamientos Menores.',
+        shopTypeId: 24,
+        merchantQualityId: 3,
+    },
+    {
+        name: 'Encantamiento mayor aleatorio',
+        price: '500 gp',
+        quantityFormula: '3',
+        source: '—',
+        notes: 'Cantidad en encantamientos diarios. El encantamiento se determina tirando en la tabla de Encantamientos Mayores.',
+        shopTypeId: 24,
+        merchantQualityId: 3,
+    },
+    {
+        name: 'Encantamiento menor elegido',
+        price: '200 gp',
+        quantityFormula: '3',
+        source: '—',
+        notes: 'Cantidad en encantamientos diarios. El comprador elige un encantamiento de la tabla de Encantamientos Menores.',
+        shopTypeId: 24,
+        merchantQualityId: 4,
+    },
+    {
+        name: 'Encantamiento mayor elegido',
+        price: '1,000 gp',
+        quantityFormula: '3',
+        source: '—',
+        notes: 'Cantidad en encantamientos diarios. El comprador elige un encantamiento de la tabla de Encantamientos Mayores.',
+        shopTypeId: 24,
+        merchantQualityId: 4,
+    },
+    {
+        name: 'Encantamiento legendario aleatorio',
+        price: '5,000 gp',
+        quantityFormula: '3',
+        source: '—',
+        notes: 'Cantidad en encantamientos diarios. El encantamiento se determina tirando en la tabla de Encantamientos Legendarios.',
+        shopTypeId: 24,
+        merchantQualityId: 4,
+    },
+    {
+        name: 'Encantamiento legendario elegido',
+        price: '10,000 gp',
+        quantityFormula: '3',
+        source: '—',
+        notes: 'Cantidad en encantamientos diarios. El comprador elige un encantamiento de la tabla de Encantamientos Legendarios.',
+        shopTypeId: 24,
+        merchantQualityId: 5,
+    },
+];
+
+module.exports = enchantmentsItems;
