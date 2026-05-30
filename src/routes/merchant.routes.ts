@@ -1,8 +1,18 @@
 import { Router, Request, Response } from "express";
 import { Op } from "sequelize";
+
 import { pickRandomElement, pickRandomItems } from "../utils/random.utils";
 import { rollDiceFormula } from "../utils/dice.utils";
 import { getInventorySizeByQualityRank } from "../utils/inventory.utils";
+import { generateMerchantNameBySpecies } from "../utils/merchantName.utils";
+import { getMerchantCashFromQualities } from "../utils/merchantCash.utils";
+import {
+  PRICE_MODIFIER_OPTIONS,
+  getPriceModifierOptionByValue,
+  getModifiedPrice,
+  applyPriceModifierToCopper,
+} from "../utils/priceModifier.utils";
+
 import { 
   speciesOptions, 
   regionOptions,
@@ -12,16 +22,9 @@ import {
   flawsOptions,
   gimmicksOptions,
 } from "../data/merchants";
-import { generateMerchantNameBySpecies } from "../utils/merchantName.utils";
-import { getMerchantCashFromQualities } from "../utils/merchantCash.utils";
-import {
-  PRICE_MODIFIER_OPTIONS,
-  getPriceModifierOptionByValue,
-  getModifiedPrice,
-  applyPriceModifierToCopper,
-} from "../utils/priceModifier.utils";
-import { formatCopperToCurrency } from "../utils/currency.utils";
 
+import { formatCopperToCurrency } from "../utils/currency.utils";
+import { resolveSpecialItem } from "../utils/itemResolver.utils";
 const { sequelize, Merchant, ShopType, MerchantQuality, Item, MerchantInventory } = require("../../models");
 
 const router = Router();
@@ -259,23 +262,34 @@ router.post("/generate", async (req: Request, res: Response) => {
 
     const generatedInventory = selectedItems
       .map((item: any) => {
-        const quantity = item.quantityFormula
-          ? rollDiceFormula(item.quantityFormula)
+        const itemData = item.toJSON ? item.toJSON() : item;
+
+        const quantity = itemData.quantityFormula
+          ? rollDiceFormula(itemData.quantityFormula)
           : 1;
 
         const { finalPrice, finalPriceCp } = getModifiedPrice(
-          item.basePriceCp || 0,
+          itemData.basePriceCp || 0,
           finalPriceModifierOption.value
         );
 
+        const originalNotes = itemData.notes || "";
+        const resolvedSpecialItem = resolveSpecialItem(itemData.name, originalNotes);
+
         return {
-          itemId: item.id,
+          itemId: itemData.id,
           quantity,
           finalPrice,
           finalPriceCp,
           status: quantity > 0 ? "Disponible" : "Sin stock",
-          notes: "",
-          item,
+          notes: resolvedSpecialItem.isResolved ? resolvedSpecialItem.notes : "",
+          item: {
+            ...itemData,
+            name: resolvedSpecialItem.name,
+            notes: resolvedSpecialItem.isResolved
+              ? resolvedSpecialItem.notes
+              : originalNotes,
+          },
         };
       })
       .filter((inventoryItem: any) => inventoryItem.quantity > 0);
