@@ -1,6 +1,6 @@
 'use strict';
 const items = require('../src/data/items/index.js');
-const { parseCurrencyToCopper } = require("../src/utils/currency.core");
+const { parseCurrencyToCopper } = require("../dist/utils/currency.core");
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
