@@ -1,5 +1,28 @@
 require("dotenv").config();
 
+const isProduction = process.env.NODE_ENV === "production";
+
+const getProductionConfig = () => {
+  return {
+    username: process.env.DB_USERNAME || process.env.MYSQLUSER,
+    password: process.env.DB_PASSWORD || process.env.MYSQLPASSWORD,
+    database: process.env.DB_DATABASE || process.env.MYSQLDATABASE,
+    host: process.env.DB_HOST || process.env.MYSQLHOST,
+    dialect: "mysql",
+    port: Number(process.env.DB_PORT || process.env.MYSQLPORT) || 3306,
+
+    dialectOptions:
+      process.env.DB_SSL === "true"
+        ? {
+            ssl: {
+              require: true,
+              rejectUnauthorized: false,
+            },
+          }
+        : {},
+  };
+};
+
 module.exports = {
   development: {
     username: "root",
@@ -18,18 +41,5 @@ module.exports = {
     dialect: "mysql",
   },
 
-  production: {
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE,
-    host: process.env.DB_HOST,
-    dialect: "mysql",
-    port: Number(process.env.DB_PORT) || 3306,
-    dialectOptions: {
-      ssl: {
-        require: true,
-        rejectUnauthorized: false,
-      },
-    },
-  },
+  production: getProductionConfig(),
 };
