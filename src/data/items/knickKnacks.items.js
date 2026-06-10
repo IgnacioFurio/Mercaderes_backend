@@ -4,7 +4,7 @@ const knickKnacksItems = [
         name: 'Pértiga de 10 pies',
         price: '5 cp',
         quantityFormula: '1d4 x 4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 1
@@ -13,7 +13,7 @@ const knickKnacksItems = [
         name: 'Manta',
         price: '5 sp',
         quantityFormula: '1d4 x 4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 1
@@ -24,7 +24,7 @@ const knickKnacksItems = [
         name: 'Polea y aparejo',
         price: '1 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -33,7 +33,7 @@ const knickKnacksItems = [
         name: 'Cubo',
         price: '5 cp',
         quantityFormula: '1d4 x 4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -42,7 +42,7 @@ const knickKnacksItems = [
         name: 'Vela',
         price: '1 cp',
         quantityFormula: '1d4 x 10',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Viene en varios colores.',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -51,7 +51,7 @@ const knickKnacksItems = [
         name: 'Tiza',
         price: '1 cp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por pieza. Cantidad en piezas. Viene en varios colores.',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -60,7 +60,7 @@ const knickKnacksItems = [
         name: 'Juego de dados',
         price: '1 sp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -69,7 +69,7 @@ const knickKnacksItems = [
         name: 'Frasco o jarra',
         price: '2 cp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Hecho de peltre o madera tratada.',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -78,7 +78,7 @@ const knickKnacksItems = [
         name: 'Tinta, botella',
         price: '10 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por onza. Cantidad en onzas.',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -87,7 +87,7 @@ const knickKnacksItems = [
         name: 'Pluma de tinta',
         price: '2 cp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -96,7 +96,7 @@ const knickKnacksItems = [
         name: 'Papel',
         price: '2 sp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por hoja. Cantidad en hojas.',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -114,7 +114,7 @@ const knickKnacksItems = [
         name: 'Juego de naipes',
         price: '5 sp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -123,7 +123,7 @@ const knickKnacksItems = [
         name: 'Silbato de señales',
         price: '5 cp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -132,7 +132,7 @@ const knickKnacksItems = [
         name: 'Tienda de campaña para dos personas',
         price: '2 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -141,7 +141,7 @@ const knickKnacksItems = [
         name: 'Yesquero',
         price: '5 sp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -150,7 +150,7 @@ const knickKnacksItems = [
         name: 'Cera de sellado',
         price: '5 sp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 2
@@ -161,7 +161,7 @@ const knickKnacksItems = [
         name: 'Amuleto',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Símbolo sagrado; un collar con un símbolo de fe.',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -170,7 +170,7 @@ const knickKnacksItems = [
         name: 'Rodamientos de bolas',
         price: '1 gp',
         quantityFormula: '1d4 x 2000',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -179,7 +179,7 @@ const knickKnacksItems = [
         name: 'Bocado y brida',
         price: '2 gp',
         quantityFormula: '1d4',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -188,7 +188,7 @@ const knickKnacksItems = [
         name: 'Carro',
         price: '15 gp',
         quantityFormula: '1d4-1',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -197,7 +197,7 @@ const knickKnacksItems = [
         name: 'Estuche para mapa o pergamino',
         price: '1 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Vacío.',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -206,7 +206,7 @@ const knickKnacksItems = [
         name: 'Cadena',
         price: '5 gp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por 10 pies. Cantidad en tramos de 10 pies.',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -215,7 +215,7 @@ const knickKnacksItems = [
         name: 'Útiles de escalada',
         price: '25 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -224,7 +224,7 @@ const knickKnacksItems = [
         name: 'Crampones',
         price: '2 gp',
         quantityFormula: '1d4',
-        source: 'IDRF 20',
+        source: 'IDRF',
         notes: 'Placas metálicas con pinchos para botas; impiden resbalar sobre hielo.',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -233,7 +233,7 @@ const knickKnacksItems = [
         name: 'Garfio de escalada',
         price: '2 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -242,7 +242,7 @@ const knickKnacksItems = [
         name: 'Reloj de arena',
         price: '25 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -251,7 +251,7 @@ const knickKnacksItems = [
         name: 'Lámpara',
         price: '5 sp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -260,7 +260,7 @@ const knickKnacksItems = [
         name: 'Linterna ojo de buey',
         price: '10 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -269,7 +269,7 @@ const knickKnacksItems = [
         name: 'Linterna con capucha',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -278,7 +278,7 @@ const knickKnacksItems = [
         name: 'Candado',
         price: '10 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Llave incluida.',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -287,7 +287,7 @@ const knickKnacksItems = [
         name: 'Cuerda de cáñamo',
         price: '1 gp',
         quantityFormula: '1d4 x 50',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por 50 pies. Cantidad en tramos de 50 pies.',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -296,7 +296,7 @@ const knickKnacksItems = [
         name: 'Balanza de mercader',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -305,7 +305,7 @@ const knickKnacksItems = [
         name: 'Raquetas de nieve',
         price: '2 gp',
         quantityFormula: '1d4',
-        source: 'IDRF 20',
+        source: 'IDRF',
         notes: 'Precio por par. Cantidad en pares. Evitan que quien las lleva se hunda en nieve profunda.',
         shopTypeId: 9,
         merchantQualityId: 3
@@ -316,7 +316,7 @@ const knickKnacksItems = [
         name: 'Herramientas de artesano',
         price: 'Variable',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: 'Seleccionadas aleatoriamente; los precios son los indicados en el PHB.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -325,7 +325,7 @@ const knickKnacksItems = [
         name: 'Paracaídas de mochila',
         price: '100 gp',
         quantityFormula: '1d4-1',
-        source: 'WDH 47',
+        source: 'WDH',
         notes: 'Puede llevar a salvo una caída de 60 pies; 10 minutos para volver a guardarlo.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -334,7 +334,7 @@ const knickKnacksItems = [
         name: 'Campana',
         price: '1 gp',
         quantityFormula: '1d4+1',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -343,7 +343,7 @@ const knickKnacksItems = [
         name: 'Libro en blanco',
         price: '25 gp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Apto para escribir o dibujar; no puede contener conjuros.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -352,7 +352,7 @@ const knickKnacksItems = [
         name: 'Abrojos',
         price: '1 gp',
         quantityFormula: '1d4 x 40',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por bolsa de 20. Cantidad en bolsas de 20.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -361,7 +361,7 @@ const knickKnacksItems = [
         name: 'Vela de las profundidades',
         price: '100 gp',
         quantityFormula: '1d4-2',
-        source: 'XGE 136',
+        source: 'XGE',
         notes: 'Puede arder bajo el agua.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -370,7 +370,7 @@ const knickKnacksItems = [
         name: 'Cofre de preservación',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'WDMM 139',
+        source: 'WDMM',
         notes: 'Solo 1, para siempre. Los objetos dentro no envejecen ni se descomponen; contiene 3,75 pies cúbicos.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -379,7 +379,7 @@ const knickKnacksItems = [
         name: 'Piedra de limpieza',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'ERLW 276',
+        source: 'ERLW',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -388,7 +388,7 @@ const knickKnacksItems = [
         name: 'Dados de hueso grabados',
         price: '25 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Un juego de dados con muchas cantidades distintas de caras.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -397,7 +397,7 @@ const knickKnacksItems = [
         name: 'Juego de dragonchess',
         price: '1 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -406,7 +406,7 @@ const knickKnacksItems = [
         name: 'Trompetilla para sordera',
         price: '100 gp',
         quantityFormula: '1d4-2',
-        source: 'XGE 137',
+        source: 'XGE',
         notes: 'Sostenida contra la oreja; suprime la condición ensordecido.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -415,7 +415,7 @@ const knickKnacksItems = [
         name: 'Garfio de escalada',
         price: '2 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -424,7 +424,7 @@ const knickKnacksItems = [
         name: 'Sombrero de alimañas',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 137',
+        source: 'XGE',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -433,7 +433,7 @@ const knickKnacksItems = [
         name: 'Anzuelo de deleite del pescador',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'IDRF 314',
+        source: 'IDRF',
         notes: 'Solo 1, para siempre. Atrapa una de cuatro variedades de pez semimágico.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -442,7 +442,7 @@ const knickKnacksItems = [
         name: 'Cuerno de alarma silenciosa',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 137',
+        source: 'XGE',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -451,7 +451,7 @@ const knickKnacksItems = [
         name: 'Linterna de revelación',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 179',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Revela criaturas y objetos invisibles.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -460,7 +460,7 @@ const knickKnacksItems = [
         name: 'Vara inamovible',
         price: '500 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 175',
+        source: 'DMG',
         notes: 'Al activarse, permanece en su lugar y soporta 8.000 libras.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -469,7 +469,7 @@ const knickKnacksItems = [
         name: 'Lupa',
         price: '100 gp',
         quantityFormula: '1d4-1',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -478,7 +478,7 @@ const knickKnacksItems = [
         name: 'Grilletes',
         price: '2 gp',
         quantityFormula: '1d4-1',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Llave incluida.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -487,7 +487,7 @@ const knickKnacksItems = [
         name: 'Llave misteriosa',
         price: '50 gp',
         quantityFormula: '1d4-2',
-        source: 'XGE 138',
+        source: 'XGE',
         notes: 'Tiene un 5% de probabilidad de abrir cualquier cerradura y luego desaparece.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -496,7 +496,7 @@ const knickKnacksItems = [
         name: 'Orbe de dirección',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 138',
+        source: 'XGE',
         notes: 'Solo 1, para siempre. Acción: aprende qué dirección es el norte.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -505,7 +505,7 @@ const knickKnacksItems = [
         name: 'Pipa de monstruos de humo',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 138',
+        source: 'XGE',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -514,7 +514,7 @@ const knickKnacksItems = [
         name: 'Pértiga plegable',
         price: '100 gp',
         quantityFormula: '1d4-2',
-        source: 'XGE 138',
+        source: 'XGE',
         notes: 'Puede contraerse a 1 pie o expandirse hasta 10 pies.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -523,7 +523,7 @@ const knickKnacksItems = [
         name: 'Bote de remos',
         price: '50 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 119',
+        source: 'DMG',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -532,7 +532,7 @@ const knickKnacksItems = [
         name: 'Piedra de buena suerte',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 205',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -541,7 +541,7 @@ const knickKnacksItems = [
         name: 'Muñeca parlante',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 139',
+        source: 'XGE',
         notes: 'Solo 1, para siempre. Puede recibir instrucciones para decir hasta 6 frases cortas.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -550,7 +550,7 @@ const knickKnacksItems = [
         name: 'Mazo de tarokka',
         price: '10 gp',
         quantityFormula: '1d4-1',
-        source: 'CS 243',
+        source: 'CS',
         notes: 'Usado para leer el futuro; solo un vistani puede hacerlo de verdad.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -559,7 +559,7 @@ const knickKnacksItems = [
         name: 'Juego de Three-Dragon Ante',
         price: '1 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -568,7 +568,7 @@ const knickKnacksItems = [
         name: 'Lona recogelluvia',
         price: '1 gp',
         quantityFormula: '1d4-1',
-        source: 'TA 32',
+        source: 'TA',
         notes: 'Recoge 2 galones de agua por pulgada de lluvia; contiene 8 galones.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -577,7 +577,7 @@ const knickKnacksItems = [
         name: 'Catalejo',
         price: '1,000 gp',
         quantityFormula: '1d4-1',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -586,7 +586,7 @@ const knickKnacksItems = [
         name: 'Zancos ajustables',
         price: '50 gp',
         quantityFormula: '1d4-2',
-        source: 'WDH 47',
+        source: 'WDH',
         notes: '1 minuto para ponérselos o quitárselos; aumentan la altura en 2,5 pies.',
         shopTypeId: 9,
         merchantQualityId: 4
@@ -597,7 +597,7 @@ const knickKnacksItems = [
         name: 'Juego de mesa de jade',
         price: '7,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Un juego antiguo con piezas de oro macizo; reglas incluidas.',
         shopTypeId: 9,
         merchantQualityId: 5
@@ -606,7 +606,7 @@ const knickKnacksItems = [
         name: 'Tapón de botella enjoyado',
         price: '750 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Decorado con pan de oro y amatistas; para una persona noble.',
         shopTypeId: 9,
         merchantQualityId: 5
@@ -615,7 +615,7 @@ const knickKnacksItems = [
         name: 'Pegamento soberano',
         price: '50,000 gp',
         quantityFormula: '1',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 9,
         merchantQualityId: 5
@@ -624,7 +624,7 @@ const knickKnacksItems = [
         name: 'Disolvente universal',
         price: '50,000 gp',
         quantityFormula: '1',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 9,
         merchantQualityId: 5

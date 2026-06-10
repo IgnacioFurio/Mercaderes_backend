@@ -4,7 +4,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Caja de limosnas',
         price: '5 cp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 151',
+        source: 'PHB',
         notes: 'Caja para recoger ofrendas monetarias.',
         shopTypeId: 14,
         merchantQualityId: 1
@@ -13,7 +13,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Vela',
         price: '1 cp',
         quantityFormula: '1d4 x 10',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Viene en varios colores.',
         shopTypeId: 14,
         merchantQualityId: 1
@@ -24,7 +24,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Amuleto',
         price: '5 gp',
         quantityFormula: '1d4 x 7',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Símbolo sagrado; un collar con un símbolo de fe.',
         shopTypeId: 14,
         merchantQualityId: 2
@@ -33,7 +33,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Libro sagrado',
         price: '5 gp',
         quantityFormula: '1d4 x 10',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'De una entre varias religiones.',
         shopTypeId: 14,
         merchantQualityId: 2
@@ -42,7 +42,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Tiza',
         price: '1 cp',
         quantityFormula: '1d4 x 10',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por pieza. Cantidad en piezas. Viene en varios colores.',
         shopTypeId: 14,
         merchantQualityId: 2
@@ -51,7 +51,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Daga ritual',
         price: '2 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 149',
+        source: 'PHB',
         notes: 'Tiene un diseño extrañamente curvado.',
         shopTypeId: 14,
         merchantQualityId: 2
@@ -60,7 +60,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Emblema',
         price: '5 gp',
         quantityFormula: '1d4 x 10',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Símbolo sagrado; el rostro o símbolo de una deidad.',
         shopTypeId: 14,
         merchantQualityId: 2
@@ -69,7 +69,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Incienso',
         price: '1 sp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 151',
+        source: 'PHB',
         notes: 'Precio por bloque. Cantidad en bloques. Espeso, almizclado y penetrante.',
         shopTypeId: 14,
         merchantQualityId: 2
@@ -78,7 +78,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Pergamino',
         price: '1 sp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por hoja. Cantidad en hojas.',
         shopTypeId: 14,
         merchantQualityId: 2
@@ -87,7 +87,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Relicario',
         price: '5 gp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Símbolo sagrado; una pequeña caja que contiene un fragmento de reliquia.',
         shopTypeId: 14,
         merchantQualityId: 2
@@ -96,7 +96,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: ceremonia',
         price: '60 gp',
         quantityFormula: '3',
-        source: 'XGE 151',
+        source: 'XGE',
         notes: 'Cantidad en conjuros diarios. Realiza un rito sagrado: expiación, bendecir agua, mayoría de edad, dedicación, funeral o boda.',
         shopTypeId: 14,
         merchantQualityId: 2
@@ -105,7 +105,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: curar heridas',
         price: '10 gp',
         quantityFormula: '3',
-        source: 'PHB 230',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Lanzado a nivel 1; cura 1d8 + 3 puntos de golpe.',
         shopTypeId: 14,
         merchantQualityId: 2
@@ -114,7 +114,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: identificar',
         price: '20 gp',
         quantityFormula: '3',
-        source: 'PHB 252',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Revela las propiedades de un objeto mágico.',
         shopTypeId: 14,
         merchantQualityId: 2
@@ -125,7 +125,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Incensario',
         price: '55 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 151',
+        source: 'PHB',
         notes: 'Recipiente dorado para quemar incienso.',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -134,7 +134,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Ropa, túnicas',
         price: '1 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Sencillas, lisas y limpias, con muchos bolsillos.',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -143,7 +143,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Vestiduras',
         price: '8 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 151',
+        source: 'PHB',
         notes: 'Un atuendo ceremonial para un miembro de una fe específica.',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -152,7 +152,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Kit de sanador',
         price: '5 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -161,7 +161,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Agua bendita',
         price: '25 gp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por frasco. Cantidad en frascos.',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -170,7 +170,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Lámpara',
         price: '5 sp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -179,7 +179,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Aceite',
         price: '1 sp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por frasco. Cantidad en frascos.',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -188,7 +188,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Bastón',
         price: '2 sp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 148',
+        source: 'PHB',
         notes: '',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -197,7 +197,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: ayuda',
         price: '40 gp',
         quantityFormula: '3',
-        source: 'PHB 255',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Lanzado a nivel 2; hasta 3 criaturas aumentan su máximo de puntos de golpe en 5 durante 8 horas.',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -206,7 +206,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: disipar magia',
         price: '90 gp',
         quantityFormula: '3',
-        source: 'PHB 234',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Lanzado a nivel 3; termina un conjuro o efecto mágico.',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -215,7 +215,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: restablecimiento menor',
         price: '40 gp',
         quantityFormula: '3',
-        source: 'PHB 255',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Cura ceguera, sordera, parálisis o envenenamiento.',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -224,7 +224,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: plegaria de curación',
         price: '40 gp',
         quantityFormula: '3',
-        source: 'PHB 267',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Lanzado a nivel 2; cura hasta 6 criaturas por 2d8 + 3 puntos de golpe.',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -233,7 +233,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Tótem',
         price: '1 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Foco druídico; tallado con la imagen de un buen espíritu.',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -242,7 +242,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Varita de tejo',
         price: '10 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Foco druídico; asociada con la naturaleza, la vida eterna.',
         shopTypeId: 14,
         merchantQualityId: 3
@@ -253,7 +253,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Amuleto del devoto +1',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'TCE 119',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo para clérigos o paladines; permite usar Canalizar Divinidad sin gastar carga.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -262,7 +262,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Balanza de la armonía',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'TYP 228',
+        source: 'TYP',
         notes: 'Solo 1, para siempre. Balanza capaz de detectar el bien y el mal como ritual.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -271,7 +271,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Piedra de limpieza',
         price: '100 gp',
         quantityFormula: '1d4-2',
-        source: 'ERLW 276',
+        source: 'ERLW',
         notes: '',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -280,7 +280,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Ropa, paño de oro',
         price: '25 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Adecuada para un sumo sacerdote o una persona de posición distinguida.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -289,7 +289,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Linterna siemprebrillante',
         price: '100 gp',
         quantityFormula: '1d4-1',
-        source: 'ERLW 277',
+        source: 'ERLW',
         notes: 'En Eberron usa una llama continua; fuera de Eberron, funciona como una llama continua.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -298,7 +298,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Emblema guardián',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'TCE 128',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo clérigo o paladín; niega golpes críticos.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -307,7 +307,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Ungüento de Keoghtom',
         price: '250 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 179',
+        source: 'DMG',
         notes: '',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -316,7 +316,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Linterna de revelación',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 179',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Revela criaturas y objetos invisibles.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -325,7 +325,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Periapto de salud',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 184',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Concede inmunidad a la enfermedad.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -334,7 +334,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Periapto de cerrar heridas',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 184',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Estabiliza al morir y duplica la curación por dados de golpe.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -343,7 +343,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Santuario pequeño',
         price: '8 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Cualquier espacio donde dejar ofrendas o hacer plegarias rápidas.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -352,7 +352,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: guarda contra la muerte',
         price: '160 gp',
         quantityFormula: '3',
-        source: 'PHB 230',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Si cae a 0 PG, baja a 1 PG en su lugar.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -361,7 +361,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: adivinación',
         price: '210 gp',
         quantityFormula: '3',
-        source: 'PHB 234',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Otorga guía sobre un curso de acción.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -370,7 +370,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: levantar maldición',
         price: '90 gp',
         quantityFormula: '3',
-        source: 'PHB 271',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Levanta una maldición o sintonización con un objeto maldito.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -379,7 +379,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: hablar con los muertos',
         price: '90 gp',
         quantityFormula: '3',
-        source: 'PHB 277',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Permite hablar con un cadáver no muerto.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -388,7 +388,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Bastón de la pitón',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 204',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -406,7 +406,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Jarra de sobriedad',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 139',
+        source: 'XGE',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 14,
         merchantQualityId: 4
@@ -417,7 +417,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Vela de invocación',
         price: '50,000 gp',
         quantityFormula: '1',
-        source: 'DMG 157',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 14,
         merchantQualityId: 5
@@ -426,7 +426,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Incensario del devoto',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'TCE 126',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo clérigo o paladín; mayal, bonificador al daño y curación.',
         shopTypeId: 14,
         merchantQualityId: 5
@@ -435,7 +435,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Maza de disrupción',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'DMG 179',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 14,
         merchantQualityId: 5
@@ -444,7 +444,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Collar de cuentas de plegaria',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'DMG 182',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Tiene 1d4 + 2 cuentas aleatorias que lanzan conjuros.',
         shopTypeId: 14,
         merchantQualityId: 5
@@ -453,7 +453,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Periapto de prueba contra veneno',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'DMG 184',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Concede inmunidad al veneno, al daño de veneno y a la condición envenenado.',
         shopTypeId: 14,
         merchantQualityId: 5
@@ -462,7 +462,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Versos protectores',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'TCE 134',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo para magos; contiene conjuros y añade puntos de golpe temporales.',
         shopTypeId: 14,
         merchantQualityId: 5
@@ -471,7 +471,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: restablecimiento mayor',
         price: '450 gp',
         quantityFormula: '3',
-        source: 'PHB 246',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Reduce agotamiento, elimina encantamiento, petrificación, maldición o reducción de característica/puntos de golpe.',
         shopTypeId: 14,
         merchantQualityId: 5
@@ -480,7 +480,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: sacralizar',
         price: '2,250 gp',
         quantityFormula: '3',
-        source: 'PHB 249',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Santifica una zona con efectos adicionales.',
         shopTypeId: 14,
         merchantQualityId: 5
@@ -489,7 +489,7 @@ const religiousIdolsAndBlessingsItems = [
         name: 'Conjuro: alzar a los muertos',
         price: '1,250 gp',
         quantityFormula: '3',
-        source: 'PHB 270',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Devuelve la vida a un cadáver.',
         shopTypeId: 14,
         merchantQualityId: 5

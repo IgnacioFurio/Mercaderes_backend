@@ -24,7 +24,7 @@ const mechanicalContraptionsItems = [
         name: 'Ábaco',
         price: '2 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 11,
         merchantQualityId: 2
@@ -33,7 +33,7 @@ const mechanicalContraptionsItems = [
         name: 'Rodamientos de bolas',
         price: '1 gp',
         quantityFormula: '1d4 x 2000',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por bolsa de 1.000. Cantidad en rodamientos.',
         shopTypeId: 11,
         merchantQualityId: 2
@@ -42,7 +42,7 @@ const mechanicalContraptionsItems = [
         name: 'Polea y aparejo',
         price: '1 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 11,
         merchantQualityId: 2
@@ -51,7 +51,7 @@ const mechanicalContraptionsItems = [
         name: 'Cadena',
         price: '5 gp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por 10 pies. Cantidad en tramos de 10 pies.',
         shopTypeId: 11,
         merchantQualityId: 2
@@ -69,7 +69,7 @@ const mechanicalContraptionsItems = [
         name: 'Móvil de madera',
         price: '9 cp',
         quantityFormula: '1d4',
-        source: 'CS 118',
+        source: 'CS',
         notes: 'Murciélagos, pájaros o dragones; las alas se agitan al girar.',
         shopTypeId: 11,
         merchantQualityId: 2
@@ -78,7 +78,7 @@ const mechanicalContraptionsItems = [
         name: 'Muñecas rusas de madera',
         price: '9 cp',
         quantityFormula: '1d4 x 2',
-        source: 'CS 118',
+        source: 'CS',
         notes: 'Pintadas para parecer plebeyos o animales.',
         shopTypeId: 11,
         merchantQualityId: 2
@@ -87,7 +87,7 @@ const mechanicalContraptionsItems = [
         name: 'Aceite',
         price: '1 sp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por frasco. Cantidad en frascos.',
         shopTypeId: 11,
         merchantQualityId: 2
@@ -96,7 +96,7 @@ const mechanicalContraptionsItems = [
         name: 'Marioneta de madera',
         price: '9 cp',
         quantityFormula: '1d4 x 2',
-        source: 'CS 118',
+        source: 'CS',
         notes: 'Parece una figura histórica o mitológica.',
         shopTypeId: 11,
         merchantQualityId: 2
@@ -107,7 +107,7 @@ const mechanicalContraptionsItems = [
         name: 'Caja ladradora',
         price: '50 gp',
         quantityFormula: '1d4-1',
-        source: 'WDH 47',
+        source: 'WDH',
         notes: 'Cuerda: ladra al detectar vibración durante 8 horas.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -125,7 +125,7 @@ const mechanicalContraptionsItems = [
         name: 'Virote de ballesta',
         price: '1 gp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -134,7 +134,7 @@ const mechanicalContraptionsItems = [
         name: 'Estuche para virotes de ballesta',
         price: '1 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Contiene hasta 20 virotes.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -143,7 +143,7 @@ const mechanicalContraptionsItems = [
         name: 'Bomba',
         price: '150 gp',
         quantityFormula: '1d4 x 4',
-        source: 'DMG 267',
+        source: 'DMG',
         notes: 'Puede no existir en ambientaciones sin pólvora.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -152,7 +152,7 @@ const mechanicalContraptionsItems = [
         name: 'Perro mecánico',
         price: '50 gp',
         quantityFormula: '1d4',
-        source: 'SKT 44',
+        source: 'SKT',
         notes: 'Cuerda: te sigue durante 12 horas.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -170,7 +170,7 @@ const mechanicalContraptionsItems = [
         name: 'Ballesta de mano',
         price: '75 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 149',
+        source: 'PHB',
         notes: '1d6 perforante; ligera, recarga, a distancia 30/120.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -179,7 +179,7 @@ const mechanicalContraptionsItems = [
         name: 'Ballesta ligera',
         price: '25 gp',
         quantityFormula: '1d4',
-        source: 'PHB 149',
+        source: 'PHB',
         notes: '1d8 perforante; recarga, a dos manos, a distancia 80/320.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -188,7 +188,7 @@ const mechanicalContraptionsItems = [
         name: 'Ojo de repuesto',
         price: '100 gp',
         quantityFormula: '1d4',
-        source: 'XGE 137',
+        source: 'XGE',
         notes: 'Reemplaza un ojo perdido.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -197,7 +197,7 @@ const mechanicalContraptionsItems = [
         name: 'Cuerno de pólvora',
         price: '35 gp',
         quantityFormula: '1d4 x 4',
-        source: 'DMG 267',
+        source: 'DMG',
         notes: 'Puede no existir en ambientaciones sin pólvora.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -206,7 +206,7 @@ const mechanicalContraptionsItems = [
         name: 'Trampa de caza',
         price: '5 gp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Una prueba de Destreza CD 13 evita sufrir 1d4 de daño perforante y quedar atrapado.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -215,7 +215,7 @@ const mechanicalContraptionsItems = [
         name: 'Candado',
         price: '10 gp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Llave incluida.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -224,7 +224,7 @@ const mechanicalContraptionsItems = [
         name: 'Grilletes',
         price: '2 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Llave incluida.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -233,7 +233,7 @@ const mechanicalContraptionsItems = [
         name: 'Pipa de fósforos',
         price: '50 gp',
         quantityFormula: '1d4-1',
-        source: 'WDH 47',
+        source: 'WDH',
         notes: 'Se enciende mágicamente cuando se usa.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -242,7 +242,7 @@ const mechanicalContraptionsItems = [
         name: 'Carrusel musical',
         price: '9 sp',
         quantityFormula: '1d4',
-        source: 'CS 118',
+        source: 'CS',
         notes: 'Se sostiene con ambas manos, se le da cuerda y toca música.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -251,7 +251,7 @@ const mechanicalContraptionsItems = [
         name: 'Prótesis de extremidad',
         price: '100 gp',
         quantityFormula: '1d4',
-        source: 'ERLW 278',
+        source: 'ERLW',
         notes: 'Reemplaza una extremidad perdida.',
         shopTypeId: 11,
         merchantQualityId: 3
@@ -262,7 +262,7 @@ const mechanicalContraptionsItems = [
         name: 'Herramienta multiusos +1',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'TCE 119',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo para artífices; cambia a cualquier herramienta y permite lanzar truco.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -271,7 +271,7 @@ const mechanicalContraptionsItems = [
         name: 'Paracaídas de mochila',
         price: '100 gp',
         quantityFormula: '1d4-1',
-        source: 'WDH 47',
+        source: 'WDH',
         notes: 'Puede llevar a salvo una caída de 60 pies; 10 minutos para volver a guardarlo.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -280,7 +280,7 @@ const mechanicalContraptionsItems = [
         name: 'Amuleto mecánico',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 137',
+        source: 'XGE',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -307,7 +307,7 @@ const mechanicalContraptionsItems = [
         name: 'Montura mecánica',
         price: '250 gp',
         quantityFormula: '1d4-2',
-        source: 'MM 336',
+        source: 'MM',
         notes: 'Igual que un caballo de monta; no necesita comer, dormir ni respirar; inmune al veneno.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -325,7 +325,7 @@ const mechanicalContraptionsItems = [
         name: 'Ballesta pesada',
         price: '50 gp',
         quantityFormula: '1d4',
-        source: 'PHB 149',
+        source: 'PHB',
         notes: '1d10 perforante; pesada, recarga, a dos manos, a distancia 100/400.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -334,7 +334,7 @@ const mechanicalContraptionsItems = [
         name: 'Ballesta ligera, repetición',
         price: '150 gp',
         quantityFormula: '1d4-1',
-        source: 'OA 224',
+        source: 'OA',
         notes: '1d8 perforante; a dos manos, a distancia 40/160; tiene 6 disparos y puede recargarse con una acción.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -343,7 +343,7 @@ const mechanicalContraptionsItems = [
         name: 'Dinamita',
         price: '200 gp',
         quantityFormula: '1d4 x 4',
-        source: 'DMG 267',
+        source: 'DMG',
         notes: 'Precio por cartucho. Cantidad en cartuchos. Puede no existir en ambientaciones sin pólvora.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -352,7 +352,7 @@ const mechanicalContraptionsItems = [
         name: 'Gafas de visión nocturna',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 172',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -361,7 +361,7 @@ const mechanicalContraptionsItems = [
         name: 'Pólvora',
         price: '250 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 267',
+        source: 'DMG',
         notes: 'Puede no existir en ambientaciones sin pólvora.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -370,7 +370,7 @@ const mechanicalContraptionsItems = [
         name: 'Yelmo de respiración subacuática',
         price: '500 gp',
         quantityFormula: '1d4-1',
-        source: 'GS 229',
+        source: 'GS',
         notes: 'Permite respirar bajo el agua; concede velocidad de nado de 60 pies y ventaja en pruebas de nadar.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -379,7 +379,7 @@ const mechanicalContraptionsItems = [
         name: 'Candado de engaño',
         price: '100 gp',
         quantityFormula: '1d4 x 2',
-        source: 'XGE 138',
+        source: 'XGE',
         notes: 'La prueba de Destreza para abrirlo tiene desventaja.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -388,7 +388,7 @@ const mechanicalContraptionsItems = [
         name: 'Aceite de resbalamiento',
         price: '250 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 184',
+        source: 'DMG',
         notes: 'Precio por frasco. Cantidad en frascos.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -397,7 +397,7 @@ const mechanicalContraptionsItems = [
         name: 'Orbe de movimiento',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'WDMM 174',
+        source: 'WDMM',
         notes: 'Solo 1, para siempre. Acción: hace que el orbe empiece o deje de moverse indefinidamente.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -415,7 +415,7 @@ const mechanicalContraptionsItems = [
         name: 'Casco propulsor',
         price: '250 gp',
         quantityFormula: '1',
-        source: 'WDMM 251',
+        source: 'WDMM',
         notes: 'Solo 1, para siempre. Acción: se activa, pero hay un 50% de probabilidad de romperse.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -424,7 +424,7 @@ const mechanicalContraptionsItems = [
         name: 'Piroconvergente',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'GGR 180',
+        source: 'GGR',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -433,7 +433,7 @@ const mechanicalContraptionsItems = [
         name: 'Granada enredadora',
         price: '250 gp',
         quantityFormula: '1d4-2',
-        source: 'WDMM 244',
+        source: 'WDMM',
         notes: 'Se lanza hasta 60 pies; explota; criaturas en 10 pies hacen salvación de Destreza CD 15. Si fallan quedan apresadas hasta 1 hora. CD para escapar: 20.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -442,7 +442,7 @@ const mechanicalContraptionsItems = [
         name: 'Cubo térmico',
         price: '100 gp',
         quantityFormula: '1d4-1',
-        source: 'IDRF 316',
+        source: 'IDRF',
         notes: 'Irradia calor seco en un radio de 15 pies.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -451,7 +451,7 @@ const mechanicalContraptionsItems = [
         name: 'Herramientas de ladrón',
         price: '25 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -460,7 +460,7 @@ const mechanicalContraptionsItems = [
         name: 'Herramientas de manitas',
         price: '50 gp',
         quantityFormula: '1d4+1',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -469,7 +469,7 @@ const mechanicalContraptionsItems = [
         name: 'Cucaracha mecánica',
         price: '10 gp',
         quantityFormula: '1d4 x 10',
-        source: 'XGE 139',
+        source: 'XGE',
         notes: 'Una criatura golpeada debe superar una salvación de Fuerza CD 10 o quedar derribada.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -478,7 +478,7 @@ const mechanicalContraptionsItems = [
         name: 'Varita de pirotecnia',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 140',
+        source: 'XGE',
         notes: 'Solo 1, para siempre. Dispara fuegos artificiales.',
         shopTypeId: 11,
         merchantQualityId: 4
@@ -489,7 +489,7 @@ const mechanicalContraptionsItems = [
         name: 'Cañón arcano',
         price: '50,000 gp',
         quantityFormula: '1',
-        source: 'ERLW 276',
+        source: 'ERLW',
         notes: 'Solo 1, para siempre. Puede hacer un ataque de puñetazo cohete a distancia.',
         shopTypeId: 11,
         merchantQualityId: 5
@@ -498,7 +498,7 @@ const mechanicalContraptionsItems = [
         name: 'Bastón de explosiones',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'WDMM 310',
+        source: 'WDMM',
         notes: 'Solo 1, para siempre. Lanza cadena de relámpagos a voluntad.',
         shopTypeId: 11,
         merchantQualityId: 5
@@ -525,7 +525,7 @@ const mechanicalContraptionsItems = [
         name: 'Dodecaedro de perdición',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'WDMM 284',
+        source: 'WDMM',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 11,
         merchantQualityId: 5
@@ -534,7 +534,7 @@ const mechanicalContraptionsItems = [
         name: 'Bandas de hierro de Bilarro',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'DMG 177',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 11,
         merchantQualityId: 5
@@ -543,7 +543,7 @@ const mechanicalContraptionsItems = [
         name: 'Manual de gólems de hierro',
         price: '25,000 gp',
         quantityFormula: '1',
-        source: 'DMG 180',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 11,
         merchantQualityId: 5
@@ -552,7 +552,7 @@ const mechanicalContraptionsItems = [
         name: 'Espejo de acero de mizium',
         price: '5,000 sp',
         quantityFormula: '1',
-        source: 'GGR 179',
+        source: 'GGR',
         notes: 'Solo 1, para siempre. Hecho de mithral; en lugares distintos de Rávnica.',
         shopTypeId: 11,
         merchantQualityId: 5
@@ -561,7 +561,7 @@ const mechanicalContraptionsItems = [
         name: 'Caja de música de oro',
         price: '2,500 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Reproduce 10 canciones; una obra maestra de arte y artesanía.',
         shopTypeId: 11,
         merchantQualityId: 5
@@ -570,7 +570,7 @@ const mechanicalContraptionsItems = [
         name: 'Profesor orbe',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'WDMM 284',
+        source: 'WDMM',
         notes: 'Solo 1, para siempre. Es consciente, tiene Inteligencia 18, es erudito por personalidad y sabe 4 materias esotéricas; +6 a esas pruebas.',
         shopTypeId: 11,
         merchantQualityId: 5
@@ -579,7 +579,7 @@ const mechanicalContraptionsItems = [
         name: 'Conjuro: convocar constructo',
         price: '200 gp',
         quantityFormula: '3',
-        source: 'TCE 111',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Puede lanzar convocar constructo 3 veces al día.',
         shopTypeId: 11,
         merchantQualityId: 5
@@ -588,7 +588,7 @@ const mechanicalContraptionsItems = [
         name: 'Varita de relámpagos',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'DMG 211',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 11,
         merchantQualityId: 5
@@ -597,7 +597,7 @@ const mechanicalContraptionsItems = [
         name: 'Cargador alado',
         price: '500 gp',
         quantityFormula: '1d4-2',
-        source: 'PA 223',
+        source: 'PA',
         notes: 'En lugar de recargas, usa una correa larga.',
         shopTypeId: 11,
         merchantQualityId: 5

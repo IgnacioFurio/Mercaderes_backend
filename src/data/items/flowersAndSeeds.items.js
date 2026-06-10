@@ -15,7 +15,7 @@ const flowersAndSeedsItems = [
     name: 'Muérdago',
     price: '1 gp',
     quantityFormula: '1d4 x 5',
-    source: 'PHB 150',
+    source: 'PHB',
     notes: 'Precio por ramita. Cantidad en ramitas. Foco druídico; fresco y venenoso.',
     shopTypeId: 4,
     merchantQualityId: 2
@@ -89,7 +89,7 @@ const flowersAndSeedsItems = [
     name: 'Kit de herboristería',
     price: '5 gp',
     quantityFormula: '1',
-    source: 'PHB 154',
+    source: 'PHB',
     notes: 'Herramienta de herborista.',
     shopTypeId: 4,
     merchantQualityId: 3
@@ -271,7 +271,7 @@ const flowersAndSeedsItems = [
     name: 'Bastón de flores',
     price: '100 gp',
     quantityFormula: '1',
-    source: 'XGE 139',
+    source: 'XGE',
     notes: 'Solo 1, para siempre. Puede hacer crecer una flor no mágica específica.',
     shopTypeId: 4,
     merchantQualityId: 4
@@ -309,7 +309,7 @@ const flowersAndSeedsItems = [
     name: 'Talismán de orden vegetal',
     price: '5,000 gp',
     quantityFormula: '1',
-    source: 'GS 229',
+    source: 'GS',
     notes: 'Solo 1, para siempre. Permite lanzar hablar con las plantas 3 veces al día; concede ventaja en pruebas de Carisma para hablar con plantas.',
     shopTypeId: 4,
     merchantQualityId: 5
@@ -336,7 +336,7 @@ const flowersAndSeedsItems = [
     name: 'Ficha de pluma de Quaal, árbol',
     price: '2,500 gp',
     quantityFormula: '1',
-    source: 'DMG 188',
+    source: 'DMG',
     notes: 'Solo 1, para siempre. Conjura un árbol no mágico de 60 pies de altura.',
     shopTypeId: 4,
     merchantQualityId: 5

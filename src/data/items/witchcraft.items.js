@@ -22,7 +22,7 @@ const witchcraftItems = [
         name: 'Vela',
         price: '1 cp',
         quantityFormula: '1d4 x 10',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Viene en una gran variedad de colores.',
         shopTypeId: 22,
         merchantQualityId: 1
@@ -31,7 +31,7 @@ const witchcraftItems = [
         name: 'Daga ritual',
         price: '2 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 149',
+        source: 'PHB',
         notes: 'Diseño simple; tiene un extraño sigilo grabado en la hoja.',
         shopTypeId: 22,
         merchantQualityId: 1
@@ -40,7 +40,7 @@ const witchcraftItems = [
         name: 'Olla de hierro',
         price: '2 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Contiene 1 galón.',
         shopTypeId: 22,
         merchantQualityId: 1
@@ -49,7 +49,7 @@ const witchcraftItems = [
         name: 'Muérdago',
         price: '1 gp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por 5 ramitas. Cantidad en ramitas. Foco druídico; fresco y venenoso.',
         shopTypeId: 22,
         merchantQualityId: 1
@@ -60,7 +60,7 @@ const witchcraftItems = [
         name: 'Libro de cocina',
         price: '25 gp',
         quantityFormula: '1d4',
-        source: 'DMG 301',
+        source: 'DMG',
         notes: 'Lleno de recetas que suenan deliciosas.',
         shopTypeId: 22,
         merchantQualityId: 2
@@ -87,7 +87,7 @@ const witchcraftItems = [
         name: 'Utensilios de cocina',
         price: '1 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 22,
         merchantQualityId: 2
@@ -96,7 +96,7 @@ const witchcraftItems = [
         name: 'Cristal',
         price: '10 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Foco arcano; trozo brillante de cuarzo o similar.',
         shopTypeId: 22,
         merchantQualityId: 2
@@ -114,7 +114,7 @@ const witchcraftItems = [
         name: 'Kit de sanador',
         price: '5 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 22,
         merchantQualityId: 2
@@ -123,7 +123,7 @@ const witchcraftItems = [
         name: 'Kit de herboristería',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 22,
         merchantQualityId: 2
@@ -141,7 +141,7 @@ const witchcraftItems = [
         name: 'Comida modesta',
         price: '3 sp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 158',
+        source: 'PHB',
         notes: 'Precio por día. Cantidad en días. Un caldo sustancioso con verduras reales; 1 día de comida.',
         shopTypeId: 22,
         merchantQualityId: 2
@@ -150,7 +150,7 @@ const witchcraftItems = [
         name: 'Carne',
         price: '3 sp',
         quantityFormula: '1d4 x 15',
-        source: 'PHB 158',
+        source: 'PHB',
         notes: 'Precio por pieza. Cantidad en piezas. Ternera, pollo, venado o similar; 1/2 día de comida.',
         shopTypeId: 22,
         merchantQualityId: 2
@@ -159,7 +159,7 @@ const witchcraftItems = [
         name: 'Balanza de mercader',
         price: '5 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 22,
         merchantQualityId: 2
@@ -186,7 +186,7 @@ const witchcraftItems = [
         name: 'Conjuro: Curar heridas',
         price: '10 gp',
         quantityFormula: '3',
-        source: 'PHB 230',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Lanzado a nivel 1; cura a 1 criatura 1d8 + 3 puntos de golpe.',
         shopTypeId: 22,
         merchantQualityId: 2
@@ -224,7 +224,7 @@ const witchcraftItems = [
         name: 'Suministros de alquimista',
         price: '50 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -233,7 +233,7 @@ const witchcraftItems = [
         name: 'Antitoxina',
         price: '50 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por vial. Cantidad en viales.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -242,7 +242,7 @@ const witchcraftItems = [
         name: 'Grimorio arcano +1',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'TCE 120',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo mago; mejora Recuperación Arcana.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -251,7 +251,7 @@ const witchcraftItems = [
         name: 'Sangre de asesino',
         price: '150 gp',
         quantityFormula: '1d4+1',
-        source: 'DMG 257',
+        source: 'DMG',
         notes: 'Precio por dosis. Cantidad en dosis. Ingerido; puede infligir 1d12 de daño por veneno.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -260,7 +260,7 @@ const witchcraftItems = [
         name: 'Vial pozo de sangre +1',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'TCE 122',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo hechicero; recupera puntos de hechicería con dados de golpe.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -269,7 +269,7 @@ const witchcraftItems = [
         name: 'Libro de astrología',
         price: '50 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 301',
+        source: 'DMG',
         notes: 'Una colección completa de signos estelares y sus significados.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -278,7 +278,7 @@ const witchcraftItems = [
         name: 'Bestiario',
         price: '125 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 301',
+        source: 'DMG',
         notes: 'Trata sobre un tipo específico de criatura hallada en la zona.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -287,7 +287,7 @@ const witchcraftItems = [
         name: 'Libro de herboristería',
         price: '5 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 301',
+        source: 'DMG',
         notes: 'Describe la práctica de recolectar y procesar hierbas.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -296,7 +296,7 @@ const witchcraftItems = [
         name: 'Libro de flora local',
         price: '50 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 301',
+        source: 'DMG',
         notes: 'Imágenes y descripciones de plantas locales comunes.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -305,7 +305,7 @@ const witchcraftItems = [
         name: 'Libro de medicina',
         price: '100 gp',
         quantityFormula: '1d4',
-        source: 'DMG 301',
+        source: 'DMG',
         notes: 'Contiene remedios mundanos para muchas dolencias comunes.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -323,7 +323,7 @@ const witchcraftItems = [
         name: 'Perfume de embrujo',
         price: '50 gp',
         quantityFormula: '1d4-2',
-        source: 'XGE 138',
+        source: 'XGE',
         notes: 'Ventaja en pruebas de Carisma contra humanoides de VD 1 o menor durante 1 hora.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -332,7 +332,7 @@ const witchcraftItems = [
         name: 'Veneno básico',
         price: '100 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por vial. Cantidad en viales. Lesión; puede infligir 1d4 de daño por veneno.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -341,7 +341,7 @@ const witchcraftItems = [
         name: 'Kit de envenenador',
         price: '50 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -350,7 +350,7 @@ const witchcraftItems = [
         name: 'Poción de crecimiento',
         price: '250 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'Creces como con agrandar/reducir durante 1d4 horas.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -359,7 +359,7 @@ const witchcraftItems = [
         name: 'Poción de curación',
         price: '50 gp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Recupera 2d4 + 2 puntos de golpe.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -368,7 +368,7 @@ const witchcraftItems = [
         name: 'Raíz ryath',
         price: '50 gp',
         quantityFormula: '1d4 x 2',
-        source: 'TA 205',
+        source: 'TA',
         notes: 'Otorga 2d4 puntos de golpe temporales; si comes más de una, quedas envenenado.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -377,7 +377,7 @@ const witchcraftItems = [
         name: 'Conjuro: Restauración menor',
         price: '40 gp',
         quantityFormula: '3',
-        source: 'PHB 255',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Cura ceguera, sordera, parálisis o envenenamiento.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -386,7 +386,7 @@ const witchcraftItems = [
         name: 'Libro de conjuros',
         price: '50 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Vacío; adecuado para contener conjuros.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -395,7 +395,7 @@ const witchcraftItems = [
         name: 'Muñeca parlante',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 139',
+        source: 'XGE',
         notes: 'Solo 1, para siempre. Puede configurarse para decir hasta 6 frases cortas.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -404,7 +404,7 @@ const witchcraftItems = [
         name: 'Baraja de tarokka',
         price: '10 gp',
         quantityFormula: '1d4-1',
-        source: 'CS 243',
+        source: 'CS',
         notes: 'Se usa para leer la fortuna; solo una vistani puede hacer una lectura verdadera.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -458,7 +458,7 @@ const witchcraftItems = [
         name: 'Varita',
         price: '10 gp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Foco arcano; hecha de una única rama retorcida.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -467,7 +467,7 @@ const witchcraftItems = [
         name: 'Wildroot',
         price: '25 gp',
         quantityFormula: '1d4 x 2',
-        source: 'TA 205',
+        source: 'TA',
         notes: 'Cura la condición envenenado.',
         shopTypeId: 22,
         merchantQualityId: 3
@@ -478,7 +478,7 @@ const witchcraftItems = [
         name: 'Rama campana',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'TCE 122',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo druida o brujo; detecta la presencia de criaturas.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -487,7 +487,7 @@ const witchcraftItems = [
         name: 'Libro de fauna exótica',
         price: '150 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 301',
+        source: 'DMG',
         notes: 'Tiene imágenes y descripciones de muchos animales extraños.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -496,7 +496,7 @@ const witchcraftItems = [
         name: 'Libro de flora exótica',
         price: '150 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 301',
+        source: 'DMG',
         notes: 'Detalla muchas hierbas y plantas raras y misteriosas.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -505,7 +505,7 @@ const witchcraftItems = [
         name: 'Escoba voladora',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 156',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Velocidad de vuelo de 50 ft., o 30 ft. si carga más de 200 lb.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -514,7 +514,7 @@ const witchcraftItems = [
         name: 'Caldero de abundancia',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'ERLW 314',
+        source: 'ERLW',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -523,7 +523,7 @@ const witchcraftItems = [
         name: 'Veneno drow',
         price: '200 gp',
         quantityFormula: '1d4',
-        source: 'DMG 258',
+        source: 'DMG',
         notes: 'Precio por dosis. Cantidad en dosis. Lesión; puede dejar inconsciente al objetivo.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -532,7 +532,7 @@ const witchcraftItems = [
         name: 'Elixir de salud',
         price: '2500 gp',
         quantityFormula: '1d4',
-        source: 'DMG 168',
+        source: 'DMG',
         notes: 'Cura enfermedad, ceguera, sordera, parálisis y envenenamiento.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -541,7 +541,7 @@ const witchcraftItems = [
         name: 'Figurilla de poder maravilloso: cuervo de plata',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 170',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -559,7 +559,7 @@ const witchcraftItems = [
         name: 'Malicia',
         price: '250 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 258',
+        source: 'DMG',
         notes: 'Precio por dosis. Cantidad en dosis. Inhalado; puede cegar a las criaturas afectadas.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -568,7 +568,7 @@ const witchcraftItems = [
         name: 'Manto de la naturaleza',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'TCE 133',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo druida o explorador.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -577,7 +577,7 @@ const witchcraftItems = [
         name: 'Poción de curación superior',
         price: '250 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'Recupera 4d4 + 4 puntos de golpe.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -586,7 +586,7 @@ const witchcraftItems = [
         name: 'Conjuro: Restauración mayor',
         price: '450 gp',
         quantityFormula: '3',
-        source: 'PHB 246',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Reduce agotamiento y elimina encantado, petrificado, una maldición o reducciones de puntuaciones o máximos.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -595,7 +595,7 @@ const witchcraftItems = [
         name: 'Conjuro: Reencarnar',
         price: '2250 gp',
         quantityFormula: '3',
-        source: 'PHB 271',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Devuelve a una criatura a la vida como una raza aleatoria.',
         shopTypeId: 22,
         merchantQualityId: 4
@@ -651,7 +651,7 @@ const witchcraftItems = [
         name: 'Caldero de renacimiento',
         price: '5000 gp',
         quantityFormula: '1',
-        source: 'TCE 122',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo druida o brujo.',
         shopTypeId: 22,
         merchantQualityId: 5
@@ -660,7 +660,7 @@ const witchcraftItems = [
         name: 'Bola de cristal',
         price: '50000 gp',
         quantityFormula: '1',
-        source: 'DMG 159',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Lanza el conjuro escudriñamiento.',
         shopTypeId: 22,
         merchantQualityId: 5
@@ -678,7 +678,7 @@ const witchcraftItems = [
         name: 'Poción de longevidad',
         price: '25000 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 188',
+        source: 'DMG',
         notes: 'Reduce tu edad en 1d6 + 6 años normalmente.',
         shopTypeId: 22,
         merchantQualityId: 5
@@ -687,7 +687,7 @@ const witchcraftItems = [
         name: 'Poción de curación suprema',
         price: '25000 gp',
         quantityFormula: '1d4',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'Recupera 10d4 + 20 puntos de golpe.',
         shopTypeId: 22,
         merchantQualityId: 5
@@ -696,7 +696,7 @@ const witchcraftItems = [
         name: 'Conjuro: Despertar',
         price: '2250 gp',
         quantityFormula: '3',
-        source: 'PHB 216',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Hace que una bestia o planta gane inteligencia y sea capaz de hablar.',
         shopTypeId: 22,
         merchantQualityId: 5

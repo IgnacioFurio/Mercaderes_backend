@@ -4,7 +4,7 @@ const highFashionItems = [
         name: 'Saco, ponible',
         price: '1 cp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Casi impermeable.',
         shopTypeId: 7,
         merchantQualityId: 1
@@ -42,7 +42,7 @@ const highFashionItems = [
         name: 'Tela, lona',
         price: '1 sp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por yarda cuadrada. Cantidad en yardas cuadradas. Tela resistente; de colores variados.',
         shopTypeId: 7,
         merchantQualityId: 2
@@ -51,7 +51,7 @@ const highFashionItems = [
         name: 'Ropa común',
         price: '5 sp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Gastada y remendada, hecha con materiales bastos.',
         shopTypeId: 7,
         merchantQualityId: 2
@@ -60,7 +60,7 @@ const highFashionItems = [
         name: 'Ropa, túnicas',
         price: '1 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Sencillas, lisas y limpias, con muchos bolsillos.',
         shopTypeId: 7,
         merchantQualityId: 2
@@ -69,7 +69,7 @@ const highFashionItems = [
         name: 'Ropa de viajero',
         price: '2 gp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Duradera y bien hecha, pero no exactamente elegante.',
         shopTypeId: 7,
         merchantQualityId: 2
@@ -80,7 +80,7 @@ const highFashionItems = [
         name: 'Brazalete pequeño de oro',
         price: '25 gp',
         quantityFormula: '1d4',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Brilla hermosamente a la luz del sol.',
         shopTypeId: 7,
         merchantQualityId: 3
@@ -107,7 +107,7 @@ const highFashionItems = [
         name: 'Tela, algodón',
         price: '5 sp',
         quantityFormula: '1d4 x 4',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por yarda cuadrada. Cantidad en yardas cuadradas. Resistente, pero transpira fácilmente; de colores variados.',
         shopTypeId: 7,
         merchantQualityId: 3
@@ -116,7 +116,7 @@ const highFashionItems = [
         name: 'Ropa para clima frío',
         price: '10 gp',
         quantityFormula: '1d4 x 2',
-        source: 'IDRF 20',
+        source: 'IDRF',
         notes: 'Con capas para mantener el calor; ideal para condiciones gélidas.',
         shopTypeId: 7,
         merchantQualityId: 3
@@ -125,7 +125,7 @@ const highFashionItems = [
         name: 'Ropa de disfraz',
         price: '5 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Un disfraz bien confeccionado para juglar, bailarín o actor.',
         shopTypeId: 7,
         merchantQualityId: 3
@@ -134,7 +134,7 @@ const highFashionItems = [
         name: 'Vestiduras',
         price: '8 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 151',
+        source: 'PHB',
         notes: 'Un atuendo ceremonial para un miembro de una fe específica.',
         shopTypeId: 7,
         merchantQualityId: 3
@@ -143,7 +143,7 @@ const highFashionItems = [
         name: 'Herramientas de zapatero',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 7,
         merchantQualityId: 3
@@ -179,7 +179,7 @@ const highFashionItems = [
         name: 'Pañuelo de seda',
         price: '25 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Suave y con bordado personalizado.',
         shopTypeId: 7,
         merchantQualityId: 3
@@ -215,7 +215,7 @@ const highFashionItems = [
         name: 'Perfume',
         price: '5 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por vial. Cantidad en viales. Un tenue aroma floral para narices exigentes.',
         shopTypeId: 7,
         merchantQualityId: 3
@@ -224,7 +224,7 @@ const highFashionItems = [
         name: 'Herramientas de tejedor',
         price: '1 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 7,
         merchantQualityId: 3
@@ -244,7 +244,7 @@ const highFashionItems = [
         name: 'Botas de huellas falsas',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 136',
+        source: 'XGE',
         notes: 'Solo 1, para siempre. Hace que tus huellas parezcan las de otro humanoide.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -262,7 +262,7 @@ const highFashionItems = [
         name: 'Brazalete grande de oro',
         price: '250 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Detallado con patrones increíblemente elaborados.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -280,7 +280,7 @@ const highFashionItems = [
         name: 'Capa de ondeo',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 136',
+        source: 'XGE',
         notes: 'Solo 1, para siempre. Acción adicional: la capa ondea dramáticamente.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -289,7 +289,7 @@ const highFashionItems = [
         name: 'Capa de muchas modas',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 136',
+        source: 'XGE',
         notes: 'Solo 1, para siempre. Puede hacerse parecer cualquier capa.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -298,7 +298,7 @@ const highFashionItems = [
         name: 'Tela, lino',
         price: '5 gp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por yarda cuadrada. Cantidad en yardas cuadradas. Adecuada para ropa de todo tipo; de muchos colores.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -307,7 +307,7 @@ const highFashionItems = [
         name: 'Tela, seda',
         price: '10 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por yarda cuadrada. Cantidad en yardas cuadradas. Sedosa y suave; de muchos colores.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -316,7 +316,7 @@ const highFashionItems = [
         name: 'Ropa, paño de oro',
         price: '25 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Adecuada para un sumo sacerdote o una persona de posición distinguida.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -343,7 +343,7 @@ const highFashionItems = [
         name: 'Ropa fina',
         price: '15 gp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Ropa refinada, muy a la moda.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -352,7 +352,7 @@ const highFashionItems = [
         name: 'Ropa, túnicas de seda',
         price: '250 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Bordadas con oro; adecuadas para un archimago.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -361,7 +361,7 @@ const highFashionItems = [
         name: 'Ropa de remendar',
         price: '100 gp',
         quantityFormula: '1d4-1',
-        source: 'XGE 137',
+        source: 'XGE',
         notes: '',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -379,7 +379,7 @@ const highFashionItems = [
         name: 'Glamentrama común',
         price: '100 gp',
         quantityFormula: '1d4-1',
-        source: 'ERLW 277',
+        source: 'ERLW',
         notes: '',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -424,7 +424,7 @@ const highFashionItems = [
         name: 'Sombrero de hechicería',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 137',
+        source: 'XGE',
         notes: 'Solo 1, para siempre. Solo para magos; intenta lanzar trucos adicionales.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -460,7 +460,7 @@ const highFashionItems = [
         name: 'Máscara de terciopelo negro',
         price: '25 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Cosida con hilo de plata; ideal para un baile.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -478,7 +478,7 @@ const highFashionItems = [
         name: 'Perfume de embrujo',
         price: '50 gp',
         quantityFormula: '1d4-2',
-        source: 'XGE 138',
+        source: 'XGE',
         notes: 'Ventaja en pruebas de Carisma contra humanoides con CR 1 o inferior durante 1 hora.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -487,7 +487,7 @@ const highFashionItems = [
         name: 'Cuerda de seda',
         price: '10 gp',
         quantityFormula: '1d4 x 50',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por 50 pies. Cantidad en tramos de 50 pies. Ligera y fácil de trepar.',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -505,7 +505,7 @@ const highFashionItems = [
         name: 'Tejido cambiante',
         price: '100 gp',
         quantityFormula: '1d4-1',
-        source: 'ERLW 279',
+        source: 'ERLW',
         notes: '',
         shopTypeId: 7,
         merchantQualityId: 4
@@ -516,7 +516,7 @@ const highFashionItems = [
         name: 'Tobillera enjoyada',
         price: '2,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Brilla y reluce como mil estrellas diminutas.',
         shopTypeId: 7,
         merchantQualityId: 5
@@ -525,7 +525,7 @@ const highFashionItems = [
         name: 'Botas de las tierras invernales',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 156',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 7,
         merchantQualityId: 5
@@ -534,7 +534,7 @@ const highFashionItems = [
         name: 'Brazalete grande de platino',
         price: '2,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Engastado con un inmenso zafiro reluciente.',
         shopTypeId: 7,
         merchantQualityId: 5
@@ -543,7 +543,7 @@ const highFashionItems = [
         name: 'Broche de plata y oro',
         price: '750 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Estampado con pétalos de lilas increíblemente delicados.',
         shopTypeId: 7,
         merchantQualityId: 5
@@ -570,7 +570,7 @@ const highFashionItems = [
         name: 'Juego de peines, oro de dragón',
         price: '750 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Dos peines, con granates rojo sangre como ojos de dragón.',
         shopTypeId: 7,
         merchantQualityId: 5
@@ -579,7 +579,7 @@ const highFashionItems = [
         name: 'Glamentrama poco común',
         price: '500 gp',
         quantityFormula: '1d4-2',
-        source: 'ERLW 277',
+        source: 'ERLW',
         notes: '',
         shopTypeId: 7,
         merchantQualityId: 5
@@ -597,7 +597,7 @@ const highFashionItems = [
         name: 'Túnica de colores centelleantes',
         price: '50,000 gp',
         quantityFormula: '1',
-        source: 'DMG 192',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Emite colores resplandecientes que aturden criaturas.',
         shopTypeId: 7,
         merchantQualityId: 5
@@ -606,7 +606,7 @@ const highFashionItems = [
         name: 'Zapatillas de trepar cual arácnido',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 7,
         merchantQualityId: 5

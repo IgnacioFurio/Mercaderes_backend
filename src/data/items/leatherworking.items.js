@@ -13,7 +13,7 @@ const leatherworkingItems = [
         name: 'Saco',
         price: '1 cp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Contiene hasta 1 pie cúbico o 30 libras.',
         shopTypeId: 10,
         merchantQualityId: 1
@@ -22,7 +22,7 @@ const leatherworkingItems = [
         name: 'Jarra de cuero',
         price: '1 cp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Hecha completamente de cuero.',
         shopTypeId: 10,
         merchantQualityId: 1
@@ -33,7 +33,7 @@ const leatherworkingItems = [
         name: 'Bocado y brida',
         price: '2 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: '',
         shopTypeId: 10,
         merchantQualityId: 2
@@ -51,7 +51,7 @@ const leatherworkingItems = [
         name: 'Carne',
         price: '3 sp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 158',
+        source: 'PHB',
         notes: 'Precio por trozo. Cantidad en trozos. Ternera, pollo, venado o similar; 1/2 día de comida.',
         shopTypeId: 10,
         merchantQualityId: 2
@@ -60,7 +60,7 @@ const leatherworkingItems = [
         name: 'Armadura acolchada',
         price: '5 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 145',
+        source: 'PHB',
         notes: 'Armadura ligera. CA 11 + modificador de Destreza; desventaja en sigilo.',
         shopTypeId: 10,
         merchantQualityId: 2
@@ -69,7 +69,7 @@ const leatherworkingItems = [
         name: 'Faltriquera',
         price: '5 sp',
         quantityFormula: '1d4 x 4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Contiene hasta 1/5 de pie cúbico o 6 libras.',
         shopTypeId: 10,
         merchantQualityId: 2
@@ -78,7 +78,7 @@ const leatherworkingItems = [
         name: 'Silla de carga',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: '',
         shopTypeId: 10,
         merchantQualityId: 2
@@ -87,7 +87,7 @@ const leatherworkingItems = [
         name: 'Odre',
         price: '2 sp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 10,
         merchantQualityId: 2
@@ -98,7 +98,7 @@ const leatherworkingItems = [
         name: 'Mochila',
         price: '2 gp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -107,7 +107,7 @@ const leatherworkingItems = [
         name: 'Estuche para virotes de ballesta',
         price: '1 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Contiene hasta 20 virotes.',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -125,7 +125,7 @@ const leatherworkingItems = [
         name: 'Ropa para clima frío',
         price: '10 gp',
         quantityFormula: '1d4 x 2',
-        source: 'IDRF 20',
+        source: 'IDRF',
         notes: 'Con capas para mantener el calor; ideal para condiciones gélidas.',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -134,7 +134,7 @@ const leatherworkingItems = [
         name: 'Ropa de viajero',
         price: '2 gp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Duradera y bien hecha; resiste el castigo.',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -152,7 +152,7 @@ const leatherworkingItems = [
         name: 'Trampa de caza',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Una prueba de Destreza CD 13 evita sufrir 1d4 de daño perforante y quedar atrapado.',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -161,7 +161,7 @@ const leatherworkingItems = [
         name: 'Armadura de cuero',
         price: '10 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 145',
+        source: 'PHB',
         notes: 'Armadura ligera. CA 11 + modificador de Destreza.',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -170,7 +170,7 @@ const leatherworkingItems = [
         name: 'Herramientas de peletero',
         price: '25 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -179,7 +179,7 @@ const leatherworkingItems = [
         name: 'Aceite',
         price: '1 sp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por frasco. Cantidad en frascos.',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -188,7 +188,7 @@ const leatherworkingItems = [
         name: 'Carcaj',
         price: '1 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Contiene hasta 20 flechas.',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -197,7 +197,7 @@ const leatherworkingItems = [
         name: 'Lona recogelluvia',
         price: '1 gp',
         quantityFormula: '1d4-1',
-        source: 'TA 32',
+        source: 'TA',
         notes: 'Recoge 2 galones de agua por pulgada de lluvia; contiene 8 galones.',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -206,7 +206,7 @@ const leatherworkingItems = [
         name: 'Silla de montar',
         price: '10 gp',
         quantityFormula: '1d4-1',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: '',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -215,7 +215,7 @@ const leatherworkingItems = [
         name: 'Escudo',
         price: '10 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 145',
+        source: 'PHB',
         notes: 'Una piel o blanco de cuero; +2 a la CA.',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -224,7 +224,7 @@ const leatherworkingItems = [
         name: 'Látigo',
         price: '2 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 149',
+        source: 'PHB',
         notes: '1d4 cortante; sutil, alcance.',
         shopTypeId: 10,
         merchantQualityId: 3
@@ -235,7 +235,7 @@ const leatherworkingItems = [
         name: 'Armadura +1, ligera o de pieles',
         price: '5,000 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 152',
+        source: 'DMG',
         notes: 'Añade el coste base de la armadura no mágica al precio del objeto. Puede ser armadura ligera o armadura de pieles.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -244,7 +244,7 @@ const leatherworkingItems = [
         name: 'Armadura resplandeciente, ligera o de pieles',
         price: '100 gp',
         quantityFormula: '1d4-1',
-        source: 'XGE 136',
+        source: 'XGE',
         notes: 'Añade el coste base de la armadura no mágica al precio del objeto. Puede ser armadura ligera o armadura de pieles.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -253,7 +253,7 @@ const leatherworkingItems = [
         name: 'Gaita',
         price: '30 gp',
         quantityFormula: '1d4-1',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -262,7 +262,7 @@ const leatherworkingItems = [
         name: 'Barda, ligera o de pieles',
         price: 'Variable',
         quantityFormula: '1d4-1',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio: 4 veces el coste de una armadura similar para humanoides.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -271,7 +271,7 @@ const leatherworkingItems = [
         name: 'Bolsa de contención',
         price: '500 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 153',
+        source: 'DMG',
         notes: 'Contiene 64 pies cúbicos o 500 libras; siempre pesa 15 libras.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -280,7 +280,7 @@ const leatherworkingItems = [
         name: 'Botas élficas',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 155',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -289,7 +289,7 @@ const leatherworkingItems = [
         name: 'Botas de huellas falsas',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 136',
+        source: 'XGE',
         notes: 'Solo 1, para siempre. Hace que tus huellas parezcan las de otro humanoide.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -298,7 +298,7 @@ const leatherworkingItems = [
         name: 'Botas de zancadas y saltos',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 156',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -307,7 +307,7 @@ const leatherworkingItems = [
         name: 'Botas de las tierras invernales',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 156',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -316,7 +316,7 @@ const leatherworkingItems = [
         name: 'Armadura de lanzamiento, ligera o de pieles',
         price: '100 gp',
         quantityFormula: '1d4-1',
-        source: 'XGE 136',
+        source: 'XGE',
         notes: 'Añade el coste base de la armadura no mágica al precio del objeto. Puede ser armadura ligera o armadura de pieles.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -343,7 +343,7 @@ const leatherworkingItems = [
         name: 'Tambor o pandero',
         price: '6 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: 'Instrumento; de cuero sobre un armazón de madera.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -361,7 +361,7 @@ const leatherworkingItems = [
         name: 'Armadura de pieles',
         price: '10 gp',
         quantityFormula: '1d4',
-        source: 'PHB 145',
+        source: 'PHB',
         notes: 'Armadura media. CA 12 + modificador de Destreza, máximo 2.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -370,7 +370,7 @@ const leatherworkingItems = [
         name: 'Armadura de marinero, ligera o de pieles',
         price: '500 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 181',
+        source: 'DMG',
         notes: 'Añade el coste base de la armadura no mágica al precio del objeto. Puede ser armadura ligera o armadura de pieles.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -379,7 +379,7 @@ const leatherworkingItems = [
         name: 'Carcaj de Ehlonna',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 189',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Contiene mucha munición y muchas armas a distancia.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -388,7 +388,7 @@ const leatherworkingItems = [
         name: 'Alforjas',
         price: '4 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: '',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -397,7 +397,7 @@ const leatherworkingItems = [
         name: 'Silla exótica',
         price: '60 gp',
         quantityFormula: '1d4-1',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: '',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -406,7 +406,7 @@ const leatherworkingItems = [
         name: 'Silla militar',
         price: '20 gp',
         quantityFormula: '1d4',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: '',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -415,7 +415,7 @@ const leatherworkingItems = [
         name: 'Armadura de escamas',
         price: '50 gp',
         quantityFormula: '1d4-1',
-        source: 'PHB 145',
+        source: 'PHB',
         notes: 'Hecha usando escamas de una criatura que una vez estuvo viva.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -424,7 +424,7 @@ const leatherworkingItems = [
         name: 'Armadura de cuero tachonado',
         price: '45 gp',
         quantityFormula: '1d4',
-        source: 'PHB 145',
+        source: 'PHB',
         notes: 'Armadura ligera. CA 12 + modificador de Destreza.',
         shopTypeId: 10,
         merchantQualityId: 4
@@ -435,7 +435,7 @@ const leatherworkingItems = [
         name: 'Armadura +2, ligera o de pieles',
         price: '50,000 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 152',
+        source: 'DMG',
         notes: 'Añade el coste base de la armadura no mágica al precio del objeto. Puede ser armadura ligera o armadura de pieles.',
         shopTypeId: 10,
         merchantQualityId: 5
@@ -444,7 +444,7 @@ const leatherworkingItems = [
         name: 'Armadura de resistencia, ligera o de pieles',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'DMG 152',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Variedad aleatoria; añade el coste base de la armadura no mágica al precio del objeto.',
         shopTypeId: 10,
         merchantQualityId: 5
@@ -453,7 +453,7 @@ const leatherworkingItems = [
         name: 'Escudo atrapaflechas',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'DMG 152',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 10,
         merchantQualityId: 5
@@ -462,7 +462,7 @@ const leatherworkingItems = [
         name: 'Cinturón de los enanos',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'DMG 155',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 10,
         merchantQualityId: 5
@@ -471,7 +471,7 @@ const leatherworkingItems = [
         name: 'Armadura de escamas de dragón, roja',
         price: '50,000 gp',
         quantityFormula: '1',
-        source: 'DMG 165',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 10,
         merchantQualityId: 5
@@ -480,7 +480,7 @@ const leatherworkingItems = [
         name: 'Armadura de cuero glamuroso',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'DMG 172',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 10,
         merchantQualityId: 5
@@ -489,7 +489,7 @@ const leatherworkingItems = [
         name: 'Mochila práctica de Heward',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'DMG 174',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Contiene 12 pies cúbicos o 120 libras; siempre pesa 5 libras.',
         shopTypeId: 10,
         merchantQualityId: 5
@@ -498,7 +498,7 @@ const leatherworkingItems = [
         name: 'Silla del caballero',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 199',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 10,
         merchantQualityId: 5
@@ -507,7 +507,7 @@ const leatherworkingItems = [
         name: 'Escudo +1',
         price: '500 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Un escudo mágico o blanco de cuero; +3 a la CA.',
         shopTypeId: 10,
         merchantQualityId: 5
@@ -516,7 +516,7 @@ const leatherworkingItems = [
         name: 'Cargador alado',
         price: '500 gp',
         quantityFormula: '1d4-2',
-        source: 'PA 223',
+        source: 'PA',
         notes: 'En lugar de recargas, usa una correa larga.',
         shopTypeId: 10,
         merchantQualityId: 5

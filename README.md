@@ -373,7 +373,7 @@ Cada item sigue una estructura similar:
   name: 'Objeto',
   price: '100 gp',
   quantityFormula: '1d4',
-  source: 'DMG 150',
+  source: 'DMG',
   notes: 'Notas del objeto.',
   shopTypeId: 1,
   merchantQualityId: 3
@@ -396,7 +396,7 @@ Ejemplos correctos:
   name: 'Lingote de hierro',
   price: '1 gp',
   quantityFormula: '1d4 x 5',
-  source: 'PHB 157',
+  source: 'PHB',
   notes: 'Precio por libra. Cantidad en libras.',
   shopTypeId: 12,
   merchantQualityId: 2
@@ -408,7 +408,7 @@ Ejemplos correctos:
   name: 'Conjuro: Restauración mayor',
   price: '450 gp',
   quantityFormula: '3',
-  source: 'PHB 246',
+  source: 'PHB',
   notes: 'Cantidad en conjuros diarios. Reduce agotamiento y elimina encantado, petrificado, una maldición o reducciones de puntuaciones o máximos.',
   shopTypeId: 22,
   merchantQualityId: 4
@@ -510,7 +510,7 @@ En seeders puede aparecer:
   name: 'Botas de elfo',
   price: '0 gp',
   quantityFormula: '1',
-  source: 'DMG 155',
+  source: 'DMG',
   notes: 'Solo 1, para siempre. Coste: geas menor.',
   shopTypeId: 25,
   merchantQualityId: 3

@@ -15,7 +15,7 @@ const jewelryAndGemsItems = [
         name: 'Barra de cobre',
         price: '5 sp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por libra. Cantidad en libras.',
         shopTypeId: 8,
         merchantQualityId: 2
@@ -24,7 +24,7 @@ const jewelryAndGemsItems = [
         name: 'Barra de hierro',
         price: '1 sp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por libra. Cantidad en libras.',
         shopTypeId: 8,
         merchantQualityId: 2
@@ -42,7 +42,7 @@ const jewelryAndGemsItems = [
         name: 'Cáliz de cobre',
         price: '25 gp',
         quantityFormula: '1d4',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Contiene 1 copa; diseño sencillo con filigrana de plata.',
         shopTypeId: 8,
         merchantQualityId: 2
@@ -51,7 +51,7 @@ const jewelryAndGemsItems = [
         name: 'Cristal',
         price: '10 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Foco arcano; un trozo brillante de cuarzo o similar.',
         shopTypeId: 8,
         merchantQualityId: 2
@@ -69,7 +69,7 @@ const jewelryAndGemsItems = [
         name: 'Gemas mundanas',
         price: '10 gp',
         quantityFormula: '1d4 x 5',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Precio por unidad. Cantidad en unidades. Ejemplos: ágata, lapislázuli, malaquita, ojo de tigre.',
         shopTypeId: 8,
         merchantQualityId: 2
@@ -87,7 +87,7 @@ const jewelryAndGemsItems = [
         name: 'Pico de minero',
         price: '4 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 8,
         merchantQualityId: 2
@@ -96,7 +96,7 @@ const jewelryAndGemsItems = [
         name: 'Lupa',
         price: '100 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 8,
         merchantQualityId: 2
@@ -116,7 +116,7 @@ const jewelryAndGemsItems = [
         name: 'Barra de plata',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por libra. Cantidad en libras.',
         shopTypeId: 8,
         merchantQualityId: 3
@@ -134,7 +134,7 @@ const jewelryAndGemsItems = [
         name: 'Brazalete pequeño de oro',
         price: '25 gp',
         quantityFormula: '1d4',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Brilla hermosamente a la luz del sol.',
         shopTypeId: 8,
         merchantQualityId: 3
@@ -143,7 +143,7 @@ const jewelryAndGemsItems = [
         name: 'Corona de bronce',
         price: '250 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Una corona de estudio, apta para un gobernante menor.',
         shopTypeId: 8,
         merchantQualityId: 3
@@ -152,7 +152,7 @@ const jewelryAndGemsItems = [
         name: 'Gemas comunes',
         price: '50 gp',
         quantityFormula: '1d4 x 5',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Precio por unidad. Cantidad en unidades. Ejemplos: citrino, jaspe, piedra lunar, cuarzo.',
         shopTypeId: 8,
         merchantQualityId: 3
@@ -161,7 +161,7 @@ const jewelryAndGemsItems = [
         name: 'Gemas poco comunes',
         price: '100 gp',
         quantityFormula: '1d4 x 4',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Precio por unidad. Cantidad en unidades. Ejemplos: ámbar, amatista, granate, jade, perla.',
         shopTypeId: 8,
         merchantQualityId: 3
@@ -170,7 +170,7 @@ const jewelryAndGemsItems = [
         name: 'Herramientas de joyero',
         price: '25 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 8,
         merchantQualityId: 3
@@ -179,7 +179,7 @@ const jewelryAndGemsItems = [
         name: 'Guardapelo de oro',
         price: '25 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Se abre para contener un retrato o pequeño recuerdo.',
         shopTypeId: 8,
         merchantQualityId: 3
@@ -197,7 +197,7 @@ const jewelryAndGemsItems = [
         name: 'Anillo de sello',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 8,
         merchantQualityId: 3
@@ -206,7 +206,7 @@ const jewelryAndGemsItems = [
         name: 'Gema de conjuro, obsidiana',
         price: '500 gp',
         quantityFormula: '1d4-1',
-        source: 'OA 223',
+        source: 'OA',
         notes: '',
         shopTypeId: 8,
         merchantQualityId: 3
@@ -217,7 +217,7 @@ const jewelryAndGemsItems = [
         name: 'Barra de oro',
         price: '50 gp',
         quantityFormula: '1d4',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por libra. Cantidad en libras.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -226,7 +226,7 @@ const jewelryAndGemsItems = [
         name: 'Barra de platino',
         price: '500 gp',
         quantityFormula: '1d4',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por libra. Cantidad en libras.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -244,7 +244,7 @@ const jewelryAndGemsItems = [
         name: 'Jaula de pájaro de oro',
         price: '250 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Puede albergar hasta 5 pajarillos; filigrana de electro.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -253,7 +253,7 @@ const jewelryAndGemsItems = [
         name: 'Brazalete grande de oro',
         price: '250 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Detallado con patrones increíblemente elaborados.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -262,7 +262,7 @@ const jewelryAndGemsItems = [
         name: 'Broche de protección',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 156',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -271,7 +271,7 @@ const jewelryAndGemsItems = [
         name: 'Broche de plata y oro',
         price: '750 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Estampado con pétalos de rosa increíblemente delicados.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -280,7 +280,7 @@ const jewelryAndGemsItems = [
         name: 'Cáliz de plata',
         price: '750 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Grabado con símbolos lunares; engastado con piedras lunares.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -289,7 +289,7 @@ const jewelryAndGemsItems = [
         name: 'Juego de peines, oro de dragón',
         price: '750 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Dos peines, con granates rojo sangre como ojos de dragón.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -316,7 +316,7 @@ const jewelryAndGemsItems = [
         name: 'Gema elemental cualquiera',
         price: '250 gp',
         quantityFormula: '1',
-        source: 'DMG 167',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -325,7 +325,7 @@ const jewelryAndGemsItems = [
         name: 'Gema de brillo',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 171',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -334,7 +334,7 @@ const jewelryAndGemsItems = [
         name: 'Gema de visión',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 172',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -343,7 +343,7 @@ const jewelryAndGemsItems = [
         name: 'Gemas raras',
         price: '500 gp',
         quantityFormula: '1d4 x 3',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Precio por unidad. Cantidad en unidades. Ejemplos: alejandrita, peridoto, topacio.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -352,7 +352,7 @@ const jewelryAndGemsItems = [
         name: 'Gemas muy raras',
         price: '1,000 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Precio por unidad. Cantidad en unidades. Ejemplos: esmeralda, ópalo, zafiro, rubí.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -361,7 +361,7 @@ const jewelryAndGemsItems = [
         name: 'Medallón de pensamientos',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 181',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -370,7 +370,7 @@ const jewelryAndGemsItems = [
         name: 'Jarra de latón, obra maestra',
         price: '250 gp',
         quantityFormula: '1d4',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Contiene 1 pinta; tiene incrustación de jade en un bello patrón.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -379,7 +379,7 @@ const jewelryAndGemsItems = [
         name: 'Collar de plata',
         price: '250 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Incluye un colgante en forma de gema.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -388,7 +388,7 @@ const jewelryAndGemsItems = [
         name: 'Cristal psi',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'IDRF 315',
+        source: 'IDRF',
         notes: 'Solo 1, para siempre. Concede telepatía; irradia luz basada en INT.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -397,7 +397,7 @@ const jewelryAndGemsItems = [
         name: 'Anillo de oro',
         price: '250 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Parece hiedra entrelazada, engastado con una hematita.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -406,7 +406,7 @@ const jewelryAndGemsItems = [
         name: 'Rubí del mago de guerra',
         price: '100 gp',
         quantityFormula: '1d4-1',
-        source: 'XGE 138',
+        source: 'XGE',
         notes: 'Se acopla a un arma; se usa como foco para conjuros.',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -415,7 +415,7 @@ const jewelryAndGemsItems = [
         name: 'Gema de conjuro, lapislázuli',
         price: '500 gp',
         quantityFormula: '1d4-1',
-        source: 'OA 223',
+        source: 'OA',
         notes: '',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -424,7 +424,7 @@ const jewelryAndGemsItems = [
         name: 'Gema de conjuro, cuarzo',
         price: '5,000 gp',
         quantityFormula: '1d4-2',
-        source: 'OA 223',
+        source: 'OA',
         notes: '',
         shopTypeId: 8,
         merchantQualityId: 4
@@ -435,7 +435,7 @@ const jewelryAndGemsItems = [
         name: 'Tobillera enjoyada',
         price: '2,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Brilla y reluce como mil estrellas diminutas.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -444,7 +444,7 @@ const jewelryAndGemsItems = [
         name: 'Brazalete grande de platino',
         price: '2,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Engastado con un inmenso zafiro reluciente.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -453,7 +453,7 @@ const jewelryAndGemsItems = [
         name: 'Cadena de oro fino',
         price: '2,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Fijada con una luminosa perla rosa.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -462,7 +462,7 @@ const jewelryAndGemsItems = [
         name: 'Cáliz enjoyado de oro',
         price: '7,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -471,7 +471,7 @@ const jewelryAndGemsItems = [
         name: 'Aro de oro',
         price: '2,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Engastado con una hilera de diminutos zafiros brillantes.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -480,7 +480,7 @@ const jewelryAndGemsItems = [
         name: 'Corona enjoyada de oro',
         price: '7,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Una corona maestra apta solo para un emperador.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -489,7 +489,7 @@ const jewelryAndGemsItems = [
         name: 'Cristal crónico',
         price: '50,000 gp',
         quantityFormula: '1',
-        source: 'TCE 124',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo para magos; contiene conjuros; ignora componentes materiales.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -498,7 +498,7 @@ const jewelryAndGemsItems = [
         name: 'Cuerno de beber de marfil',
         price: '7,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Con joyas y filigrana de oro; propio de un thane enano.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -507,7 +507,7 @@ const jewelryAndGemsItems = [
         name: 'Ojo enjoyado',
         price: '2,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Tiene zafiros y piedras lunares que imitan un ojo mímico.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -516,7 +516,7 @@ const jewelryAndGemsItems = [
         name: 'Gemas legendarias',
         price: '5,000 gp',
         quantityFormula: '1d4',
-        source: 'DMG 134',
+        source: 'DMG',
         notes: 'Precio por unidad. Cantidad en unidades. Ejemplos: zafiro negro, diamante, jacinto.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -525,7 +525,7 @@ const jewelryAndGemsItems = [
         name: 'Collar de perlas rosas',
         price: '2,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Una hilera de perlas irregulares de color rosa.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -534,7 +534,7 @@ const jewelryAndGemsItems = [
         name: 'Anillo enjoyado de platino',
         price: '7,500 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Solo 1, para siempre. Con forma de dragón circular con ojos de rubí.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -543,7 +543,7 @@ const jewelryAndGemsItems = [
         name: 'Anillo de protección',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'DMG 191',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -552,7 +552,7 @@ const jewelryAndGemsItems = [
         name: 'Anillo de telequinesis',
         price: '50,000 gp',
         quantityFormula: '1',
-        source: 'DMG 193',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -561,7 +561,7 @@ const jewelryAndGemsItems = [
         name: 'Gema de conjuro, ámbar',
         price: '50,000 gp',
         quantityFormula: '1',
-        source: 'OA 223',
+        source: 'OA',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 8,
         merchantQualityId: 5
@@ -570,7 +570,7 @@ const jewelryAndGemsItems = [
         name: 'Gema de conjuro, piedra de sangre',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'OA 223',
+        source: 'OA',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 8,
         merchantQualityId: 5

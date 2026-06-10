@@ -4,7 +4,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Botella de cristal',
         price: '2 gp',
         quantityFormula: '1d4 x 25',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por botella. Vacía; contiene hasta 1½ pintas.',
         shopTypeId: 13,
         merchantQualityId: 1
@@ -13,7 +13,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Frasco',
         price: '1 cp',
         quantityFormula: '1d4 x 50',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por frasco. Vacío; contiene hasta 1 pinta.',
         shopTypeId: 13,
         merchantQualityId: 1
@@ -22,7 +22,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Vial',
         price: '1 gp',
         quantityFormula: '1d4 x 50',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por vial. Vacío; contiene hasta 4 onzas.',
         shopTypeId: 13,
         merchantQualityId: 1
@@ -42,7 +42,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Sangre de dragón, droga',
         price: '10 gp',
         quantityFormula: '1d4 x 2',
-        source: 'ERLW 244',
+        source: 'ERLW',
         notes: 'Precio por dosis. Cantidad en dosis. Muy adictiva; mejora la aptitud mágica.',
         shopTypeId: 13,
         merchantQualityId: 2
@@ -51,7 +51,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Dreamlily, droga',
         price: '10 gp',
         quantityFormula: '1d4 x 2',
-        source: 'ERLW 244',
+        source: 'ERLW',
         notes: 'Precio por dosis. Cantidad en dosis. Muy adictiva; reduce significativamente el dolor.',
         shopTypeId: 13,
         merchantQualityId: 2
@@ -60,7 +60,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Kit de herborista',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 13,
         merchantQualityId: 2
@@ -78,7 +78,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Balanza de mercader',
         price: '5 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 13,
         merchantQualityId: 2
@@ -87,7 +87,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Veneno básico',
         price: '100 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por vial. Cantidad en viales. Veneno de herida; puede infligir 1d4 de daño de veneno.',
         shopTypeId: 13,
         merchantQualityId: 2
@@ -96,7 +96,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de trepar',
         price: '50 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'Otorga velocidad trepadora durante 1 hora.',
         shopTypeId: 13,
         merchantQualityId: 2
@@ -105,7 +105,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de curación',
         price: '50 gp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Restaura 2d4 + 2 puntos de golpe.',
         shopTypeId: 13,
         merchantQualityId: 2
@@ -134,7 +134,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Fuego de alquimista',
         price: '50 gp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por frasco. Cantidad en frascos.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -143,7 +143,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Ácido',
         price: '25 gp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por vial. Cantidad en viales.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -152,7 +152,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Suministros de alquimista',
         price: '50 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -161,7 +161,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Antitoxina',
         price: '50 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por vial. Cantidad en viales.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -170,7 +170,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Sangre de asesino',
         price: '150 gp',
         quantityFormula: '1d4+1',
-        source: 'DMG 257',
+        source: 'DMG',
         notes: 'Precio por dosis. Cantidad en dosis. Ingerido; puede infligir 1d12 de daño de veneno.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -179,7 +179,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Kit de sanador',
         price: '5 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -197,7 +197,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Aceite de resbalamiento',
         price: '250 gp',
         quantityFormula: '1d4+2',
-        source: 'DMG 184',
+        source: 'DMG',
         notes: 'Otorga libertad de movimiento o grasa.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -206,7 +206,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Perfume',
         price: '5 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por vial. Cantidad en viales. Un tenue aroma floral para narices exigentes.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -215,7 +215,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Filtro de amor',
         price: '250 gp',
         quantityFormula: '1d4+1',
-        source: 'DMG 184',
+        source: 'DMG',
         notes: 'Encanta a quien lo bebe durante hasta 1 hora.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -224,7 +224,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Kit de envenenador',
         price: '50 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -233,7 +233,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de aliento de fuego',
         price: '250 gp',
         quantityFormula: '1d4+2',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'Permite exhalar fuego, infligiendo 4d6 de daño de fuego.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -242,7 +242,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de curación mayor',
         price: '250 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'Restaura 4d4 + 4 puntos de golpe.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -251,7 +251,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de crecimiento',
         price: '250 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'Permite crecer como con el conjuro agrandar/reducir durante 1d4 horas.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -260,7 +260,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de resistencia',
         price: '250 gp',
         quantityFormula: '1d4 x 3',
-        source: 'DMG 188',
+        source: 'DMG',
         notes: 'De tipo aleatorio; otorga resistencia a un tipo de daño durante 1 hora.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -269,7 +269,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de respirar bajo el agua',
         price: '250 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 188',
+        source: 'DMG',
         notes: 'Permite respirar bajo el agua durante hasta 1 hora.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -278,7 +278,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Raíz de ryath',
         price: '50 gp',
         quantityFormula: '1d4 x 2',
-        source: 'TA 205',
+        source: 'TA',
         notes: 'Otorga 2d4 puntos de golpe temporales; si se obtiene un 1, envenena.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -350,7 +350,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Suero de la verdad',
         price: '150 gp',
         quantityFormula: '1d4+1',
-        source: 'DMG 258',
+        source: 'DMG',
         notes: 'Precio por dosis. Cantidad en dosis. Ingerido; el objetivo no puede mentir conscientemente.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -359,7 +359,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Raíz wildroot',
         price: '25 gp',
         quantityFormula: '1d4 x 2',
-        source: 'TA 205',
+        source: 'TA',
         notes: 'Cura la condición de envenenado.',
         shopTypeId: 13,
         merchantQualityId: 3
@@ -370,7 +370,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Jarra de alquimia',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 150',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -379,7 +379,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Suministros de cervecero',
         price: '20 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -388,7 +388,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Veneno drow',
         price: '200 gp',
         quantityFormula: '1d4',
-        source: 'DMG 258',
+        source: 'DMG',
         notes: 'Precio por dosis. Cantidad en dosis. Veneno de herida; puede dejar inconsciente al objetivo.',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -397,7 +397,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Elixir de salud',
         price: '2,500 gp',
         quantityFormula: '1d4',
-        source: 'DMG 168',
+        source: 'DMG',
         notes: 'Cura enfermedad, ceguera, sordera, parálisis y veneno.',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -406,7 +406,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Herramientas de soplador de vidrio',
         price: '30 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -424,7 +424,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Perfume de embrujo',
         price: '50 gp',
         quantityFormula: '1d4-2',
-        source: 'XGE 138',
+        source: 'XGE',
         notes: 'Ventaja en pruebas de Carisma contra humanoides con CR 1 o inferior durante 1 hora.',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -433,7 +433,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de clarividencia',
         price: '2,500 gp',
         quantityFormula: '1d4',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'Otorga el efecto del conjuro clarividencia.',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -442,7 +442,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de disminución',
         price: '2,500 gp',
         quantityFormula: '1d4',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'Permite encogerse como con el conjuro agrandar/reducir.',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -451,7 +451,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de heroísmo',
         price: '2,500 gp',
         quantityFormula: '1d4',
-        source: 'DMG 188',
+        source: 'DMG',
         notes: 'Otorga bendición y 10 puntos de golpe temporales.',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -460,7 +460,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de leer la mente',
         price: '2,500 gp',
         quantityFormula: '1d4',
-        source: 'DMG 188',
+        source: 'DMG',
         notes: 'Otorga el efecto del conjuro detectar pensamientos.',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -469,7 +469,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de fuerza de gigante de piedra',
         price: '2,500 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'La puntuación de Fuerza se convierte en 23 durante 1 hora.',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -478,7 +478,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de curación superior',
         price: '2,500 gp',
         quantityFormula: '1d4+1',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'Restaura 8d4 + 8 puntos de golpe.',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -487,7 +487,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Veneno de serpiente',
         price: '200 gp',
         quantityFormula: '1d4',
-        source: 'DMG 258',
+        source: 'DMG',
         notes: 'Precio por dosis. Cantidad en dosis. Veneno de herida; puede infligir 3d6 de daño de veneno.',
         shopTypeId: 13,
         merchantQualityId: 4
@@ -579,7 +579,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Compendio alquímico',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'TCE 119',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo para magos; transforma objetos.',
         shopTypeId: 13,
         merchantQualityId: 5
@@ -588,7 +588,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Vapores de othur quemado',
         price: '500 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 258',
+        source: 'DMG',
         notes: 'Precio por dosis. Cantidad en dosis. Inhalado; puede infligir daño persistente de veneno.',
         shopTypeId: 13,
         merchantQualityId: 5
@@ -606,7 +606,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Mucosidad de Kyrzin',
         price: '50,000 gp',
         quantityFormula: '1',
-        source: 'ERLW 278',
+        source: 'ERLW',
         notes: 'Solo 1, para siempre. Otorga aliento ácido, forma amorfa, etc.',
         shopTypeId: 13,
         merchantQualityId: 5
@@ -615,7 +615,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Malicia',
         price: '250 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 258',
+        source: 'DMG',
         notes: 'Precio por dosis. Cantidad en dosis. Inhalado; puede causar ceguera a las criaturas afectadas.',
         shopTypeId: 13,
         merchantQualityId: 5
@@ -624,7 +624,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Aceite de filo',
         price: '25,000 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 184',
+        source: 'DMG',
         notes: 'Otorga +3 al ataque y daño de un arma.',
         shopTypeId: 13,
         merchantQualityId: 5
@@ -633,7 +633,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de fuerza de gigante de las nubes',
         price: '25,000 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'La puntuación de Fuerza se convierte en 27 durante 1 hora.',
         shopTypeId: 13,
         merchantQualityId: 5
@@ -642,7 +642,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de invisibilidad',
         price: '25,000 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 188',
+        source: 'DMG',
         notes: 'Otorga invisibilidad durante hasta 1 hora.',
         shopTypeId: 13,
         merchantQualityId: 5
@@ -651,7 +651,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de invulnerabilidad',
         price: '2,500 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 188',
+        source: 'DMG',
         notes: 'Otorga resistencia a todo el daño.',
         shopTypeId: 13,
         merchantQualityId: 5
@@ -660,7 +660,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de longevidad',
         price: '25,000 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 188',
+        source: 'DMG',
         notes: 'Reduce la edad en 1d6 + 6 años, normalmente.',
         shopTypeId: 13,
         merchantQualityId: 5
@@ -669,7 +669,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de curación suprema',
         price: '25,000 gp',
         quantityFormula: '1d4',
-        source: 'DMG 187',
+        source: 'DMG',
         notes: 'Restaura 10d4 + 20 puntos de golpe.',
         shopTypeId: 13,
         merchantQualityId: 5
@@ -678,7 +678,7 @@ const potionsPoisonsAndHerbsItems = [
         name: 'Poción de vitalidad',
         price: '25,000 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 188',
+        source: 'DMG',
         notes: 'Cura agotamiento, enfermedad y veneno.',
         shopTypeId: 13,
         merchantQualityId: 5

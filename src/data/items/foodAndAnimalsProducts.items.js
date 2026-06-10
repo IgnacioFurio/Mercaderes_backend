@@ -22,7 +22,7 @@ const foodAndAnimalProductsItems = [
         name: 'Comida, escuálida',
         price: '3 cp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 158',
+        source: 'PHB',
         notes: 'Precio por día. Cantidad en días. Madura, rancia y del tipo incorrecto de masticable; 1 día.',
         shopTypeId: 5,
         merchantQualityId: 1
@@ -42,7 +42,7 @@ const foodAndAnimalProductsItems = [
         name: 'Pan',
         price: '2 cp',
         quantityFormula: '1d4 x 10',
-        source: 'PHB 158',
+        source: 'PHB',
         notes: 'Precio por hogaza. Cantidad en hogazas. 1/4 día.',
         shopTypeId: 5,
         merchantQualityId: 2
@@ -60,7 +60,7 @@ const foodAndAnimalProductsItems = [
         name: 'Queso',
         price: '1 sp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 158',
+        source: 'PHB',
         notes: 'Precio por trozo. Cantidad en trozos. Muchos tipos distintos; 1/4 día.',
         shopTypeId: 5,
         merchantQualityId: 2
@@ -78,7 +78,7 @@ const foodAndAnimalProductsItems = [
         name: 'Harina',
         price: '2 cp',
         quantityFormula: '1d4 x 10',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por libra. Cantidad en libras.',
         shopTypeId: 5,
         merchantQualityId: 2
@@ -105,7 +105,7 @@ const foodAndAnimalProductsItems = [
         name: 'Comida, pobre',
         price: '6 cp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 158',
+        source: 'PHB',
         notes: 'Precio por día. Cantidad en días. Gachas y trozos grasientos; huele a arrepentimiento. 1 día.',
         shopTypeId: 5,
         merchantQualityId: 2
@@ -141,7 +141,7 @@ const foodAndAnimalProductsItems = [
         name: 'Trigo',
         price: '1 cp',
         quantityFormula: '1d4 x 25',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por libra. Cantidad en libras.',
         shopTypeId: 5,
         merchantQualityId: 2
@@ -188,7 +188,7 @@ const foodAndAnimalProductsItems = [
         name: 'Trampa de caza',
         price: '5 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Una prueba de Destreza CD 13 evita sufrir 1d4 de daño perforante y quedar atrapado.',
         shopTypeId: 5,
         merchantQualityId: 3
@@ -197,7 +197,7 @@ const foodAndAnimalProductsItems = [
         name: 'Comida, modesta',
         price: '3 sp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 158',
+        source: 'PHB',
         notes: 'Precio por día. Cantidad en días. Un caldo sustancioso con verduras reales; 1 día.',
         shopTypeId: 5,
         merchantQualityId: 3
@@ -206,7 +206,7 @@ const foodAndAnimalProductsItems = [
         name: 'Carne',
         price: '3 sp',
         quantityFormula: '1d4 x 15',
-        source: 'PHB 158',
+        source: 'PHB',
         notes: 'Precio por trozo. Cantidad en trozos. Ternera, pollo, venado o similar; 1/2 día.',
         shopTypeId: 5,
         merchantQualityId: 3
@@ -215,7 +215,7 @@ const foodAndAnimalProductsItems = [
         name: 'Ración de campaña',
         price: '2 sp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 5,
         merchantQualityId: 3
@@ -224,7 +224,7 @@ const foodAndAnimalProductsItems = [
         name: 'Olla de hierro',
         price: '2 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Contiene 1 galón.',
         shopTypeId: 5,
         merchantQualityId: 3
@@ -233,7 +233,7 @@ const foodAndAnimalProductsItems = [
         name: 'Raciones',
         price: '5 sp',
         quantityFormula: '1d4 x 15',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por día. Cantidad en días. Carne seca, galleta dura o similar; 1 día.',
         shopTypeId: 5,
         merchantQualityId: 3
@@ -242,7 +242,7 @@ const foodAndAnimalProductsItems = [
         name: 'Sal',
         price: '5 cp',
         quantityFormula: '1d4 x 10',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por libra. Cantidad en libras.',
         shopTypeId: 5,
         merchantQualityId: 3
@@ -251,7 +251,7 @@ const foodAndAnimalProductsItems = [
         name: 'Jabón',
         price: '2 cp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 5,
         merchantQualityId: 3
@@ -341,7 +341,7 @@ const foodAndAnimalProductsItems = [
         name: 'Especia, clavo',
         price: '3 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por libra. Cantidad en libras.',
         shopTypeId: 5,
         merchantQualityId: 3
@@ -359,7 +359,7 @@ const foodAndAnimalProductsItems = [
         name: 'Especia, jengibre',
         price: '1 gp',
         quantityFormula: '1d4 x 10',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por libra. Cantidad en libras.',
         shopTypeId: 5,
         merchantQualityId: 3
@@ -397,7 +397,7 @@ const foodAndAnimalProductsItems = [
         name: 'Cuenta de alimento',
         price: '50 gp',
         quantityFormula: '1d4 x 2',
-        source: 'XGE 136',
+        source: 'XGE',
         notes: '',
         shopTypeId: 5,
         merchantQualityId: 4
@@ -433,7 +433,7 @@ const foodAndAnimalProductsItems = [
         name: 'Utensilios de cocinero',
         price: '1 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 5,
         merchantQualityId: 4
@@ -442,7 +442,7 @@ const foodAndAnimalProductsItems = [
         name: 'Aparejos de pesca',
         price: '1 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 5,
         merchantQualityId: 4
@@ -460,7 +460,7 @@ const foodAndAnimalProductsItems = [
         name: 'Bolsa de especias útil de Heward',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 137',
+        source: 'XGE',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 5,
         merchantQualityId: 4
@@ -469,7 +469,7 @@ const foodAndAnimalProductsItems = [
         name: 'Comida, cómoda',
         price: '5 sp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 158',
+        source: 'PHB',
         notes: 'Precio por día. Cantidad en días. Carne ligeramente especiada con guarnición; 1 día.',
         shopTypeId: 5,
         merchantQualityId: 4
@@ -478,7 +478,7 @@ const foodAndAnimalProductsItems = [
         name: 'Comida, rica',
         price: '8 sp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 158',
+        source: 'PHB',
         notes: 'Precio por día. Cantidad en días. Un corte de carne selecto con postre; 1 día.',
         shopTypeId: 5,
         merchantQualityId: 4
@@ -514,7 +514,7 @@ const foodAndAnimalProductsItems = [
         name: 'Especias, otras',
         price: '2 gp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por libra. Cantidad en libras. Pimienta, canela o similar.',
         shopTypeId: 5,
         merchantQualityId: 4
@@ -523,7 +523,7 @@ const foodAndAnimalProductsItems = [
         name: 'Especia, azafrán',
         price: '15 gp',
         quantityFormula: '1d4',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por libra. Cantidad en libras.',
         shopTypeId: 5,
         merchantQualityId: 4
@@ -552,7 +552,7 @@ const foodAndAnimalProductsItems = [
         name: 'Garrote de fémur de dragón',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'SKT 105',
+        source: 'SKT',
         notes: 'Solo 1, para siempre. 3d8 contundente; a dos manos.',
         shopTypeId: 5,
         merchantQualityId: 5
@@ -570,7 +570,7 @@ const foodAndAnimalProductsItems = [
         name: 'Piedra ioun, sustento',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'DMG 176',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 5,
         merchantQualityId: 5
@@ -579,7 +579,7 @@ const foodAndAnimalProductsItems = [
         name: 'Comida, aristocrática',
         price: '2 gp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 158',
+        source: 'PHB',
         notes: 'Precio por día. Cantidad en días. El corte más suculento de una bestia mágica; 1 día.',
         shopTypeId: 5,
         merchantQualityId: 5

@@ -4,7 +4,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Barril pequeño',
         price: '1 gp',
         quantityFormula: '1d4 x 5',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '0,75 pies de ancho y 1 pie de alto; contiene 20 galones o 2 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 1
@@ -13,7 +13,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Barril',
         price: '2 gp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '1,25 pies de ancho y 2,5 pies de alto; contiene 40 galones o 4 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 1
@@ -22,7 +22,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Cesta',
         price: '4 sp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '1 pie de ancho y 1 pie de alto; contiene 40 libras o 2 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 1
@@ -31,7 +31,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Caja mediana',
         price: '1 gp',
         quantityFormula: '1d4 x 5',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '2 pies por 2 pies y 1 pie de alto; contiene 80 libras o 4 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 1
@@ -40,7 +40,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Estante',
         price: '7 sp',
         quantityFormula: '1d4 x 4',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '4 pies por 0,5 pies; contiene aproximadamente 20 libros u otros objetos.',
         shopTypeId: 6,
         merchantQualityId: 1
@@ -51,7 +51,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Cama individual',
         price: '2 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '6 pies por 3 pies y 2,5 pies de alto; duerme 1 criatura Mediana.',
         shopTypeId: 6,
         merchantQualityId: 2
@@ -69,7 +69,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Caja grande',
         price: '7 gp',
         quantityFormula: '1d4 x 3',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '3 pies por 3 pies y 3 pies de alto; contiene 675 libras o 27 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 2
@@ -78,7 +78,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Barril firkin',
         price: '5 sp',
         quantityFormula: '1d4 x 4',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '0,5 pies de ancho y 1,33 pies de alto; contiene 10 galones o 1 pie cúbico.',
         shopTypeId: 6,
         merchantQualityId: 2
@@ -87,7 +87,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Silla sencilla',
         price: '3 sp',
         quantityFormula: '1d4 x 4',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Hecha de madera dura; asiento para 1 criatura Mediana.',
         shopTypeId: 6,
         merchantQualityId: 2
@@ -96,7 +96,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Cofre mediano',
         price: '5 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '6 pies por 2 pies y 1 pie de alto; contiene 300 libras o 12 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 2
@@ -105,7 +105,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Brasero de metal',
         price: '1 gp',
         quantityFormula: '1d4 x 3',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '0,5 pies de ancho; quema madera, carbón, aceite o incienso.',
         shopTypeId: 6,
         merchantQualityId: 2
@@ -132,7 +132,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Alfombra pequeña',
         price: '1 gp',
         quantityFormula: '1d4 x 3',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '3 pies por 5 pies; colorida, con un patrón agradable.',
         shopTypeId: 6,
         merchantQualityId: 2
@@ -141,7 +141,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Taburete',
         price: '5 sp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '1 pie de ancho y 3/4 pies de alto; asiento para 1 criatura Mediana.',
         shopTypeId: 6,
         merchantQualityId: 2
@@ -150,7 +150,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Mesa pequeña',
         price: '3 gp',
         quantityFormula: '1d4',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '3 pies por 5 pies y 2,5 pies de alto.',
         shopTypeId: 6,
         merchantQualityId: 2
@@ -159,7 +159,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Banco de trabajo',
         price: '7 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '3 pies por 6 pies y 3 pies de alto; incluye soportes para colgar herramientas.',
         shopTypeId: 6,
         merchantQualityId: 2
@@ -170,7 +170,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Armario ropero',
         price: '10 gp',
         quantityFormula: '1d4',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '4 pies por 1,5 pies y 6 pies de alto; contiene 900 libras o 36 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -188,7 +188,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Cama doble',
         price: '10 gp',
         quantityFormula: '1d4',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '6 pies por 5 pies y 2,5 pies de alto; duermen 2 criaturas Medianas.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -197,7 +197,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Literas',
         price: '8 gp',
         quantityFormula: '1d4',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '6 pies por 3 pies y 6 pies de alto; duermen 2 criaturas Medianas.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -206,7 +206,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Brasero de metal',
         price: '3 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '1,5 pies de ancho; quema madera, carbón, aceite o incienso.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -215,7 +215,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Banco de madera',
         price: '2 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '10 pies por 1 pie y 1,5 pies de alto; asiento para 5 criaturas Medianas.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -224,7 +224,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Gabinete o alacena',
         price: '1 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '2 pies por 1 pie y 3 pies de alto; contiene 150 libras o 6 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -233,7 +233,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Barril hogshead',
         price: '4 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '1,5 pies de ancho y 3 pies de alto; contiene 65 galones o 6 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -242,7 +242,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Barril tierce',
         price: '2 gp',
         quantityFormula: '1d4 x 3',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '1,25 pies de ancho y 2,5 pies de alto; contiene 40 galones o 4 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -251,7 +251,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Silla acolchada',
         price: '1 gp',
         quantityFormula: '1d4 x 3',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Algo cómoda; asiento para 1 criatura Mediana.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -260,7 +260,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Cofre grande',
         price: '10 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '6 pies por 3 pies y 2 pies de alto; contiene 900 libras o 36 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -269,7 +269,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Jarra o cántaro',
         price: '2 cp',
         quantityFormula: '1d4 x 4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Contiene 1 galón.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -278,7 +278,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Cuadro mediano',
         price: '10 gp',
         quantityFormula: '1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Hecho por encargo. Ejemplo: representa a una gnoma y su abeja gigante mascota.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -287,7 +287,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Colcha',
         price: '8 gp',
         quantityFormula: '1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Hecha por encargo. 8 pies por 6 pies; acogedora y colorida.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -296,7 +296,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Alfombra mediana',
         price: '6 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '5 pies por 10 pies; resulta cálida, cómoda y acogedora.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -305,7 +305,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Biombo',
         price: '5 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Hecho de papel y madera; da privacidad, pero no demasiada.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -314,7 +314,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Santuario pequeño',
         price: '8 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Un pequeño espacio para dejar ofrendas o realizar plegarias rápidas.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -332,7 +332,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Mesa grande',
         price: '6 gp',
         quantityFormula: '1d4',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '4 pies por 10 pies y 2,5 pies de alto.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -341,7 +341,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Mesa redonda',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '15 pies de ancho y 2,5 pies de alto.',
         shopTypeId: 6,
         merchantQualityId: 3
@@ -370,7 +370,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Altar grande',
         price: '20 gp',
         quantityFormula: '1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Hecho por encargo. Contiene símbolos sagrados y espacio para rituales.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -388,7 +388,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Bañera ornamentada',
         price: '25 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Ejemplo: acero trabajado con grifos con cabeza de dragón.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -397,7 +397,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Cama con dosel',
         price: '75 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '8 pies por 6 pies; rellena de plumón de oso lechuza.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -406,7 +406,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Candelabro',
         price: '5 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '1 pie de alto; sostiene entre 3 y 5 velas.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -415,7 +415,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Barril butt',
         price: '8 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '2 pies de ancho y 4 pies de alto; contiene 125 galones o 12 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -424,7 +424,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Barril pipe',
         price: '6 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '1,75 pies de ancho y 3,5 pies de alto; contiene 105 galones o 10 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -442,7 +442,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Diván',
         price: '10 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '8 pies por 2,5 pies y 1,5 pies de alto; asiento para entre 1 y 3 criaturas Medianas.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -451,7 +451,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Sofá',
         price: '18 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '8 pies por 3 pies y 3,5 pies de alto; asiento para 3 criaturas Medianas.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -460,7 +460,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Escritorio ornamentado',
         price: '15 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Ejemplo: enredaderas intrincadas talladas en madera lisa.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -469,7 +469,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Fuente',
         price: '750 gp',
         quantityFormula: '1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Hecha por encargo. 6 pies por 6 pies y 4 pies de alto; de mármol o material similar.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -478,7 +478,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Fresco grande',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Hecho por encargo. Ejemplo: la Ciudad de Latón, enmarcada por un mar de fuego.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -487,7 +487,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Cojín bajo',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '1 pie por 1 pie y 1,5 pies de alto; ayuda a una criatura a sentarse con comodidad.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -532,7 +532,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Cuadro grande',
         price: '50 gp',
         quantityFormula: '1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Hecho por encargo. Ejemplo: una dragonborn cortesana y su consorte.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -541,7 +541,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Pedestal de piedra',
         price: '15 gp',
         quantityFormula: '1d4',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '3 pies de alto; ayuda a exhibir un objeto, planta u obra de arte.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -550,7 +550,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Alfombra grande',
         price: '12 gp',
         quantityFormula: '1d4',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '10 pies por 50 pies; realmente da unidad a la habitación.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -568,7 +568,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Mesa larga',
         price: '14 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '6 pies por 25 pies y 2,5 pies de alto.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -577,7 +577,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Tapiz',
         price: '250 gp',
         quantityFormula: '1',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Hecho por encargo. Ejemplo: aventureros frustrando un mal ancestral.',
         shopTypeId: 6,
         merchantQualityId: 4
@@ -588,7 +588,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Barril tun',
         price: '16 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: '3 pies de ancho y 6 pies de alto; contiene 250 galones o 25 pies cúbicos.',
         shopTypeId: 6,
         merchantQualityId: 5
@@ -597,7 +597,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Trono',
         price: '750 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Magnífico, esculpido o tallado, con cojines lujosos.',
         shopTypeId: 6,
         merchantQualityId: 5
@@ -606,7 +606,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Candelabro colgante enorme',
         price: '1,500 gp',
         quantityFormula: '1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Hecho por encargo. Ejemplo: cristal astral entrelazado con mithral.',
         shopTypeId: 6,
         merchantQualityId: 5
@@ -615,7 +615,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Caja de música de oro',
         price: '2,500 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Reproduce 10 canciones; una obra maestra de arte y artesanía.',
         shopTypeId: 6,
         merchantQualityId: 5
@@ -624,7 +624,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Espejo atrapavidas',
         price: '50,000 gp',
         quantityFormula: '1',
-        source: 'DMG 181',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 6,
         merchantQualityId: 5
@@ -633,7 +633,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Cuadro antiguo, obra maestra',
         price: '2,500 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 135',
+        source: 'DMG',
         notes: 'Una obra de arte legendaria e histórica.',
         shopTypeId: 6,
         merchantQualityId: 5
@@ -642,7 +642,7 @@ const furnitureAndInteriorDecorItems = [
         name: 'Estatua preciosa',
         price: '2,000 gp',
         quantityFormula: '1',
-        source: 'DMG 299',
+        source: 'DMG',
         notes: 'Hecha por encargo. Ejemplo: un enorme dragón de adamantina.',
         shopTypeId: 6,
         merchantQualityId: 5

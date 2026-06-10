@@ -24,7 +24,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Cerveza genérica',
     price: '4 cp',
     quantityFormula: '1d4 x 100',
-    source: 'PHB 158',
+    source: 'PHB',
     notes: 'Precio por jarra. Cantidad en jarras. Cualquier cerveza que el mercader tenga a mano.',
     shopTypeId: 1,
     merchantQualityId: 2
@@ -42,7 +42,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Frasco o jarra',
     price: '2 cp',
     quantityFormula: '1d4 x 15',
-    source: 'PHB 150',
+    source: 'PHB',
     notes: 'Hecho de peltre o madera tratada.',
     shopTypeId: 1,
     merchantQualityId: 2
@@ -107,7 +107,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Suministros de cervecero',
     price: '20 gp',
     quantityFormula: '1d4',
-    source: 'PHB 154',
+    source: 'PHB',
     notes: '',
     shopTypeId: 1,
     merchantQualityId: 3
@@ -215,7 +215,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Vino común',
     price: '5 sp',
     quantityFormula: '1d4 x 5',
-    source: 'PHB 158',
+    source: 'PHB',
     notes: 'Precio por botella. Cantidad en botellas. Una de muchas variedades de vino simple y barato.',
     shopTypeId: 1,
     merchantQualityId: 3
@@ -280,7 +280,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Cuenta de refresco',
     price: '50 gp',
     quantityFormula: '1d4 x 2',
-    source: 'XGE 136',
+    source: 'XGE',
     notes: '',
     shopTypeId: 1,
     merchantQualityId: 4
@@ -334,7 +334,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Hidromiel tej',
     price: '3 sp',
     quantityFormula: '1d4 x 50',
-    source: 'TA 32',
+    source: 'TA',
     notes: 'Precio por jarra. Cantidad en jarras. Hidromiel importada hecha con especias de la jungla.',
     shopTypeId: 1,
     merchantQualityId: 4
@@ -352,7 +352,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Jarra de sobriedad',
     price: '100 gp',
     quantityFormula: '1',
-    source: 'XGE 139',
+    source: 'XGE',
     notes: 'Solo 1, para siempre.',
     shopTypeId: 1,
     merchantQualityId: 4
@@ -505,7 +505,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Vino fino',
     price: '10 gp',
     quantityFormula: '1d4 x 4',
-    source: 'PHB 158',
+    source: 'PHB',
     notes: 'Precio por botella. Cantidad en botellas. Una de muchas variedades de vino fino.',
     shopTypeId: 1,
     merchantQualityId: 4
@@ -579,7 +579,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Decantador de agua inagotable',
     price: '500 gp',
     quantityFormula: '1',
-    source: 'DMG 161',
+    source: 'DMG',
     notes: 'Solo 1, para siempre.',
     shopTypeId: 1,
     merchantQualityId: 5
@@ -588,7 +588,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Cuerno de beber de marfil',
     price: '7,500 gp',
     quantityFormula: '1',
-    source: 'DMG 135',
+    source: 'DMG',
     notes: 'Solo 1, para siempre. Engastado con filigrana de oro; propio de un thane enano.',
     shopTypeId: 1,
     merchantQualityId: 5
@@ -597,7 +597,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Aguamanil de cobre verde',
     price: '5,000 gp',
     quantityFormula: '1',
-    source: 'CS 188',
+    source: 'CS',
     notes: 'Solo 1, para siempre. Conjura 1 galón de vino al día; convierte veneno en vino.',
     shopTypeId: 1,
     merchantQualityId: 5
@@ -615,7 +615,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Jarra de latón de gran calidad',
     price: '250 gp',
     quantityFormula: '1d4',
-    source: 'DMG 135',
+    source: 'DMG',
     notes: 'Contiene 1 pinta; tiene incrustación de jade en un bello patrón.',
     shopTypeId: 1,
     merchantQualityId: 5
@@ -624,7 +624,7 @@ const alcoholAndRefreshmentItems = [
     name: 'Jarra de abundancia',
     price: '5,000 gp',
     quantityFormula: '1',
-    source: 'HDQ 74',
+    source: 'HDQ',
     notes: 'Solo 1, para siempre. Se llena mágicamente con 3 pintas de cerveza enana, 3 veces al día.',
     shopTypeId: 1,
     merchantQualityId: 5

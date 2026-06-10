@@ -15,7 +15,7 @@ const spellScrollsAndTomesItems = [
         name: 'Libro en blanco',
         price: '25 gp',
         quantityFormula: '1d4 x 3',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Apto para escribir o dibujar; no puede contener conjuros.',
         shopTypeId: 16,
         merchantQualityId: 2
@@ -24,7 +24,7 @@ const spellScrollsAndTomesItems = [
         name: 'Suministros de calígrafo',
         price: '10 gp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 16,
         merchantQualityId: 2
@@ -33,7 +33,7 @@ const spellScrollsAndTomesItems = [
         name: 'Estuche para pergamino',
         price: '1 gp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 16,
         merchantQualityId: 2
@@ -42,7 +42,7 @@ const spellScrollsAndTomesItems = [
         name: 'Tinta',
         price: '10 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por botella. Cantidad en botellas.',
         shopTypeId: 16,
         merchantQualityId: 2
@@ -51,7 +51,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pluma de tinta',
         price: '2 cp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 16,
         merchantQualityId: 2
@@ -60,7 +60,7 @@ const spellScrollsAndTomesItems = [
         name: 'Papel',
         price: '2 sp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por hoja. Cantidad en hojas.',
         shopTypeId: 16,
         merchantQualityId: 2
@@ -69,7 +69,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pergamino',
         price: '1 sp',
         quantityFormula: '1d4 x 20',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por hoja. Cantidad en hojas.',
         shopTypeId: 16,
         merchantQualityId: 2
@@ -78,7 +78,7 @@ const spellScrollsAndTomesItems = [
         name: 'Libro de conjuros',
         price: '50 gp',
         quantityFormula: '1d4 x 5',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Vacío; adecuado para contener conjuros.',
         shopTypeId: 16,
         merchantQualityId: 2
@@ -89,7 +89,7 @@ const spellScrollsAndTomesItems = [
         name: 'Libro de conjuros resistente',
         price: '100 gp',
         quantityFormula: '1d4',
-        source: 'XGE 137',
+        source: 'XGE',
         notes: 'Vacío; no se daña por fuego, agua o el paso del tiempo.',
         shopTypeId: 16,
         merchantQualityId: 3
@@ -152,7 +152,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pergamino de conjuro, truco',
         price: '50 gp',
         quantityFormula: '1d4 x 5',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Contiene un truco aleatorio; puede copiarse.',
         shopTypeId: 16,
         merchantQualityId: 3
@@ -161,7 +161,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pergamino de conjuro, nivel 1',
         price: '50 gp',
         quantityFormula: '1d4 x 4',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Contiene un conjuro aleatorio de nivel 1; puede copiarse.',
         shopTypeId: 16,
         merchantQualityId: 3
@@ -170,7 +170,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pergamino de conjuro, nivel 2',
         price: '250 gp',
         quantityFormula: '1d4 x 4',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Contiene un conjuro aleatorio de nivel 2; puede copiarse.',
         shopTypeId: 16,
         merchantQualityId: 3
@@ -179,7 +179,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pergamino de conjuro, nivel 3',
         price: '250 gp',
         quantityFormula: '1d4 x 3',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Contiene un conjuro aleatorio de nivel 3; puede copiarse.',
         shopTypeId: 16,
         merchantQualityId: 3
@@ -188,7 +188,7 @@ const spellScrollsAndTomesItems = [
         name: 'Conjuro: identificar',
         price: '20 gp',
         quantityFormula: '3',
-        source: 'PHB 252',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Revela las propiedades de un objeto mágico.',
         shopTypeId: 16,
         merchantQualityId: 3
@@ -197,7 +197,7 @@ const spellScrollsAndTomesItems = [
         name: 'Conjuro: escritura ilusoria',
         price: '30 gp',
         quantityFormula: '3',
-        source: 'PHB 252',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Escribe un mensaje codificado mágicamente.',
         shopTypeId: 16,
         merchantQualityId: 3
@@ -206,7 +206,7 @@ const spellScrollsAndTomesItems = [
         name: 'Conjuro: Abrir',
         price: '40 gp',
         quantityFormula: '3',
-        source: 'PHB 254',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Abre un objeto cerrado.',
         shopTypeId: 16,
         merchantQualityId: 3
@@ -215,7 +215,7 @@ const spellScrollsAndTomesItems = [
         name: 'Conjuro: armadura de mago',
         price: '10 gp',
         quantityFormula: '3',
-        source: 'PHB 256',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. La CA base del objetivo pasa a ser 13 + modificador de Destreza.',
         shopTypeId: 16,
         merchantQualityId: 3
@@ -226,7 +226,7 @@ const spellScrollsAndTomesItems = [
         name: 'Grimorio arcano +1',
         price: '500 gp',
         quantityFormula: '1',
-        source: 'TCE 120',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo para magos; mejora Recuperación Arcana.',
         shopTypeId: 16,
         merchantQualityId: 4
@@ -244,7 +244,7 @@ const spellScrollsAndTomesItems = [
         name: 'Sombrero de hechicería',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'XGE 137',
+        source: 'XGE',
         notes: 'Solo 1, para siempre. Solo para magos; intenta lanzar trucos adicionales.',
         shopTypeId: 16,
         merchantQualityId: 4
@@ -253,7 +253,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pájaro de papel',
         price: '250 gp',
         quantityFormula: '1d4 x 2',
-        source: 'WDH 191',
+        source: 'WDH',
         notes: 'Transporta un mensaje de hasta 50 palabras a un destinatario.',
         shopTypeId: 16,
         merchantQualityId: 4
@@ -307,7 +307,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pergamino de protección',
         price: '2,500 gp',
         quantityFormula: '1d4 x 3',
-        source: 'DMG 199',
+        source: 'DMG',
         notes: 'Puede usarlo cualquiera; protege contra un tipo de criatura.',
         shopTypeId: 16,
         merchantQualityId: 4
@@ -316,7 +316,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pergamino de conjuro, nivel 4',
         price: '2,500 gp',
         quantityFormula: '1d4 x 3',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Contiene un conjuro aleatorio de nivel 4; puede copiarse.',
         shopTypeId: 16,
         merchantQualityId: 4
@@ -325,7 +325,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pergamino de conjuro, nivel 5',
         price: '2,500 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Contiene un conjuro aleatorio de nivel 5; puede copiarse.',
         shopTypeId: 16,
         merchantQualityId: 4
@@ -334,7 +334,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pergamino de conjuro, nivel 6',
         price: '25,000 gp',
         quantityFormula: '1d4 x 2',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Contiene un conjuro aleatorio de nivel 6; puede copiarse.',
         shopTypeId: 16,
         merchantQualityId: 4
@@ -343,7 +343,7 @@ const spellScrollsAndTomesItems = [
         name: 'Conjuro: leyenda',
         price: '770 gp',
         quantityFormula: '3',
-        source: 'PHB 254',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. Revela detalles sobre una persona, lugar u objeto importante.',
         shopTypeId: 16,
         merchantQualityId: 4
@@ -352,7 +352,7 @@ const spellScrollsAndTomesItems = [
         name: 'Conjuro: escritura celeste',
         price: '40 gp',
         quantityFormula: '3',
-        source: 'XGE 165',
+        source: 'XGE',
         notes: 'Cantidad en conjuros diarios. Aparecen hasta 10 palabras en el cielo.',
         shopTypeId: 16,
         merchantQualityId: 4
@@ -361,7 +361,7 @@ const spellScrollsAndTomesItems = [
         name: 'Conjuro: lenguas',
         price: '90 gp',
         quantityFormula: '3',
-        source: 'PHB 283',
+        source: 'PHB',
         notes: 'Cantidad en conjuros diarios. El objetivo entiende todos los idiomas.',
         shopTypeId: 16,
         merchantQualityId: 4
@@ -381,7 +381,7 @@ const spellScrollsAndTomesItems = [
         name: 'Tratado fulminante',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'TCE 128',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo para magos; contiene conjuros e inflige más daño de conjuro.',
         shopTypeId: 16,
         merchantQualityId: 5
@@ -390,7 +390,7 @@ const spellScrollsAndTomesItems = [
         name: 'Grimorio corazóntejido',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'TCE 128',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Solo para magos; contiene conjuros y potencia encantamientos.',
         shopTypeId: 16,
         merchantQualityId: 5
@@ -399,7 +399,7 @@ const spellScrollsAndTomesItems = [
         name: 'Manual de gólems de barro',
         price: '25,000 gp',
         quantityFormula: '1',
-        source: 'DMG 180',
+        source: 'DMG',
         notes: 'Solo 1, para siempre.',
         shopTypeId: 16,
         merchantQualityId: 5
@@ -408,7 +408,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pergamino de conjuro, nivel 7',
         price: '25,000 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Contiene un conjuro aleatorio de nivel 7; puede copiarse.',
         shopTypeId: 16,
         merchantQualityId: 5
@@ -417,7 +417,7 @@ const spellScrollsAndTomesItems = [
         name: 'Pergamino de conjuro, nivel 8',
         price: '25,000 gp',
         quantityFormula: '1d4-2',
-        source: 'DMG 200',
+        source: 'DMG',
         notes: 'Contiene un conjuro aleatorio de nivel 8; puede copiarse.',
         shopTypeId: 16,
         merchantQualityId: 5

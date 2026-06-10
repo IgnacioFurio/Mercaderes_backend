@@ -4,7 +4,7 @@ const tattoosItems = [
         name: 'Tinta',
         price: '10 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por botella. Cantidad en botellas. Adecuada para escribir o aplicar tatuajes.',
         shopTypeId: 17,
         merchantQualityId: 1
@@ -13,7 +13,7 @@ const tattoosItems = [
         name: 'Pluma de tinta',
         price: '2 cp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 17,
         merchantQualityId: 1
@@ -51,7 +51,7 @@ const tattoosItems = [
         name: 'Kit de sanador',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 17,
         merchantQualityId: 2
@@ -60,7 +60,7 @@ const tattoosItems = [
         name: 'Aceite',
         price: '1 sp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: 'Precio por frasco. Cantidad en frascos. Apto tanto para músculos como para faroles.',
         shopTypeId: 17,
         merchantQualityId: 2
@@ -69,7 +69,7 @@ const tattoosItems = [
         name: 'Jabón',
         price: '2 cp',
         quantityFormula: '1d4 x 2',
-        source: 'PHB 150',
+        source: 'PHB',
         notes: '',
         shopTypeId: 17,
         merchantQualityId: 2
@@ -98,7 +98,7 @@ const tattoosItems = [
         name: 'Tatuaje barrera pequeño',
         price: '500 gp',
         quantityFormula: '3',
-        source: 'TCE 122',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Otorga una CA igual a 12 + tu modificador de Destreza.',
         shopTypeId: 17,
         merchantQualityId: 3
@@ -107,7 +107,7 @@ const tattoosItems = [
         name: 'Suministros de calígrafo',
         price: '10 gp',
         quantityFormula: '1d4',
-        source: 'PHB 154',
+        source: 'PHB',
         notes: '',
         shopTypeId: 17,
         merchantQualityId: 3
@@ -116,7 +116,7 @@ const tattoosItems = [
         name: 'Piedra de limpieza',
         price: '100 gp',
         quantityFormula: '1',
-        source: 'ERLW 276',
+        source: 'ERLW',
         notes: 'Solo 1, para siempre. Usar una acción mientras se toca; limpia la suciedad de ti.',
         shopTypeId: 17,
         merchantQualityId: 3
@@ -134,7 +134,7 @@ const tattoosItems = [
         name: 'Tatuaje del iluminador',
         price: '100 gp',
         quantityFormula: '3',
-        source: 'TCE 129',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Puede escribir con el dedo, haciendo escritura invisible.',
         shopTypeId: 17,
         merchantQualityId: 3
@@ -143,7 +143,7 @@ const tattoosItems = [
         name: 'Tatuaje de mascarada',
         price: '100 gp',
         quantityFormula: '3',
-        source: 'TCE 131',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Cambia de forma; permite lanzar disfrazarse una vez al día.',
         shopTypeId: 17,
         merchantQualityId: 3
@@ -152,7 +152,7 @@ const tattoosItems = [
         name: 'Pintura facial de luna',
         price: '100 gp',
         quantityFormula: '1d4-1',
-        source: 'GGR 180',
+        source: 'GGR',
         notes: 'Cuando se aplica al rostro, cambia de color según el ánimo.',
         shopTypeId: 17,
         merchantQualityId: 3
@@ -161,7 +161,7 @@ const tattoosItems = [
         name: 'Tatuaje sortílego, truco',
         price: '50 gp',
         quantityFormula: '3',
-        source: 'TCE 135',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Lanza un truco específico una vez, luego desaparece.',
         shopTypeId: 17,
         merchantQualityId: 3
@@ -170,7 +170,7 @@ const tattoosItems = [
         name: 'Tatuaje sortílego, nivel 1',
         price: '50 gp',
         quantityFormula: '3',
-        source: 'TCE 135',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Lanza un conjuro específico de nivel 1 una vez, luego desaparece.',
         shopTypeId: 17,
         merchantQualityId: 3
@@ -208,7 +208,7 @@ const tattoosItems = [
         name: 'Tatuaje barrera mediano',
         price: '5,000 gp',
         quantityFormula: '3',
-        source: 'TCE 122',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Otorga una CA igual a 15 + tu modificador de Destreza, máximo +2.',
         shopTypeId: 17,
         merchantQualityId: 4
@@ -217,7 +217,7 @@ const tattoosItems = [
         name: 'Tela, lino',
         price: '5 gp',
         quantityFormula: '1d4',
-        source: 'PHB 157',
+        source: 'PHB',
         notes: 'Precio por yarda cuadrada. Cantidad en yardas cuadradas. Tela blanca o beige adecuada para vendajes.',
         shopTypeId: 17,
         merchantQualityId: 4
@@ -226,7 +226,7 @@ const tattoosItems = [
         name: 'Tatuaje de agarre enroscado',
         price: '500 gp',
         quantityFormula: '3',
-        source: 'TCE 123',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Zarcillos serpentinos que agarran a una criatura.',
         shopTypeId: 17,
         merchantQualityId: 4
@@ -235,7 +235,7 @@ const tattoosItems = [
         name: 'Tatuaje de garra sobrenatural',
         price: '500 gp',
         quantityFormula: '3',
-        source: 'TCE 126',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Potencia los golpes sin armas y los ataques con armas.',
         shopTypeId: 17,
         merchantQualityId: 4
@@ -253,7 +253,7 @@ const tattoosItems = [
         name: 'Tatuaje de paso fantasmal',
         price: '500 gp',
         quantityFormula: '3',
-        source: 'TCE 128',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Permite volverse incorpóreo tres veces al día.',
         shopTypeId: 17,
         merchantQualityId: 4
@@ -271,7 +271,7 @@ const tattoosItems = [
         name: 'Tatuaje sortílego, nivel 2',
         price: '250 gp',
         quantityFormula: '3',
-        source: 'TCE 135',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Lanza un conjuro específico de nivel 2 una vez, luego desaparece.',
         shopTypeId: 17,
         merchantQualityId: 4
@@ -280,7 +280,7 @@ const tattoosItems = [
         name: 'Tatuaje sortílego, nivel 3',
         price: '250 gp',
         quantityFormula: '3',
-        source: 'TCE 135',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Lanza un conjuro específico de nivel 3 una vez, luego desaparece.',
         shopTypeId: 17,
         merchantQualityId: 4
@@ -318,7 +318,7 @@ const tattoosItems = [
         name: 'Tatuaje absorbente, cualquiera',
         price: '50,000 gp',
         quantityFormula: '3',
-        source: 'TCE 119',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Absorbe daño de un tipo elegido una vez al día.',
         shopTypeId: 17,
         merchantQualityId: 5
@@ -327,7 +327,7 @@ const tattoosItems = [
         name: 'Tatuaje barrera grande',
         price: '50,000 gp',
         quantityFormula: '3',
-        source: 'TCE 122',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Otorga una CA de 18.',
         shopTypeId: 17,
         merchantQualityId: 5
@@ -336,7 +336,7 @@ const tattoosItems = [
         name: 'Tatuaje de furia de sangre',
         price: '500,000 gp',
         quantityFormula: '1',
-        source: 'TCE 122',
+        source: 'TCE',
         notes: 'Solo 1, para siempre. Otorga crítico con 19–20, daño adicional y ataques de reacción.',
         shopTypeId: 17,
         merchantQualityId: 5
@@ -363,7 +363,7 @@ const tattoosItems = [
         name: 'Tatuaje de joya',
         price: '5,000 gp',
         quantityFormula: '3',
-        source: 'TCE 129',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Resiste daño necrótico; otorga beneficios de custodia contra la muerte una vez al día.',
         shopTypeId: 17,
         merchantQualityId: 5
@@ -372,7 +372,7 @@ const tattoosItems = [
         name: 'Piel de bronce fundido, cualquiera',
         price: '5,000 gp',
         quantityFormula: '1',
-        source: 'MOT 197',
+        source: 'MOT',
         notes: 'Solo 1, para siempre. Añade el coste base de la armadura no mágica al precio del objeto.',
         shopTypeId: 17,
         merchantQualityId: 5
@@ -381,7 +381,7 @@ const tattoosItems = [
         name: 'Pigmentos maravillosos de Nolzur',
         price: '25,000 gp',
         quantityFormula: '1',
-        source: 'DMG 183',
+        source: 'DMG',
         notes: 'Solo 1 juego, para siempre. Crea pinturas que se vuelven reales.',
         shopTypeId: 17,
         merchantQualityId: 5
@@ -390,7 +390,7 @@ const tattoosItems = [
         name: 'Aceite de etereidad',
         price: '2,500 gp',
         quantityFormula: '1d4-1',
-        source: 'DMG 183',
+        source: 'DMG',
         notes: 'Otorga los efectos del conjuro etereidad.',
         shopTypeId: 17,
         merchantQualityId: 5
@@ -399,7 +399,7 @@ const tattoosItems = [
         name: 'Tatuaje de marca sombría',
         price: '50,000 gp',
         quantityFormula: '3',
-        source: 'TCE 134',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Ventaja en Sigilo; reduce daño a la mitad usando una reacción.',
         shopTypeId: 17,
         merchantQualityId: 5
@@ -408,7 +408,7 @@ const tattoosItems = [
         name: 'Tatuaje sortílego, nivel 4',
         price: '2,500 gp',
         quantityFormula: '3',
-        source: 'TCE 135',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Lanza un conjuro específico de nivel 4 una vez, luego desaparece.',
         shopTypeId: 17,
         merchantQualityId: 5
@@ -417,7 +417,7 @@ const tattoosItems = [
         name: 'Tatuaje sortílego, nivel 5',
         price: '2,500 gp',
         quantityFormula: '3',
-        source: 'TCE 135',
+        source: 'TCE',
         notes: 'Cantidad en usos diarios. Lanza un conjuro específico de nivel 5 una vez, luego desaparece.',
         shopTypeId: 17,
         merchantQualityId: 5
