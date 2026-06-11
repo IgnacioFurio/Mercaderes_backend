@@ -1,3 +1,10 @@
 export { humanNames, humanSurnames } from "./human.names";
 export { dwarfNames, dwarfSurnames } from "./dwarf.names";
 export { elfNames, elfSurnames } from "./elf.names";
+export { halflingNames, halflingSurnames } from "./halfling.names";
+export { gnomeNames, gnomeSurnames } from "./gnome.names";
+export { orcNames, orcSurnames } from "./orc.names";
+export { tieflingNames, tieflingSurnames } from "./tiefling.names";
+export { dragonbornNames, dragonbornSurnames } from "./dragonborn.names";
+export { goblinNames, goblinSurnames } from "./goblin.names";
+export { koboldNames, koboldSurnames } from "./kobold.names";

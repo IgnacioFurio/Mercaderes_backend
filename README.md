@@ -8,7 +8,7 @@ Este backend contiene la lógica de negocio del generador: creación de mercader
 
 ## Estado del proyecto
 
-Versión actual del backend: **v1.0**
+Versión actual del backend: **v1.0.1**
 
 La V1.0 incluye:
 
@@ -24,6 +24,33 @@ La V1.0 incluye:
 * Resolución automática de tratos feéricos.
 * Compatibilidad con frontend React/Vite.
 
+---
+
+## Changelog
+
+### v1.0.1
+
+Parche centrado en mejorar la generación de nombres de mercaderes.
+
+Cambios principales:
+
+- Añadidas listas de nombres y apellidos para especies que todavía usaban fallback o listas incompletas.
+- Añadidos nombres para:
+  - Medianos
+  - Gnomos
+  - Orcos
+  - Tieflings
+  - Dracónidos
+  - Goblins
+  - Kobolds
+- Ampliadas las listas base de:
+  - Humanos
+  - Elfos
+  - Enanos
+- Ajustada la generación de nombres para especies mestizas:
+  - Semielfos usan combinación de nombres humanos y élficos.
+  - Semiorcos usan combinación de nombres humanos y orcos.
+- Las listas nuevas están diseñadas como nombres originales inspirados en patrones clásicos de fantasía, evitando copiar listas oficiales completas.
 ---
 
 ## Stack
